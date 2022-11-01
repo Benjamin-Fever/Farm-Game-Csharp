@@ -11,6 +11,6 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Domain\Library.csproj" />
+    <ProjectReference Include="..\Library\Library.csproj" />
   </ItemGroup>
 </Project>
