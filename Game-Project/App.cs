@@ -3,7 +3,7 @@ using Library.Mapping;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using Library.Util;
+using Library.Static;
 using System;
 using Viewport = Library.Camera.Viewport;
 
@@ -27,6 +27,7 @@ namespace Application
             base.Window.Title = "Video Game";
             _graphics.PreferredBackBufferWidth = Global.Window_Width;
             _graphics.PreferredBackBufferHeight = Global.Window_Height;
+            _graphics.ApplyChanges();
             base.Initialize();
         }
 

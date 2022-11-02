@@ -6,37 +6,37 @@ namespace Library.Mapping
 {
     public class MappingPos
     {
-        public int x { get; set; }
-        public int y { get; set; }
+        public int X { get; set; }
+        public int Y { get; set; }
 
         public MappingPos()
         {
-            x = 0;
-            y = 0;
+            X = 0;
+            Y = 0;
         }
 
         public MappingPos(int x, int y)
         {
-            this.x = x;
-            this.y = y;
+            this.X = x;
+            this.Y = y;
         }
 
         public MappingPos(int constant)
         {
-            x = constant;
-            y = constant;
+            X = constant;
+            Y = constant;
         }
 
         public Vector2 convertToCoord(Vector2 tileSize)
         {
-            return new Vector2(x * tileSize.X, y * tileSize.Y);
+            return new Vector2(X * tileSize.X, Y * tileSize.Y);
         }
 
-        public MappingPos add(MappingPos p2) { return new MappingPos(x + p2.x, y + p2.y); }
+        public MappingPos add(MappingPos p2) { return new MappingPos(X + p2.X, Y + p2.Y); }
 
         public override string ToString()
         {
-            return "( " + x + ", " + y + ")";
+            return "( " + X + ", " + Y + ")";
         }
     }
 }

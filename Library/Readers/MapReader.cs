@@ -5,7 +5,7 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
-using Library.Util;
+using Library.Static;
 using Microsoft.Xna.Framework;
 
 namespace Content_Library.Reader

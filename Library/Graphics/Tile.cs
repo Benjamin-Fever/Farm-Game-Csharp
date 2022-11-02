@@ -28,10 +28,10 @@ namespace Library.Graphics
             int rectLeft = (int)((tileNum % columns == 0 ? columns-1 : (tileNum % columns) - 1) * tileSize.X);
             int rectTop = (int)(MathF.Ceiling(tileNum / 40) * tileSize.Y);
             Rectangle sourceRect = new Rectangle(rectLeft, rectTop, (int)tileSize.X, (int)tileSize.Y);
-            MappingPos drawPos = new MappingPos(position.x - Viewport.getX(), position.y - Viewport.getY());
-            drawPos.x *= Viewport.getScale();
-            drawPos.y *= Viewport.getScale();
-            spriteBatch.Draw(texture, drawPos.convertToCoord(tileSize), sourceRect, Color.White, 0f, Vector2.Zero, Viewport.getVectorScale(), SpriteEffects.None, 0f);
+            MappingPos drawPos = new MappingPos(position.X - Viewport.getX(), position.Y - Viewport.getY());
+            drawPos.X *= (int)Viewport.getScale().X;
+            drawPos.Y *= (int)Viewport.getScale().Y;
+            spriteBatch.Draw(texture, drawPos.convertToCoord(tileSize), sourceRect, Color.White, 0f, Vector2.Zero, Viewport.getScale(), SpriteEffects.None, 0f);
         }
     }
 }

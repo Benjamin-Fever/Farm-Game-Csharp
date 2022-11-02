@@ -3,40 +3,41 @@ using Library.Util;
 using Microsoft.Xna.Framework;
 using System;
 using System.Data;
+using Library.Static;
 
 namespace Library.Camera
 {
     public static class Viewport
     {
-        private const int width = 5;
-        private const int height = 5;
-        private const int scale = 2;
+        private static Vector2 resolution = new Vector2(160, 128);
         public static MappingPos position = new MappingPos(0, 0);
 
         public static bool posInViewport(MappingPos pos)
         {
             return 
-                (pos.x >= position.x) &&
-                (pos.y >= position.y) && 
-                (pos.x < (position.x + width)) &&
-                (pos.y < (position.y + height));
+                (pos.X >= position.X) &&
+                (pos.Y >= position.Y) && 
+                (pos.X < (position.X + resolution.X)) &&
+                (pos.Y < (position.Y + resolution.Y));
         }
 
         public static void move(int x, int y)
         {
-            position.x += x; 
-            position.y += y;
+            position.X += x; 
+            position.Y += y;
 
-            position.x = position.x > 0 ? position.x : 0;
-            position.y = position.y > 0 ? position.y : 0;
+            position.X = position.X > 0 ? position.X : 0;
+            position.Y = position.Y > 0 ? position.Y : 0;
 
-            position.x = position.x + width > Global.Map.size.X ? (int)Global.Map.size.X - width : position.x;
-            position.y = position.y + height > Global.Map.size.Y ? (int)Global.Map.size.Y - height : position.y;
+            int width  = (int)(resolution.X / Global.Map.tileSize.X);
+            int height = (int)(resolution.Y / Global.Map.tileSize.Y);
+
+            position.X = (int)(position.X + width  > Global.Map.size.X ? Global.Map.size.X - width  : position.X);
+            position.Y = (int)(position.Y + height > Global.Map.size.Y ? Global.Map.size.Y - height : position.Y);
         }
 
-        public static int getX() { return position.x; }
-        public static int getY() { return position.y; }
-        public static int getScale() { return scale; }
-        public static Vector2 getVectorScale() { return new Vector2(getScale()); }
+        public static int getX() { return position.X; }
+        public static int getY() { return position.Y; }
+        public static Vector2 getScale() { return new Vector2(Global.Window_Width / resolution.X, Global.Window_Height / resolution.Y); }
     }
 }
