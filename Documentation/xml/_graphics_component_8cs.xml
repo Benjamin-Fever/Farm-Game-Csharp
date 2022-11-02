@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="_graphics_component_8cs" kind="file" language="C#">
+    <compoundname>GraphicsComponent.cs</compoundname>
+    <innerclass refid="interface_library_1_1_graphics_1_1_i_graphics_component" prot="public">Library::Graphics::IGraphicsComponent</innerclass>
+    <innerclass refid="class_library_1_1_graphics_1_1_graphics_component" prot="public">Library::Graphics::GraphicsComponent</innerclass>
+    <innernamespace refid="namespace_library">Library</innernamespace>
+    <innernamespace refid="namespace_library_1_1_graphics">Library::Graphics</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">Microsoft.Xna.Framework.Graphics;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="namespace_library_1_1_graphics" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_library_1_1_graphics" kindref="compound">Library.Graphics</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8" refid="interface_library_1_1_graphics_1_1_i_graphics_component" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_library_1_1_graphics_1_1_i_graphics_component" kindref="compound">IGraphicsComponent</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="10" refid="interface_library_1_1_graphics_1_1_i_graphics_component_1acca0d3d372a78a58ced6cb36d2d0d8fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_library_1_1_graphics_1_1_i_graphics_component_1acca0d3d372a78a58ced6cb36d2d0d8fb" kindref="member">draw</ref>();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="class_library_1_1_graphics_1_1_graphics_component" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">abstract</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_library_1_1_graphics_1_1_graphics_component" kindref="compound">GraphicsComponent</ref><sp/>:<sp/><ref refid="interface_library_1_1_graphics_1_1_i_graphics_component" kindref="compound">IGraphicsComponent</ref></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="18" refid="class_library_1_1_graphics_1_1_graphics_component_1a664e72c497c058d3b32073341f71159a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>SpriteBatch<sp/><ref refid="class_library_1_1_graphics_1_1_graphics_component_1a664e72c497c058d3b32073341f71159a" kindref="member">spriteBatch</ref>;</highlight></codeline>
+<codeline lineno="19" refid="class_library_1_1_graphics_1_1_graphics_component_1a42699f9e7969f7104ba11a4a47c9a69b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/><ref refid="class_library_1_1_graphics_1_1_sprite" kindref="compound">Sprite</ref><sp/><ref refid="class_library_1_1_graphics_1_1_graphics_component_1a42699f9e7969f7104ba11a4a47c9a69b" kindref="member">sprite</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="class_library_1_1_graphics_1_1_graphics_component_1ae807ff6992bd2a9b486d88a0fa75f3a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">abstract</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_library_1_1_graphics_1_1_graphics_component_1ae807ff6992bd2a9b486d88a0fa75f3a4" kindref="member">draw</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="class_library_1_1_graphics_1_1_graphics_component_1ab25cb437b13669e22dba2c8d2fa7e8fe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_library_1_1_graphics_1_1_graphics_component_1ab25cb437b13669e22dba2c8d2fa7e8fe" kindref="member">setSpriteBatch</ref>(SpriteBatch<sp/>sb)<sp/>{<sp/><ref refid="class_library_1_1_graphics_1_1_graphics_component_1a664e72c497c058d3b32073341f71159a" kindref="member">spriteBatch</ref><sp/>=<sp/>sb;<sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Library/Graphics/GraphicsComponent.cs"/>
+  </compounddef>
+</doxygen>

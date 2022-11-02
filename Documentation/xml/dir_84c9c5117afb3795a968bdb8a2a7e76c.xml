@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_84c9c5117afb3795a968bdb8a2a7e76c" kind="dir">
+    <compoundname>DiscordGameSDK/obj/Debug</compoundname>
+    <innerdir refid="dir_ca76ffba92a2238eb9290e2a74a05854">DiscordGameSDK/obj/Debug/net6.0</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="DiscordGameSDK/obj/Debug/"/>
+  </compounddef>
+</doxygen>

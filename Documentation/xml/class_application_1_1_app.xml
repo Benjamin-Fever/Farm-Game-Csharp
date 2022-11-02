@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="class_application_1_1_app" kind="class" language="C#" prot="public">
+    <compoundname>Application::App</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Game</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_application_1_1_app_1acfb3288f88afefdf192ee8b792b6f540" prot="private" static="no" mutable="no">
+        <type>GraphicsDeviceManager</type>
+        <definition>GraphicsDeviceManager Application.App._graphics</definition>
+        <argsstring></argsstring>
+        <name>_graphics</name>
+        <qualifiedname>Application.App._graphics</qualifiedname>
+        <briefdescription>
+<para>Initilize Varaibles. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game-Project/App.cs" line="16" column="39" bodyfile="Game-Project/App.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_application_1_1_app_1a616250791b44ffc90c912a8ba938eef9" prot="private" static="no" mutable="no">
+        <type>SpriteBatch</type>
+        <definition>SpriteBatch Application.App._spriteBatch</definition>
+        <argsstring></argsstring>
+        <name>_spriteBatch</name>
+        <qualifiedname>Application.App._spriteBatch</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game-Project/App.cs" line="17" column="29" bodyfile="Game-Project/App.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_application_1_1_app_1aff8946391deb4d840ed949e44e0c1676" prot="private" static="no" mutable="no">
+        <type><ref refid="class_library_1_1_graphics_1_1_renderer" kindref="compound">Renderer</ref></type>
+        <definition>Renderer Application.App._renderer</definition>
+        <argsstring></argsstring>
+        <name>_renderer</name>
+        <qualifiedname>Application.App._renderer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game-Project/App.cs" line="18" column="26" bodyfile="Game-Project/App.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_application_1_1_app_1a7f67d3d558792ba3627b2f9881e2eae9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Application.App.App</definition>
+        <argsstring>()</argsstring>
+        <name>App</name>
+        <qualifiedname>Application.App.App</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game-Project/App.cs" line="20" column="16" bodyfile="Game-Project/App.cs" bodystart="20" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_application_1_1_app_1afca44a73b69a572c08b9d707d34d9e91" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Application.App.Initialize</definition>
+        <argsstring>()</argsstring>
+        <name>Initialize</name>
+        <qualifiedname>Application.App.Initialize</qualifiedname>
+        <briefdescription>
+<para>Initilize game window  </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game-Project/App.cs" line="30" column="33" bodyfile="Game-Project/App.cs" bodystart="30" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_app_1a9c1ac277eb7629f3e99658b0083bfa71" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Application.App.LoadContent</definition>
+        <argsstring>()</argsstring>
+        <name>LoadContent</name>
+        <qualifiedname>Application.App.LoadContent</qualifiedname>
+        <briefdescription>
+<para>Load game content compiled using the monogame content pipeline  </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game-Project/App.cs" line="43" column="33" bodyfile="Game-Project/App.cs" bodystart="43" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_app_1a700abaa7b52e8b8479c3c08872359619" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Application.App.Update</definition>
+        <argsstring>(GameTime gameTime)</argsstring>
+        <name>Update</name>
+        <qualifiedname>Application.App.Update</qualifiedname>
+        <param>
+          <type>GameTime</type>
+          <declname>gameTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game-Project/App.cs" line="51" column="33" bodyfile="Game-Project/App.cs" bodystart="51" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_app_1a8a0a88e3d24e7bf906ee4b0479322292" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Application.App.Draw</definition>
+        <argsstring>(GameTime gameTime)</argsstring>
+        <name>Draw</name>
+        <qualifiedname>Application.App.Draw</qualifiedname>
+        <param>
+          <type>GameTime</type>
+          <declname>gameTime</declname>
+        </param>
+        <briefdescription>
+<para>The draw method used to display whats on the game window  </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gameTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time passed between frames</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game-Project/App.cs" line="61" column="33" bodyfile="Game-Project/App.cs" bodystart="61" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_application_1_1_app" kindref="compound">App</ref> extends on the monogame class Game to setup and run the game </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Application.App</label>
+        <link refid="class_application_1_1_app"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Game</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Application.App</label>
+        <link refid="class_application_1_1_app"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Game</label>
+      </node>
+    </collaborationgraph>
+    <location file="Game-Project/App.cs" line="13" column="11" bodyfile="Game-Project/App.cs" bodystart="14" bodyend="69"/>
+    <listofallmembers>
+      <member refid="class_application_1_1_app_1acfb3288f88afefdf192ee8b792b6f540" prot="private" virt="non-virtual"><scope>Application::App</scope><name>_graphics</name></member>
+      <member refid="class_application_1_1_app_1aff8946391deb4d840ed949e44e0c1676" prot="private" virt="non-virtual"><scope>Application::App</scope><name>_renderer</name></member>
+      <member refid="class_application_1_1_app_1a616250791b44ffc90c912a8ba938eef9" prot="private" virt="non-virtual"><scope>Application::App</scope><name>_spriteBatch</name></member>
+      <member refid="class_application_1_1_app_1a7f67d3d558792ba3627b2f9881e2eae9" prot="public" virt="non-virtual"><scope>Application::App</scope><name>App</name></member>
+      <member refid="class_application_1_1_app_1a8a0a88e3d24e7bf906ee4b0479322292" prot="protected" virt="non-virtual"><scope>Application::App</scope><name>Draw</name></member>
+      <member refid="class_application_1_1_app_1afca44a73b69a572c08b9d707d34d9e91" prot="protected" virt="non-virtual"><scope>Application::App</scope><name>Initialize</name></member>
+      <member refid="class_application_1_1_app_1a9c1ac277eb7629f3e99658b0083bfa71" prot="protected" virt="non-virtual"><scope>Application::App</scope><name>LoadContent</name></member>
+      <member refid="class_application_1_1_app_1a700abaa7b52e8b8479c3c08872359619" prot="protected" virt="non-virtual"><scope>Application::App</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

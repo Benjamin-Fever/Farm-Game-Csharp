@@ -1,0 +1,333 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.5" xml:lang="en-US">
+  <compound refid="class_library_1_1_mapping_1_1_abstract_layer" kind="class"><name>Library::Mapping::AbstractLayer</name>
+    <member refid="class_library_1_1_mapping_1_1_abstract_layer_1a177d64ac5ff09429fa2b552782f2df93" kind="variable"><name>name</name></member>
+    <member refid="class_library_1_1_mapping_1_1_abstract_layer_1a897ac86eb61859d79c468b1f09349af8" kind="variable"><name>depth</name></member>
+    <member refid="class_library_1_1_mapping_1_1_abstract_layer_1aefc1f3ba7193a82c17dec4e95a24fd2d" kind="variable"><name>tiles</name></member>
+  </compound>
+  <compound refid="class_library_1_1_mapping_1_1_abstract_map" kind="class"><name>Library::Mapping::AbstractMap</name>
+    <member refid="class_library_1_1_mapping_1_1_abstract_map_1a0d3c1fe6e13aa21c42945f68b2feaca5" kind="variable"><name>name</name></member>
+    <member refid="class_library_1_1_mapping_1_1_abstract_map_1a98009bcfecd86a1895b3a6e19ad6d437" kind="variable"><name>tileSize</name></member>
+    <member refid="class_library_1_1_mapping_1_1_abstract_map_1a5b4e0e5c2ca75e2f9c96fb4ecf9a6eae" kind="variable"><name>size</name></member>
+    <member refid="class_library_1_1_mapping_1_1_abstract_map_1ac5b4ef2de4b8ecb41b165d9aa472ff50" kind="variable"><name>background</name></member>
+    <member refid="class_library_1_1_mapping_1_1_abstract_map_1a24e37a566c32ddf48e7504fda5d667bf" kind="variable"><name>layers</name></member>
+  </compound>
+  <compound refid="class_application_1_1_app" kind="class"><name>Application::App</name>
+    <member refid="class_application_1_1_app_1acfb3288f88afefdf192ee8b792b6f540" kind="variable"><name>_graphics</name></member>
+    <member refid="class_application_1_1_app_1a616250791b44ffc90c912a8ba938eef9" kind="variable"><name>_spriteBatch</name></member>
+    <member refid="class_application_1_1_app_1aff8946391deb4d840ed949e44e0c1676" kind="variable"><name>_renderer</name></member>
+    <member refid="class_application_1_1_app_1a7f67d3d558792ba3627b2f9881e2eae9" kind="function"><name>App</name></member>
+    <member refid="class_application_1_1_app_1afca44a73b69a572c08b9d707d34d9e91" kind="function"><name>Initialize</name></member>
+    <member refid="class_application_1_1_app_1a9c1ac277eb7629f3e99658b0083bfa71" kind="function"><name>LoadContent</name></member>
+    <member refid="class_application_1_1_app_1a700abaa7b52e8b8479c3c08872359619" kind="function"><name>Update</name></member>
+    <member refid="class_application_1_1_app_1a8a0a88e3d24e7bf906ee4b0479322292" kind="function"><name>Draw</name></member>
+  </compound>
+  <compound refid="class_library_1_1_static_1_1_assets" kind="class"><name>Library::Static::Assets</name>
+    <member refid="class_library_1_1_static_1_1_assets_1a2d3dcec131fcb6f9c402a8fd8f2cb597" kind="variable"><name>textures</name></member>
+    <member refid="class_library_1_1_static_1_1_assets_1ac78cc5db29beea917a9504b83fc7b47b" kind="variable"><name>maps</name></member>
+    <member refid="class_library_1_1_static_1_1_assets_1a3a60c9794ebcfd8374427cb8be3912ec" kind="function"><name>load</name></member>
+    <member refid="class_library_1_1_static_1_1_assets_1a1da7e00ac935d7b39f7c8e0be4d3eed2" kind="function"><name>get</name></member>
+    <member refid="class_library_1_1_static_1_1_assets_1adf55c650491077eb3e774393c0126066" kind="function"><name>loadTexutres</name></member>
+    <member refid="class_library_1_1_static_1_1_assets_1a00a1d41009aec1fb2d6cf6780412ad72" kind="function"><name>getContentLocation</name></member>
+  </compound>
+  <compound refid="class_library_1_1_util_1_1_box" kind="class"><name>Library::Util::Box</name>
+    <member refid="class_library_1_1_util_1_1_box_1a6e1a48967a9e0cf26e0655b2bb23e196" kind="variable"><name>x1</name></member>
+    <member refid="class_library_1_1_util_1_1_box_1a474d646e2791df41e3eec171d11bec4b" kind="variable"><name>x2</name></member>
+    <member refid="class_library_1_1_util_1_1_box_1aa7805ee1a87289086eda19eaa892de2c" kind="variable"><name>y1</name></member>
+    <member refid="class_library_1_1_util_1_1_box_1a2fe0779515a91fd8ee051deb07ec692e" kind="variable"><name>y2</name></member>
+    <member refid="class_library_1_1_util_1_1_box_1a19f2280d8876d473d8db80c2bd321f77" kind="function"><name>Box</name></member>
+    <member refid="class_library_1_1_util_1_1_box_1a46042c9aee96eb186c39f28e7b8c3e01" kind="function"><name>Box</name></member>
+    <member refid="class_library_1_1_util_1_1_box_1a8c5b20a25981f409bd93c73b0eb307ee" kind="function"><name>ToString</name></member>
+    <member refid="class_library_1_1_util_1_1_box_1a7f2c35d927f47aa410fef8afd4d5e4aa" kind="function"><name>ConvertXnaRect</name></member>
+  </compound>
+  <compound refid="class_library_1_1_static_1_1_global" kind="class"><name>Library::Static::Global</name>
+    <member refid="class_library_1_1_static_1_1_global_1a04e05cf22781b1666d319b48da30bd3b" kind="variable"><name>Map</name></member>
+    <member refid="class_library_1_1_static_1_1_global_1a25b7bdca573f98fc83dabe7a1e64369a" kind="variable"><name>Window_Width</name></member>
+    <member refid="class_library_1_1_static_1_1_global_1aa84bc9116cd1bf9761490fb5b9aed3a2" kind="variable"><name>Window_Height</name></member>
+  </compound>
+  <compound refid="class_library_1_1_graphics_1_1_graphics_component" kind="class"><name>Library::Graphics::GraphicsComponent</name>
+    <member refid="class_library_1_1_graphics_1_1_graphics_component_1a664e72c497c058d3b32073341f71159a" kind="variable"><name>spriteBatch</name></member>
+    <member refid="class_library_1_1_graphics_1_1_graphics_component_1a42699f9e7969f7104ba11a4a47c9a69b" kind="variable"><name>sprite</name></member>
+    <member refid="class_library_1_1_graphics_1_1_graphics_component_1ae807ff6992bd2a9b486d88a0fa75f3a4" kind="function"><name>draw</name></member>
+    <member refid="class_library_1_1_graphics_1_1_graphics_component_1ab25cb437b13669e22dba2c8d2fa7e8fe" kind="function"><name>setSpriteBatch</name></member>
+  </compound>
+  <compound refid="interface_library_1_1_graphics_1_1_i_graphics_component" kind="interface"><name>Library::Graphics::IGraphicsComponent</name>
+    <member refid="interface_library_1_1_graphics_1_1_i_graphics_component_1acca0d3d372a78a58ced6cb36d2d0d8fb" kind="function"><name>draw</name></member>
+  </compound>
+  <compound refid="class_content___library_1_1_importer_1_1_map_importer" kind="class"><name>Content_Library::Importer::MapImporter</name>
+    <member refid="class_content___library_1_1_importer_1_1_map_importer_1a0ec1d4823856c05668e44592de8f14e7" kind="function"><name>Import</name></member>
+  </compound>
+  <compound refid="class_library_1_1_mapping_1_1_mapping_pos" kind="class"><name>Library::Mapping::MappingPos</name>
+    <member refid="class_library_1_1_mapping_1_1_mapping_pos_1a7536ce0ca23b9d06ea6e9b49f8cc664a" kind="property"><name>X</name></member>
+    <member refid="class_library_1_1_mapping_1_1_mapping_pos_1ae1322c42edad7b832771d3eb0238c6aa" kind="property"><name>Y</name></member>
+    <member refid="class_library_1_1_mapping_1_1_mapping_pos_1ac9556b51bd5d38820d9987142762ffbe" kind="function"><name>MappingPos</name></member>
+    <member refid="class_library_1_1_mapping_1_1_mapping_pos_1a8a1ef6a5c13e00b304e0baef129e2556" kind="function"><name>MappingPos</name></member>
+    <member refid="class_library_1_1_mapping_1_1_mapping_pos_1a0a9ca58d0df9f3beac24ce2e81415a91" kind="function"><name>MappingPos</name></member>
+    <member refid="class_library_1_1_mapping_1_1_mapping_pos_1ab76c85e01ad703429a71683502ed8ed6" kind="function"><name>ConvertToCoord</name></member>
+    <member refid="class_library_1_1_mapping_1_1_mapping_pos_1a72d4925d6f7786972d4cc06080dc222a" kind="function"><name>Add</name></member>
+    <member refid="class_library_1_1_mapping_1_1_mapping_pos_1aa74854c9afa2e0d46c66488bd77b3b93" kind="function"><name>ToString</name></member>
+  </compound>
+  <compound refid="class_content___library_1_1_processor_1_1_map_processor" kind="class"><name>Content_Library::Processor::MapProcessor</name>
+    <member refid="class_content___library_1_1_processor_1_1_map_processor_1aabc0cca59d977572ef63633597474b73" kind="function"><name>Process</name></member>
+  </compound>
+  <compound refid="class_content___library_1_1_reader_1_1_map_reader" kind="class"><name>Content_Library::Reader::MapReader</name>
+    <member refid="class_content___library_1_1_reader_1_1_map_reader_1a58524ed9485eec46fb55003f002d6219" kind="function"><name>Read</name></member>
+    <member refid="class_content___library_1_1_reader_1_1_map_reader_1a2f8dbbe7d113004c8351ad78fe752ea3" kind="function"><name>getTiles</name></member>
+  </compound>
+  <compound refid="class_content___library_1_1_writer_1_1_map_writer" kind="class"><name>Content_Library::Writer::MapWriter</name>
+    <member refid="class_content___library_1_1_writer_1_1_map_writer_1ae71669631ad1eb8a744ea4e8d33698f5" kind="function"><name>Write</name></member>
+    <member refid="class_content___library_1_1_writer_1_1_map_writer_1a166967a7913d9001f2444670ae6a42ae" kind="function"><name>GetRuntimeType</name></member>
+    <member refid="class_content___library_1_1_writer_1_1_map_writer_1a6e42abdcebd1c908d4f43581dc569a74" kind="function"><name>GetRuntimeReader</name></member>
+  </compound>
+  <compound refid="class_program" kind="class"><name>Program</name>
+    <member refid="class_program_1ada72f8d1518f89bc2e6ad807d5059564" kind="function"><name>Main</name></member>
+  </compound>
+  <compound refid="class_library_1_1_graphics_1_1_renderer" kind="class"><name>Library::Graphics::Renderer</name>
+    <member refid="class_library_1_1_graphics_1_1_renderer_1ae70bff2b721e3fffe4a03ff14caa828d" kind="variable"><name>game</name></member>
+    <member refid="class_library_1_1_graphics_1_1_renderer_1a545e2caf444dc1730cab8e698252015a" kind="function"><name>Renderer</name></member>
+    <member refid="class_library_1_1_graphics_1_1_renderer_1a6696eb171e4708d5b1e8f869671090eb" kind="function"><name>draw</name></member>
+  </compound>
+  <compound refid="class_library_1_1_serializers_1_1_serial_color" kind="class"><name>Library::Serializers::SerialColor</name>
+    <member refid="class_library_1_1_serializers_1_1_serial_color_1a3f7f82e20549a176bbdc5f4cc0c41021" kind="property"><name>red</name></member>
+    <member refid="class_library_1_1_serializers_1_1_serial_color_1ae191845f4fec1fa00a6fe0145a93fa39" kind="property"><name>green</name></member>
+    <member refid="class_library_1_1_serializers_1_1_serial_color_1a2b98a2023c3d6cd7c32e213238618d00" kind="property"><name>blue</name></member>
+  </compound>
+  <compound refid="class_library_1_1_serializers_1_1_serial_layer" kind="class"><name>Library::Serializers::SerialLayer</name>
+    <member refid="class_library_1_1_serializers_1_1_serial_layer_1a1a2b2bc617c519b5df04481b7b6ba094" kind="property"><name>Name</name></member>
+    <member refid="class_library_1_1_serializers_1_1_serial_layer_1a43b82e29794fe085b020f53c3e1e8e90" kind="property"><name>Depth</name></member>
+    <member refid="class_library_1_1_serializers_1_1_serial_layer_1ad49008ba5610bec2041c31eddcc0953c" kind="property"><name>Tileset</name></member>
+    <member refid="class_library_1_1_serializers_1_1_serial_layer_1af2e14890c1acec4eb78d15075a4da7d5" kind="property"><name>Data</name></member>
+  </compound>
+  <compound refid="class_library_1_1_serializers_1_1_serial_map" kind="class"><name>Library::Serializers::SerialMap</name>
+    <member refid="class_library_1_1_serializers_1_1_serial_map_1ab9812c4d5210a523746afb9d21fddb6d" kind="property"><name>Name</name></member>
+    <member refid="class_library_1_1_serializers_1_1_serial_map_1a3bea6074fef1e7519e8f07e3156ca805" kind="property"><name>TileWidth</name></member>
+    <member refid="class_library_1_1_serializers_1_1_serial_map_1aa68ea27264d13948e07e8e9090f3e4c8" kind="property"><name>TileHeight</name></member>
+    <member refid="class_library_1_1_serializers_1_1_serial_map_1a520d171b8963786acac5e9591a359905" kind="property"><name>Width</name></member>
+    <member refid="class_library_1_1_serializers_1_1_serial_map_1acc3a993b8a38e7e9f32ad500161bec38" kind="property"><name>Height</name></member>
+    <member refid="class_library_1_1_serializers_1_1_serial_map_1aef142e59fe69a1154d70cfe83df6e310" kind="property"><name>Background</name></member>
+    <member refid="class_library_1_1_serializers_1_1_serial_map_1a20e7ca9cadd32e55635bede2587631b0" kind="property"><name>Layers</name></member>
+  </compound>
+  <compound refid="class_library_1_1_serializers_1_1_serial_tileset" kind="class"><name>Library::Serializers::SerialTileset</name>
+    <member refid="class_library_1_1_serializers_1_1_serial_tileset_1a06178cafacce5c0d377b8df4a6607d7a" kind="property"><name>Name</name></member>
+    <member refid="class_library_1_1_serializers_1_1_serial_tileset_1ac4972794d0a8d33fc54ad74b24416cc2" kind="property"><name>source</name></member>
+    <member refid="class_library_1_1_serializers_1_1_serial_tileset_1af384ece3892b9d313f01647c70cdd5b6" kind="property"><name>columns</name></member>
+  </compound>
+  <compound refid="class_library_1_1_graphics_1_1_sprite" kind="class"><name>Library::Graphics::Sprite</name>
+    <member refid="class_library_1_1_graphics_1_1_sprite_1a0e2206c595e1a8c1156b0b344751252a" kind="variable"><name>texture</name></member>
+    <member refid="class_library_1_1_graphics_1_1_sprite_1ab21369ba1daafc30d48ddfaaf472c126" kind="variable"><name>bbox</name></member>
+    <member refid="class_library_1_1_graphics_1_1_sprite_1ae779289e86e6e8510154de2310f91435" kind="variable"><name>visible</name></member>
+    <member refid="class_library_1_1_graphics_1_1_sprite_1a646b9a855c0b819869efca81c90c64fa" kind="function"><name>Sprite</name></member>
+    <member refid="class_library_1_1_graphics_1_1_sprite_1a58d198067a86cf96f47ac7f575bc7841" kind="function"><name>Sprite</name></member>
+    <member refid="class_library_1_1_graphics_1_1_sprite_1a6918facedd445727c9571d53257d33b5" kind="function"><name>Sprite</name></member>
+    <member refid="class_library_1_1_graphics_1_1_sprite_1a7b6a7794c578b30033efece9b9930bcc" kind="function"><name>Sprite</name></member>
+    <member refid="class_library_1_1_graphics_1_1_sprite_1aac73cb8f5466d24b84a5b362cefc596e" kind="function"><name>SetTexture</name></member>
+    <member refid="class_library_1_1_graphics_1_1_sprite_1aafdeabf9ec69d17eb67ba504f162bbd9" kind="function"><name>SetBoundBox</name></member>
+    <member refid="class_library_1_1_graphics_1_1_sprite_1a2a3f87f6d972ceaa76387c18fc6707dc" kind="function"><name>SetBoundBox</name></member>
+    <member refid="class_library_1_1_graphics_1_1_sprite_1ad791fd4732b3ccdc0f275ba42d6a3c94" kind="function"><name>SetVisible</name></member>
+    <member refid="class_library_1_1_graphics_1_1_sprite_1ac88515e3cb97e911041dc38aafcc8d94" kind="function"><name>GetVisibile</name></member>
+    <member refid="class_library_1_1_graphics_1_1_sprite_1a6e50868938e3b3b138f92493e40a5983" kind="function"><name>GetTexture</name></member>
+    <member refid="class_library_1_1_graphics_1_1_sprite_1a4591f7de48d42f62da2257caeeed0987" kind="function"><name>GetBoundBox</name></member>
+  </compound>
+  <compound refid="class_library_1_1_graphics_1_1_tile" kind="class"><name>Library::Graphics::Tile</name>
+    <member refid="class_library_1_1_graphics_1_1_tile_1ad315a6d802f20f45c3a7cd9c5423197b" kind="variable"><name>tileSize</name></member>
+    <member refid="class_library_1_1_graphics_1_1_tile_1acd45540f84d89fa6c9d39bf2062527a3" kind="variable"><name>position</name></member>
+    <member refid="class_library_1_1_graphics_1_1_tile_1a49518076f8614f3ff79f6a8849c8112a" kind="variable"><name>tileNum</name></member>
+    <member refid="class_library_1_1_graphics_1_1_tile_1a36564162d1bde6d032dd9c3a98518402" kind="variable"><name>columns</name></member>
+    <member refid="class_library_1_1_graphics_1_1_tile_1a10cc32418cfb777daf902c80edc2f9c8" kind="function"><name>Tile</name></member>
+    <member refid="class_library_1_1_graphics_1_1_tile_1a228df1b1e20efb443153f724b908c3ac" kind="function"><name>draw</name></member>
+  </compound>
+  <compound refid="class_library_1_1_mapping_1_1_tile_layer" kind="class"><name>Library::Mapping::TileLayer</name>
+    <member refid="class_library_1_1_mapping_1_1_tile_layer_1a0ae81fe4be6ca201053a76a01dabe24d" kind="function"><name>CompareTo</name></member>
+    <member refid="class_library_1_1_mapping_1_1_tile_layer_1abbbf9e9c4ba471a42f2775d88d7502b8" kind="function"><name>draw</name></member>
+    <member refid="class_library_1_1_mapping_1_1_tile_layer_1a3d6def6f8721ba89005de03cd425d870" kind="function"><name>GetDepth</name></member>
+  </compound>
+  <compound refid="class_library_1_1_mapping_1_1_tile_map" kind="class"><name>Library::Mapping::TileMap</name>
+    <member refid="class_library_1_1_mapping_1_1_tile_map_1ab283074c478918bf8ee465d729dd1a31" kind="function"><name>draw</name></member>
+  </compound>
+  <compound refid="class_library_1_1_camera_1_1_viewport" kind="class"><name>Library::Camera::Viewport</name>
+    <member refid="class_library_1_1_camera_1_1_viewport_1ad8fa597f4f1bbbe4b8de5c14c19ea7d9" kind="variable"><name>resolution</name></member>
+    <member refid="class_library_1_1_camera_1_1_viewport_1ae521d6805423c47494d8866150a11bc9" kind="variable"><name>position</name></member>
+    <member refid="class_library_1_1_camera_1_1_viewport_1a8697d6fe8e01f24b2a76c6b8115cea69" kind="function"><name>posInViewport</name></member>
+    <member refid="class_library_1_1_camera_1_1_viewport_1ac5a95e7ecf78a3c403699c5478e08132" kind="function"><name>Move</name></member>
+    <member refid="class_library_1_1_camera_1_1_viewport_1a1cafcf35f7a46f27a48f293f6f54a436" kind="function"><name>GetX</name></member>
+    <member refid="class_library_1_1_camera_1_1_viewport_1a1a8aa445cfed3b1f7b5e88da2bf9d466" kind="function"><name>GetY</name></member>
+    <member refid="class_library_1_1_camera_1_1_viewport_1a3e33d6cd0be4d45741f4d53d8382bdab" kind="function"><name>GetScale</name></member>
+  </compound>
+  <compound refid="namespace_application" kind="namespace"><name>Application</name>
+  </compound>
+  <compound refid="namespace_content___library" kind="namespace"><name>Content_Library</name>
+  </compound>
+  <compound refid="namespace_content___library_1_1_importer" kind="namespace"><name>Content_Library::Importer</name>
+  </compound>
+  <compound refid="namespace_content___library_1_1_processor" kind="namespace"><name>Content_Library::Processor</name>
+  </compound>
+  <compound refid="namespace_content___library_1_1_reader" kind="namespace"><name>Content_Library::Reader</name>
+  </compound>
+  <compound refid="namespace_content___library_1_1_writer" kind="namespace"><name>Content_Library::Writer</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system" kind="namespace"><name>global::System</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_collections_1_1_generic" kind="namespace"><name>global::System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_i_o" kind="namespace"><name>global::System::IO</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_linq" kind="namespace"><name>global::System::Linq</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_net_1_1_http" kind="namespace"><name>global::System::Net::Http</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_threading" kind="namespace"><name>global::System::Threading</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_threading_1_1_tasks" kind="namespace"><name>global::System::Threading::Tasks</name>
+  </compound>
+  <compound refid="namespace_library" kind="namespace"><name>Library</name>
+  </compound>
+  <compound refid="namespace_library_1_1_camera" kind="namespace"><name>Library::Camera</name>
+  </compound>
+  <compound refid="namespace_library_1_1_graphics" kind="namespace"><name>Library::Graphics</name>
+  </compound>
+  <compound refid="namespace_library_1_1_mapping" kind="namespace"><name>Library::Mapping</name>
+  </compound>
+  <compound refid="namespace_library_1_1_serializers" kind="namespace"><name>Library::Serializers</name>
+  </compound>
+  <compound refid="namespace_library_1_1_static" kind="namespace"><name>Library::Static</name>
+  </compound>
+  <compound refid="namespace_library_1_1_util" kind="namespace"><name>Library::Util</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_xna_1_1_framework" kind="namespace"><name>Microsoft::Xna::Framework</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_xna_1_1_framework_1_1_content" kind="namespace"><name>Microsoft::Xna::Framework::Content</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_xna_1_1_framework_1_1_content_1_1_pipeline" kind="namespace"><name>Microsoft::Xna::Framework::Content::Pipeline</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_xna_1_1_framework_1_1_content_1_1_pipeline_1_1_serialization_1_1_compiler" kind="namespace"><name>Microsoft::Xna::Framework::Content::Pipeline::Serialization::Compiler</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_xna_1_1_framework_1_1_graphics" kind="namespace"><name>Microsoft::Xna::Framework::Graphics</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_xna_1_1_framework_1_1_input" kind="namespace"><name>Microsoft::Xna::Framework::Input</name>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_system_1_1_i_o" kind="namespace"><name>System::IO</name>
+  </compound>
+  <compound refid="namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
+  </compound>
+  <compound refid="namespace_system_1_1_reflection" kind="namespace"><name>System::Reflection</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text" kind="namespace"><name>System::Text</name>
+  </compound>
+  <compound refid="namespace_system_1_1_threading_1_1_tasks" kind="namespace"><name>System::Threading::Tasks</name>
+  </compound>
+  <compound refid="namespace_system_1_1_xml_1_1_serialization" kind="namespace"><name>System::Xml::Serialization</name>
+  </compound>
+  <compound refid="namespace_viewport" kind="namespace"><name>Viewport</name>
+  </compound>
+  <compound refid="_map_importer_8cs" kind="file"><name>MapImporter.cs</name>
+  </compound>
+  <compound refid="_content_01_pipeline_2obj_2_debug_2net6_80_2_8_n_e_t_core_app_00_version_0av6_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v6.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_discord_game_s_d_k_2obj_2_debug_2net6_80_2_8_n_e_t_core_app_00_version_0av6_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v6.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_game-_project_2obj_2_debug_2net6_80_2_8_n_e_t_core_app_00_version_0av6_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v6.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_library_2obj_2_debug_2net6_80_2_8_n_e_t_core_app_00_version_0av6_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v6.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_content_01_library_8_assembly_info_8cs" kind="file"><name>Content Library.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_map_processor_8cs" kind="file"><name>MapProcessor.cs</name>
+  </compound>
+  <compound refid="_map_writer_8cs" kind="file"><name>MapWriter.cs</name>
+  </compound>
+  <compound refid="_discord_game_s_d_k_8_assembly_info_8cs" kind="file"><name>DiscordGameSDK.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_discord_game_s_d_k_8_global_usings_8g_8cs" kind="file"><name>DiscordGameSDK.GlobalUsings.g.cs</name>
+  </compound>
+  <compound refid="_app_8cs" kind="file"><name>App.cs</name>
+  </compound>
+  <compound refid="_application_8_assembly_info_8cs" kind="file"><name>Application.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_program_8cs" kind="file"><name>Program.cs</name>
+  </compound>
+  <compound refid="_viewport_8cs" kind="file"><name>Viewport.cs</name>
+  </compound>
+  <compound refid="_graphics_component_8cs" kind="file"><name>GraphicsComponent.cs</name>
+  </compound>
+  <compound refid="_renderer_8cs" kind="file"><name>Renderer.cs</name>
+  </compound>
+  <compound refid="_sprite_8cs" kind="file"><name>Sprite.cs</name>
+  </compound>
+  <compound refid="_tile_8cs" kind="file"><name>Tile.cs</name>
+    <member refid="_tile_8cs_1a2ace89b8cd37948aa26c3311b2df22e4" kind="typedef"><name>Viewport</name></member>
+  </compound>
+  <compound refid="_layer_8cs" kind="file"><name>Layer.cs</name>
+  </compound>
+  <compound refid="_map_8cs" kind="file"><name>Map.cs</name>
+  </compound>
+  <compound refid="_mapping_pos_8cs" kind="file"><name>MappingPos.cs</name>
+  </compound>
+  <compound refid="_library_8_assembly_info_8cs" kind="file"><name>Library.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_map_reader_8cs" kind="file"><name>MapReader.cs</name>
+  </compound>
+  <compound refid="_serial_color_8cs" kind="file"><name>SerialColor.cs</name>
+  </compound>
+  <compound refid="_serial_layer_8cs" kind="file"><name>SerialLayer.cs</name>
+  </compound>
+  <compound refid="_serial_map_8cs" kind="file"><name>SerialMap.cs</name>
+  </compound>
+  <compound refid="_serial_tileset_8cs" kind="file"><name>SerialTileset.cs</name>
+  </compound>
+  <compound refid="_static_8cs" kind="file"><name>Static.cs</name>
+  </compound>
+  <compound refid="_util_8cs" kind="file"><name>Util.cs</name>
+  </compound>
+  <compound refid="dir_dfb1655f96ee4dea8f21c19c94ceb155" kind="dir"><name>Library/Camera</name>
+  </compound>
+  <compound refid="dir_21c81017b250681221350b9a519a3964" kind="dir"><name>Content Pipeline</name>
+  </compound>
+  <compound refid="dir_09016521cfad19627a6b652984008064" kind="dir"><name>Content Pipeline/obj/Debug</name>
+  </compound>
+  <compound refid="dir_84c9c5117afb3795a968bdb8a2a7e76c" kind="dir"><name>DiscordGameSDK/obj/Debug</name>
+  </compound>
+  <compound refid="dir_fc460679b34691475d05692113be918f" kind="dir"><name>Game-Project/obj/Debug</name>
+  </compound>
+  <compound refid="dir_96d44df0f32a46171a0410449705357e" kind="dir"><name>Library/obj/Debug</name>
+  </compound>
+  <compound refid="dir_d717bea906f3695552c8808d10dcf107" kind="dir"><name>DiscordGameSDK</name>
+  </compound>
+  <compound refid="dir_5fa067c71beee98b7599a5601a2502b7" kind="dir"><name>Game-Project</name>
+  </compound>
+  <compound refid="dir_b10eb7d4ec47c939902b9a1d52c7bfbc" kind="dir"><name>Library/Graphics</name>
+  </compound>
+  <compound refid="dir_803c85dee7e0c556cf19dd74e8136986" kind="dir"><name>Content Pipeline/Importers</name>
+  </compound>
+  <compound refid="dir_5ad7f572bbca03234e8e621e192fc099" kind="dir"><name>Library</name>
+  </compound>
+  <compound refid="dir_74bb85d020315f17d40b6e909f9f663a" kind="dir"><name>Library/Mapping</name>
+  </compound>
+  <compound refid="dir_58efda87a9f8cd96a07f9e14c5520e68" kind="dir"><name>Content Pipeline/obj/Debug/net6.0</name>
+  </compound>
+  <compound refid="dir_ca76ffba92a2238eb9290e2a74a05854" kind="dir"><name>DiscordGameSDK/obj/Debug/net6.0</name>
+  </compound>
+  <compound refid="dir_8b5d902aa8f1b37bc0895f6c314d3ca4" kind="dir"><name>Game-Project/obj/Debug/net6.0</name>
+  </compound>
+  <compound refid="dir_d4bb5e1a53ba1a3f39b9220d7dc891a0" kind="dir"><name>Library/obj/Debug/net6.0</name>
+  </compound>
+  <compound refid="dir_bef79e8b5354a15cac483d690187cc2e" kind="dir"><name>Content Pipeline/obj</name>
+  </compound>
+  <compound refid="dir_fbc1cefe508f47f52c36042d43a3febf" kind="dir"><name>DiscordGameSDK/obj</name>
+  </compound>
+  <compound refid="dir_d1aac78aafa71c5031d6e4927160fed2" kind="dir"><name>Game-Project/obj</name>
+  </compound>
+  <compound refid="dir_7070724669190ad519985f89ee867359" kind="dir"><name>Library/obj</name>
+  </compound>
+  <compound refid="dir_8fd166e0b0695772f03c344c0b01ded6" kind="dir"><name>Content Pipeline/Processors</name>
+  </compound>
+  <compound refid="dir_c23424a3267808464271f6fb9e164fb6" kind="dir"><name>Library/Readers</name>
+  </compound>
+  <compound refid="dir_33bf8cf36cf2ea60606f84e079166b1a" kind="dir"><name>Library/Serializers</name>
+  </compound>
+  <compound refid="dir_0ca48ea73e76fa02c23d539eaa1cfdc0" kind="dir"><name>Content Pipeline/Writer</name>
+  </compound>
+</doxygenindex>

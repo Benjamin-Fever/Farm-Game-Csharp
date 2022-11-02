@@ -1,0 +1,179 @@
+.TH "Library.Graphics.Sprite" 3 "Thu Nov 3 2022" "Version 0.1" "Game Engine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Library.Graphics.Sprite \- \fBSprite\fP class defines a sprites texure and hitbox   
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSprite\fP (Texture2D texture)"
+.br
+.ti -1c
+.RI "\fBSprite\fP (Texture2D texture, bool visible)"
+.br
+.ti -1c
+.RI "\fBSprite\fP (Texture2D texture, \fBBox\fP bbox)"
+.br
+.ti -1c
+.RI "\fBSprite\fP (Texture2D texture, \fBBox\fP bbox, bool visible)"
+.br
+.ti -1c
+.RI "void \fBSetTexture\fP (Texture2D texture)"
+.br
+.RI "Set the sprites image  "
+.ti -1c
+.RI "void \fBSetBoundBox\fP (float x1, float y1, float x2, float y2)"
+.br
+.RI "Set the bounding box of the sprite  "
+.ti -1c
+.RI "void \fBSetBoundBox\fP (\fBBox\fP bbox)"
+.br
+.RI "Set the bounding box of the sprite  "
+.ti -1c
+.RI "void \fBSetVisible\fP (bool visible)"
+.br
+.RI "Set sprite visibility  "
+.ti -1c
+.RI "bool \fBGetVisibile\fP ()"
+.br
+.RI "Get sprite visibility  "
+.ti -1c
+.RI "Texture2D \fBGetTexture\fP ()"
+.br
+.RI "Get sprite texture  "
+.ti -1c
+.RI "\fBBox\fP \fBGetBoundBox\fP ()"
+.br
+.RI "Get the bounding box of the sprite  "
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBSprite\fP class defines a sprites texure and hitbox  
+.PP
+Definition at line \fB9\fP of file \fBSprite\&.cs\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Library\&.Graphics\&.Sprite\&.Sprite (Texture2D texture)"
+
+.PP
+Definition at line \fB15\fP of file \fBSprite\&.cs\fP\&.
+.SS "Library\&.Graphics\&.Sprite\&.Sprite (Texture2D texture, bool visible)"
+
+.PP
+Definition at line \fB20\fP of file \fBSprite\&.cs\fP\&.
+.SS "Library\&.Graphics\&.Sprite\&.Sprite (Texture2D texture, \fBBox\fP bbox)"
+
+.PP
+Definition at line \fB26\fP of file \fBSprite\&.cs\fP\&.
+.SS "Library\&.Graphics\&.Sprite\&.Sprite (Texture2D texture, \fBBox\fP bbox, bool visible)"
+
+.PP
+Definition at line \fB31\fP of file \fBSprite\&.cs\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBBox\fP Library\&.Graphics\&.Sprite\&.GetBoundBox ()"
+
+.PP
+Get the bounding box of the sprite  
+.PP
+\fBReturns\fP
+.RS 4
+A box of the sprites bounding box
+.RE
+.PP
+
+.PP
+Definition at line \fB87\fP of file \fBSprite\&.cs\fP\&.
+.SS "Texture2D Library\&.Graphics\&.Sprite\&.GetTexture ()"
+
+.PP
+Get sprite texture  
+.PP
+\fBReturns\fP
+.RS 4
+The sprites texture
+.RE
+.PP
+
+.PP
+Definition at line \fB81\fP of file \fBSprite\&.cs\fP\&.
+.SS "bool Library\&.Graphics\&.Sprite\&.GetVisibile ()"
+
+.PP
+Get sprite visibility  
+.PP
+\fBReturns\fP
+.RS 4
+True if sprite is visible, otherwise False
+.RE
+.PP
+
+.PP
+Definition at line \fB75\fP of file \fBSprite\&.cs\fP\&.
+.SS "void Library\&.Graphics\&.Sprite\&.SetBoundBox (\fBBox\fP bbox)"
+
+.PP
+Set the bounding box of the sprite  
+.PP
+\fBParameters\fP
+.RS 4
+\fIbbox\fP New Bounding Box
+.RE
+.PP
+
+.PP
+Definition at line \fB60\fP of file \fBSprite\&.cs\fP\&.
+.SS "void Library\&.Graphics\&.Sprite\&.SetBoundBox (float x1, float y1, float x2, float y2)"
+
+.PP
+Set the bounding box of the sprite  
+.PP
+\fBParameters\fP
+.RS 4
+\fIx1\fP Left Position
+.br
+\fIy1\fP Top Position
+.br
+\fIx2\fP Right Position
+.br
+\fIy2\fP Bottom Position
+.RE
+.PP
+
+.PP
+Definition at line \fB51\fP of file \fBSprite\&.cs\fP\&.
+.SS "void Library\&.Graphics\&.Sprite\&.SetTexture (Texture2D texture)"
+
+.PP
+Set the sprites image  
+.PP
+\fBParameters\fP
+.RS 4
+\fItexture\fP \fBSprite\fP Image
+.RE
+.PP
+
+.PP
+Definition at line \fB42\fP of file \fBSprite\&.cs\fP\&.
+.SS "void Library\&.Graphics\&.Sprite\&.SetVisible (bool visible)"
+
+.PP
+Set sprite visibility  
+.PP
+\fBParameters\fP
+.RS 4
+\fIvisible\fP 
+.RE
+.PP
+
+.PP
+Definition at line \fB69\fP of file \fBSprite\&.cs\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Game Engine from the source code\&.

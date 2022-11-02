@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__serial_map_8cs" xml:lang="en-US">
+<title>Library/Serializers/SerialMap.cs File Reference</title>
+<indexterm><primary>Library/Serializers/SerialMap.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_library_1_1_serializers_1_1_serial_map">Library.Serializers.SerialMap</link></para>
+
+<para>Serializable map  </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_library">Library</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_library_1_1_serializers">Library.Serializers</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

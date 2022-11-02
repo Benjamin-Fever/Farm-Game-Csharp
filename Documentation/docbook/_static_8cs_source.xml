@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__static_8cs_source" xml:lang="en-US">
+<title>Static.cs</title>
+<indexterm><primary>Library/Static.cs</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__static_8cs_source_1l00001"/>00001 <emphasis role="keyword">using&#32;</emphasis><link linkend="_namespace_library_1_1_mapping">Library.Mapping</link>;
+<anchor xml:id="__static_8cs_source_1l00002"/>00002 <emphasis role="keyword">using&#32;</emphasis>Microsoft.Xna.Framework.Content;
+<anchor xml:id="__static_8cs_source_1l00003"/>00003 <emphasis role="keyword">using&#32;</emphasis>Microsoft.Xna.Framework.Graphics;
+<anchor xml:id="__static_8cs_source_1l00004"/>00004 <emphasis role="keyword">using&#32;</emphasis>System.Collections.Generic;
+<anchor xml:id="__static_8cs_source_1l00005"/>00005 <emphasis role="keyword">using&#32;</emphasis>System.IO;
+<anchor xml:id="__static_8cs_source_1l00006"/>00006 
+<anchor xml:id="__static_8cs_source_1l00007"/><link linkend="_namespace_library_1_1_static">00007</link> <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_library_1_1_static">Library.Static</link>
+<anchor xml:id="__static_8cs_source_1l00008"/>00008 {
+<anchor xml:id="__static_8cs_source_1l00012"/>00012 &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">class&#32;</emphasis>Global
+<anchor xml:id="__static_8cs_source_1l00013"/>00013 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__static_8cs_source_1l00014"/>00014 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">static</emphasis>&#32;<link linkend="_class_library_1_1_mapping_1_1_tile_map">TileMap</link>&#32;Map;
+<anchor xml:id="__static_8cs_source_1l00015"/>00015 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;Window_Width&#32;=&#32;800;
+<anchor xml:id="__static_8cs_source_1l00016"/>00016 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;Window_Height&#32;=&#32;512;
+<anchor xml:id="__static_8cs_source_1l00017"/>00017 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__static_8cs_source_1l00018"/>00018 
+<anchor xml:id="__static_8cs_source_1l00022"/>00022 &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">class&#32;</emphasis>Assets
+<anchor xml:id="__static_8cs_source_1l00023"/>00023 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__static_8cs_source_1l00024"/>00024 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keyword">static</emphasis>&#32;Dictionary&lt;string,&#32;Texture2D&gt;&#32;textures&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;Dictionary&lt;string,&#32;Texture2D&gt;();
+<anchor xml:id="__static_8cs_source_1l00025"/>00025 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keyword">static</emphasis>&#32;Dictionary&lt;string,&#32;TileMap&gt;&#32;maps&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;Dictionary&lt;string,&#32;TileMap&gt;();
+<anchor xml:id="__static_8cs_source_1l00026"/>00026 
+<anchor xml:id="__static_8cs_source_1l00031"/>00031 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;load(ContentManager&#32;content)
+<anchor xml:id="__static_8cs_source_1l00032"/>00032 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__static_8cs_source_1l00033"/>00033 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;loadTexutres(content);
+<anchor xml:id="__static_8cs_source_1l00034"/>00034 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__static_8cs_source_1l00035"/>00035 
+<anchor xml:id="__static_8cs_source_1l00042"/>00042 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keywordtype">object</emphasis>&#32;<emphasis role="keyword">get</emphasis>(<emphasis role="keywordtype">string</emphasis>&#32;key)
+<anchor xml:id="__static_8cs_source_1l00043"/>00043 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__static_8cs_source_1l00044"/>00044 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;key&#32;=&#32;key.Replace(<emphasis role="stringliteral">&quot;/&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;\\&quot;</emphasis>);
+<anchor xml:id="__static_8cs_source_1l00045"/>00045 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(textures.ContainsKey(key))&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;textures[key];&#32;}
+<anchor xml:id="__static_8cs_source_1l00046"/>00046 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">throw</emphasis>&#32;<emphasis role="keyword">new</emphasis>&#32;IOException(<emphasis role="stringliteral">&quot;Content&#32;was&#32;not&#32;loaded&#32;for&#32;key:&#32;&quot;</emphasis>&#32;+&#32;key);
+<anchor xml:id="__static_8cs_source_1l00047"/>00047 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__static_8cs_source_1l00048"/>00048 
+<anchor xml:id="__static_8cs_source_1l00053"/>00053 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;loadTexutres(ContentManager&#32;content)
+<anchor xml:id="__static_8cs_source_1l00054"/>00054 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__static_8cs_source_1l00055"/>00055 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;List&lt;string&gt;&#32;files&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;List&lt;string&gt;(Directory.GetFiles(<emphasis role="stringliteral">&quot;content\\assets\\textures&quot;</emphasis>));
+<anchor xml:id="__static_8cs_source_1l00056"/>00056 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">foreach</emphasis>&#32;(<emphasis role="keywordtype">string</emphasis>&#32;file&#32;<emphasis role="keywordflow">in</emphasis>&#32;files)
+<anchor xml:id="__static_8cs_source_1l00057"/>00057 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__static_8cs_source_1l00058"/>00058 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;location&#32;=&#32;getContentLocation(file);
+<anchor xml:id="__static_8cs_source_1l00059"/>00059 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;location&#32;=&#32;location.Replace(<emphasis role="stringliteral">&quot;/&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;\\&quot;</emphasis>);
+<anchor xml:id="__static_8cs_source_1l00060"/>00060 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;textures.Add(location,&#32;content.Load&lt;Texture2D&gt;(location));
+<anchor xml:id="__static_8cs_source_1l00061"/>00061 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__static_8cs_source_1l00062"/>00062 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__static_8cs_source_1l00063"/>00063 
+<anchor xml:id="__static_8cs_source_1l00069"/>00069 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keywordtype">string</emphasis>&#32;getContentLocation(<emphasis role="keywordtype">string</emphasis>&#32;location)
+<anchor xml:id="__static_8cs_source_1l00070"/>00070 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__static_8cs_source_1l00071"/>00071 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;name&#32;=&#32;location.Remove(0,&#32;<emphasis role="stringliteral">&quot;Content\\&quot;</emphasis>.Length);
+<anchor xml:id="__static_8cs_source_1l00072"/>00072 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;name.Length;&#32;i--&#32;&gt;&#32;0;)&#32;<emphasis role="comment">//&#32;Remove&#32;the&#32;filetype</emphasis>
+<anchor xml:id="__static_8cs_source_1l00073"/>00073 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__static_8cs_source_1l00074"/>00074 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(name[i]&#32;==&#32;<emphasis role="charliteral">&apos;.&apos;</emphasis>)
+<anchor xml:id="__static_8cs_source_1l00075"/>00075 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__static_8cs_source_1l00076"/>00076 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;name.Substring(0,&#32;i);
+<anchor xml:id="__static_8cs_source_1l00077"/>00077 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__static_8cs_source_1l00078"/>00078 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__static_8cs_source_1l00079"/>00079 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;name;
+<anchor xml:id="__static_8cs_source_1l00080"/>00080 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__static_8cs_source_1l00081"/>00081 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__static_8cs_source_1l00082"/>00082 
+<anchor xml:id="__static_8cs_source_1l00083"/>00083 }
+</programlisting></section>

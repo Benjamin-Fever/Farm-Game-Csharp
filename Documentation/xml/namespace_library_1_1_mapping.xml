@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="namespace_library_1_1_mapping" kind="namespace" language="C#">
+    <compoundname>Library::Mapping</compoundname>
+    <innerclass refid="class_library_1_1_mapping_1_1_abstract_layer" prot="public">Library::Mapping::AbstractLayer</innerclass>
+    <innerclass refid="class_library_1_1_mapping_1_1_abstract_map" prot="public">Library::Mapping::AbstractMap</innerclass>
+    <innerclass refid="class_library_1_1_mapping_1_1_mapping_pos" prot="public">Library::Mapping::MappingPos</innerclass>
+    <innerclass refid="class_library_1_1_mapping_1_1_tile_layer" prot="public">Library::Mapping::TileLayer</innerclass>
+    <innerclass refid="class_library_1_1_mapping_1_1_tile_map" prot="public">Library::Mapping::TileMap</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/Mapping/Layer.cs" line="6" column="1"/>
+  </compounddef>
+</doxygen>

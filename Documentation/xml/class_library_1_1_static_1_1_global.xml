@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="class_library_1_1_static_1_1_global" kind="class" language="C#" prot="public">
+    <compoundname>Library::Static::Global</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_library_1_1_static_1_1_global_1a04e05cf22781b1666d319b48da30bd3b" prot="public" static="yes" mutable="no">
+        <type><ref refid="class_library_1_1_mapping_1_1_tile_map" kindref="compound">TileMap</ref></type>
+        <definition>TileMap Library.Static.Global.Map</definition>
+        <argsstring></argsstring>
+        <name>Map</name>
+        <qualifiedname>Library.Static.Global.Map</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Static.cs" line="14" column="31" bodyfile="Library/Static.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_library_1_1_static_1_1_global_1a25b7bdca573f98fc83dabe7a1e64369a" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Library.Static.Global.Window_Width</definition>
+        <argsstring></argsstring>
+        <name>Window_Width</name>
+        <qualifiedname>Library.Static.Global.Window_Width</qualifiedname>
+        <initializer>= 800</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Static.cs" line="15" column="27" bodyfile="Library/Static.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_library_1_1_static_1_1_global_1aa84bc9116cd1bf9761490fb5b9aed3a2" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Library.Static.Global.Window_Height</definition>
+        <argsstring></argsstring>
+        <name>Window_Height</name>
+        <qualifiedname>Library.Static.Global.Window_Height</qualifiedname>
+        <initializer>= 512</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Static.cs" line="16" column="27" bodyfile="Library/Static.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Variables stored globally  </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>AbstractMap&lt; TileLayer &gt;</label>
+        <link refid="class_library_1_1_mapping_1_1_abstract_map"/>
+      </node>
+      <node id="4">
+        <label>IGraphicsComponent</label>
+        <link refid="interface_library_1_1_graphics_1_1_i_graphics_component"/>
+      </node>
+      <node id="1">
+        <label>Library.Static.Global</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Map</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Library.Mapping.TileMap</label>
+        <link refid="class_library_1_1_mapping_1_1_tile_map"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Library/Static.cs" line="12" column="19" bodyfile="Library/Static.cs" bodystart="13" bodyend="17"/>
+    <listofallmembers>
+      <member refid="class_library_1_1_static_1_1_global_1a04e05cf22781b1666d319b48da30bd3b" prot="public" virt="non-virtual"><scope>Library::Static::Global</scope><name>Map</name></member>
+      <member refid="class_library_1_1_static_1_1_global_1aa84bc9116cd1bf9761490fb5b9aed3a2" prot="public" virt="non-virtual"><scope>Library::Static::Global</scope><name>Window_Height</name></member>
+      <member refid="class_library_1_1_static_1_1_global_1a25b7bdca573f98fc83dabe7a1e64369a" prot="public" virt="non-virtual"><scope>Library::Static::Global</scope><name>Window_Width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

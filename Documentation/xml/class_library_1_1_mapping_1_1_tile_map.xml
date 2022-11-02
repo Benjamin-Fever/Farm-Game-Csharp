@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="class_library_1_1_mapping_1_1_tile_map" kind="class" language="C#" prot="public">
+    <compoundname>Library::Mapping::TileMap</compoundname>
+    <basecompoundref refid="class_library_1_1_mapping_1_1_abstract_map" prot="public" virt="non-virtual">Library.Mapping.AbstractMap&lt; TileLayer &gt;</basecompoundref>
+    <basecompoundref refid="interface_library_1_1_graphics_1_1_i_graphics_component" prot="public" virt="non-virtual">Library.Graphics.IGraphicsComponent</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_library_1_1_mapping_1_1_tile_map_1ab283074c478918bf8ee465d729dd1a31" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Library.Mapping.TileMap.draw</definition>
+        <argsstring>()</argsstring>
+        <name>draw</name>
+        <qualifiedname>Library.Mapping.TileMap.draw</qualifiedname>
+        <reimplements refid="interface_library_1_1_graphics_1_1_i_graphics_component_1acca0d3d372a78a58ced6cb36d2d0d8fb">draw</reimplements>
+        <briefdescription>
+<para>Draw the map  </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Mapping/Map.cs" line="30" column="21" bodyfile="Library/Mapping/Map.cs" bodystart="30" bodyend="38"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A tilemap used to define what layers are in the map. Layer type is a <ref refid="class_library_1_1_mapping_1_1_tile_layer" kindref="compound">TileLayer</ref>. Implements IGraphicsComponent.  </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AbstractMap&lt; TileLayer &gt;</label>
+        <link refid="class_library_1_1_mapping_1_1_abstract_map"/>
+      </node>
+      <node id="3">
+        <label>IGraphicsComponent</label>
+        <link refid="interface_library_1_1_graphics_1_1_i_graphics_component"/>
+      </node>
+      <node id="1">
+        <label>Library.Mapping.TileMap</label>
+        <link refid="class_library_1_1_mapping_1_1_tile_map"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AbstractMap&lt; TileLayer &gt;</label>
+        <link refid="class_library_1_1_mapping_1_1_abstract_map"/>
+      </node>
+      <node id="3">
+        <label>IGraphicsComponent</label>
+        <link refid="interface_library_1_1_graphics_1_1_i_graphics_component"/>
+      </node>
+      <node id="1">
+        <label>Library.Mapping.TileMap</label>
+        <link refid="class_library_1_1_mapping_1_1_tile_map"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Library/Mapping/Map.cs" line="25" column="11" bodyfile="Library/Mapping/Map.cs" bodystart="26" bodyend="39"/>
+    <listofallmembers>
+      <member refid="class_library_1_1_mapping_1_1_abstract_map_1ac5b4ef2de4b8ecb41b165d9aa472ff50" prot="public" virt="non-virtual"><scope>Library::Mapping::TileMap</scope><name>background</name></member>
+      <member refid="class_library_1_1_mapping_1_1_tile_map_1ab283074c478918bf8ee465d729dd1a31" prot="public" virt="non-virtual"><scope>Library::Mapping::TileMap</scope><name>draw</name></member>
+      <member refid="class_library_1_1_mapping_1_1_abstract_map_1a24e37a566c32ddf48e7504fda5d667bf" prot="public" virt="non-virtual"><scope>Library::Mapping::TileMap</scope><name>layers</name></member>
+      <member refid="class_library_1_1_mapping_1_1_abstract_map_1a0d3c1fe6e13aa21c42945f68b2feaca5" prot="public" virt="non-virtual"><scope>Library::Mapping::TileMap</scope><name>name</name></member>
+      <member refid="class_library_1_1_mapping_1_1_abstract_map_1a5b4e0e5c2ca75e2f9c96fb4ecf9a6eae" prot="public" virt="non-virtual"><scope>Library::Mapping::TileMap</scope><name>size</name></member>
+      <member refid="class_library_1_1_mapping_1_1_abstract_map_1a98009bcfecd86a1895b3a6e19ad6d437" prot="public" virt="non-virtual"><scope>Library::Mapping::TileMap</scope><name>tileSize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

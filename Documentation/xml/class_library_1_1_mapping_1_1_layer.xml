@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="class_library_1_1_mapping_1_1_layer" kind="class" language="C#" prot="public">
+    <compoundname>Library::Mapping::Layer</compoundname>
+    <basecompoundref refid="class_library_1_1_mapping_1_1_abstract_layer" prot="public" virt="non-virtual">Library.Mapping.AbstractLayer&lt; List&lt; Tile &gt; &gt;</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IComparable&lt; Layer &gt;</basecompoundref>
+    <basecompoundref refid="interface_library_1_1_graphics_1_1_i_graphics_component" prot="public" virt="non-virtual">Library.Graphics.IGraphicsComponent</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_library_1_1_mapping_1_1_layer_1ab37d924c8def04ccb89de26cf149b2ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Library.Mapping.Layer.CompareTo</definition>
+        <argsstring>(Layer other)</argsstring>
+        <name>CompareTo</name>
+        <qualifiedname>Library.Mapping.Layer.CompareTo</qualifiedname>
+        <param>
+          <type><ref refid="class_library_1_1_mapping_1_1_layer" kindref="compound">Layer</ref></type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Mapping/Layer.cs" line="17" column="20" bodyfile="Library/Mapping/Layer.cs" bodystart="17" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_library_1_1_mapping_1_1_layer_1a5aeae0e0be1a37574f64eb2085c08f9b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Library.Mapping.Layer.draw</definition>
+        <argsstring>()</argsstring>
+        <name>draw</name>
+        <qualifiedname>Library.Mapping.Layer.draw</qualifiedname>
+        <reimplements refid="interface_library_1_1_graphics_1_1_i_graphics_component_1acca0d3d372a78a58ced6cb36d2d0d8fb">draw</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Mapping/Layer.cs" line="25" column="21" bodyfile="Library/Mapping/Layer.cs" bodystart="25" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_library_1_1_mapping_1_1_layer_1a5d7a89cb86940f35ce4c6bbd71ffbb48" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Library.Mapping.Layer.getDepth</definition>
+        <argsstring>()</argsstring>
+        <name>getDepth</name>
+        <qualifiedname>Library.Mapping.Layer.getDepth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Mapping/Layer.cs" line="36" column="20" bodyfile="Library/Mapping/Layer.cs" bodystart="36" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AbstractLayer&lt; List&lt; Tile &gt; &gt;</label>
+        <link refid="class_library_1_1_mapping_1_1_abstract_layer"/>
+      </node>
+      <node id="3">
+        <label>IComparable&lt; Layer &gt;</label>
+      </node>
+      <node id="4">
+        <label>IGraphicsComponent</label>
+        <link refid="interface_library_1_1_graphics_1_1_i_graphics_component"/>
+      </node>
+      <node id="1">
+        <label>Library.Mapping.Layer</label>
+        <link refid="class_library_1_1_mapping_1_1_layer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AbstractLayer&lt; List&lt; Tile &gt; &gt;</label>
+        <link refid="class_library_1_1_mapping_1_1_abstract_layer"/>
+      </node>
+      <node id="3">
+        <label>IComparable&lt; Layer &gt;</label>
+      </node>
+      <node id="4">
+        <label>IGraphicsComponent</label>
+        <link refid="interface_library_1_1_graphics_1_1_i_graphics_component"/>
+      </node>
+      <node id="1">
+        <label>Library.Mapping.Layer</label>
+        <link refid="class_library_1_1_mapping_1_1_layer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Library/Mapping/Layer.cs" line="15" column="11" bodyfile="Library/Mapping/Layer.cs" bodystart="16" bodyend="37"/>
+    <listofallmembers>
+      <member refid="class_library_1_1_mapping_1_1_layer_1ab37d924c8def04ccb89de26cf149b2ae" prot="public" virt="non-virtual"><scope>Library::Mapping::Layer</scope><name>CompareTo</name></member>
+      <member refid="class_library_1_1_mapping_1_1_abstract_layer_1a897ac86eb61859d79c468b1f09349af8" prot="public" virt="non-virtual"><scope>Library::Mapping::Layer</scope><name>depth</name></member>
+      <member refid="class_library_1_1_mapping_1_1_layer_1a5aeae0e0be1a37574f64eb2085c08f9b" prot="public" virt="non-virtual"><scope>Library::Mapping::Layer</scope><name>draw</name></member>
+      <member refid="class_library_1_1_mapping_1_1_layer_1a5d7a89cb86940f35ce4c6bbd71ffbb48" prot="public" virt="non-virtual"><scope>Library::Mapping::Layer</scope><name>getDepth</name></member>
+      <member refid="class_library_1_1_mapping_1_1_abstract_layer_1a177d64ac5ff09429fa2b552782f2df93" prot="public" virt="non-virtual"><scope>Library::Mapping::Layer</scope><name>name</name></member>
+      <member refid="class_library_1_1_mapping_1_1_abstract_layer_1aefc1f3ba7193a82c17dec4e95a24fd2d" prot="public" virt="non-virtual"><scope>Library::Mapping::Layer</scope><name>tiles</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

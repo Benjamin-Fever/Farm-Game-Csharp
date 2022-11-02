@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__graphics_component_8cs" xml:lang="en-US">
+<title>Library/Graphics/GraphicsComponent.cs File Reference</title>
+<indexterm><primary>Library/Graphics/GraphicsComponent.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>interface <link linkend="_interface_library_1_1_graphics_1_1_i_graphics_component">Library.Graphics.IGraphicsComponent</link></para>
+
+<para>Generic graphics component interface  </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_library_1_1_graphics_1_1_graphics_component">Library.Graphics.GraphicsComponent</link></para>
+
+<para>Generic graphics component abstract class  </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_library">Library</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_library_1_1_graphics">Library.Graphics</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="class_library_1_1_graphics_1_1_graphics_component" kind="class" language="C#" prot="public" abstract="yes">
+    <compoundname>Library::Graphics::GraphicsComponent</compoundname>
+    <basecompoundref refid="interface_library_1_1_graphics_1_1_i_graphics_component" prot="public" virt="non-virtual">Library.Graphics.IGraphicsComponent</basecompoundref>
+    <derivedcompoundref refid="class_library_1_1_graphics_1_1_tile" prot="public" virt="non-virtual">Library.Graphics.Tile</derivedcompoundref>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="class_library_1_1_graphics_1_1_graphics_component_1a664e72c497c058d3b32073341f71159a" prot="protected" static="yes" mutable="no">
+        <type>SpriteBatch</type>
+        <definition>SpriteBatch Library.Graphics.GraphicsComponent.spriteBatch</definition>
+        <argsstring></argsstring>
+        <name>spriteBatch</name>
+        <qualifiedname>Library.Graphics.GraphicsComponent.spriteBatch</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Graphics/GraphicsComponent.cs" line="18" column="38" bodyfile="Library/Graphics/GraphicsComponent.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_library_1_1_graphics_1_1_graphics_component_1a42699f9e7969f7104ba11a4a47c9a69b" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_library_1_1_graphics_1_1_sprite" kindref="compound">Sprite</ref></type>
+        <definition>Sprite Library.Graphics.GraphicsComponent.sprite</definition>
+        <argsstring></argsstring>
+        <name>sprite</name>
+        <qualifiedname>Library.Graphics.GraphicsComponent.sprite</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Graphics/GraphicsComponent.cs" line="19" column="26" bodyfile="Library/Graphics/GraphicsComponent.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_library_1_1_graphics_1_1_graphics_component_1ae807ff6992bd2a9b486d88a0fa75f3a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void Library.Graphics.GraphicsComponent.draw</definition>
+        <argsstring>()</argsstring>
+        <name>draw</name>
+        <qualifiedname>Library.Graphics.GraphicsComponent.draw</qualifiedname>
+        <reimplements refid="interface_library_1_1_graphics_1_1_i_graphics_component_1acca0d3d372a78a58ced6cb36d2d0d8fb">draw</reimplements>
+        <reimplementedby refid="class_library_1_1_graphics_1_1_tile_1a228df1b1e20efb443153f724b908c3ac">draw</reimplementedby>
+        <briefdescription>
+<para>Draw the graphics component  </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Graphics/GraphicsComponent.cs" line="24" column="30"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_library_1_1_graphics_1_1_graphics_component_1ab25cb437b13669e22dba2c8d2fa7e8fe" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Library.Graphics.GraphicsComponent.setSpriteBatch</definition>
+        <argsstring>(SpriteBatch sb)</argsstring>
+        <name>setSpriteBatch</name>
+        <qualifiedname>Library.Graphics.GraphicsComponent.setSpriteBatch</qualifiedname>
+        <param>
+          <type>SpriteBatch</type>
+          <declname>sb</declname>
+        </param>
+        <briefdescription>
+<para>Set the spritebatch used by all graphics components  </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><programlisting><codeline><highlight class="normal">SpriteBatch</highlight></codeline>
+</programlisting></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Graphics/GraphicsComponent.cs" line="30" column="28" bodyfile="Library/Graphics/GraphicsComponent.cs" bodystart="30" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Generic graphics component abstract class  </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IGraphicsComponent</label>
+        <link refid="interface_library_1_1_graphics_1_1_i_graphics_component"/>
+      </node>
+      <node id="1">
+        <label>Library.Graphics.GraphicsComponent</label>
+        <link refid="class_library_1_1_graphics_1_1_graphics_component"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Library.Graphics.Tile</label>
+        <link refid="class_library_1_1_graphics_1_1_tile"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IGraphicsComponent</label>
+        <link refid="interface_library_1_1_graphics_1_1_i_graphics_component"/>
+      </node>
+      <node id="1">
+        <label>Library.Graphics.GraphicsComponent</label>
+        <link refid="class_library_1_1_graphics_1_1_graphics_component"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>sprite</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Library.Graphics.Sprite</label>
+        <link refid="class_library_1_1_graphics_1_1_sprite"/>
+      </node>
+    </collaborationgraph>
+    <location file="Library/Graphics/GraphicsComponent.cs" line="16" column="21" bodyfile="Library/Graphics/GraphicsComponent.cs" bodystart="17" bodyend="31"/>
+    <listofallmembers>
+      <member refid="class_library_1_1_graphics_1_1_graphics_component_1ae807ff6992bd2a9b486d88a0fa75f3a4" prot="public" virt="pure-virtual"><scope>Library::Graphics::GraphicsComponent</scope><name>draw</name></member>
+      <member refid="class_library_1_1_graphics_1_1_graphics_component_1ab25cb437b13669e22dba2c8d2fa7e8fe" prot="public" virt="non-virtual"><scope>Library::Graphics::GraphicsComponent</scope><name>setSpriteBatch</name></member>
+      <member refid="class_library_1_1_graphics_1_1_graphics_component_1a42699f9e7969f7104ba11a4a47c9a69b" prot="protected" virt="non-virtual"><scope>Library::Graphics::GraphicsComponent</scope><name>sprite</name></member>
+      <member refid="class_library_1_1_graphics_1_1_graphics_component_1a664e72c497c058d3b32073341f71159a" prot="protected" virt="non-virtual"><scope>Library::Graphics::GraphicsComponent</scope><name>spriteBatch</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

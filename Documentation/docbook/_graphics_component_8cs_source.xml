@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__graphics_component_8cs_source" xml:lang="en-US">
+<title>GraphicsComponent.cs</title>
+<indexterm><primary>Library/Graphics/GraphicsComponent.cs</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__graphics_component_8cs_source_1l00001"/>00001 <emphasis role="keyword">using&#32;</emphasis>Microsoft.Xna.Framework.Graphics;
+<anchor xml:id="__graphics_component_8cs_source_1l00002"/>00002 
+<anchor xml:id="__graphics_component_8cs_source_1l00003"/><link linkend="_namespace_library_1_1_graphics">00003</link> <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_library_1_1_graphics">Library.Graphics</link>
+<anchor xml:id="__graphics_component_8cs_source_1l00004"/>00004 {
+<anchor xml:id="__graphics_component_8cs_source_1l00008"/><link linkend="_interface_library_1_1_graphics_1_1_i_graphics_component">00008</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">interface&#32;</emphasis><link linkend="_interface_library_1_1_graphics_1_1_i_graphics_component">IGraphicsComponent</link>
+<anchor xml:id="__graphics_component_8cs_source_1l00009"/>00009 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__graphics_component_8cs_source_1l00010"/><link linkend="_interface_library_1_1_graphics_1_1_i_graphics_component_1acca0d3d372a78a58ced6cb36d2d0d8fb">00010</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_interface_library_1_1_graphics_1_1_i_graphics_component_1acca0d3d372a78a58ced6cb36d2d0d8fb">draw</link>();
+<anchor xml:id="__graphics_component_8cs_source_1l00011"/>00011 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__graphics_component_8cs_source_1l00012"/>00012 
+<anchor xml:id="__graphics_component_8cs_source_1l00016"/><link linkend="_class_library_1_1_graphics_1_1_graphics_component">00016</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">abstract</emphasis>&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_class_library_1_1_graphics_1_1_graphics_component">GraphicsComponent</link>&#32;:&#32;<link linkend="_interface_library_1_1_graphics_1_1_i_graphics_component">IGraphicsComponent</link>
+<anchor xml:id="__graphics_component_8cs_source_1l00017"/>00017 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__graphics_component_8cs_source_1l00018"/><link linkend="_class_library_1_1_graphics_1_1_graphics_component_1a664e72c497c058d3b32073341f71159a">00018</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">protected</emphasis>&#32;<emphasis role="keyword">static</emphasis>&#32;SpriteBatch&#32;<link linkend="_class_library_1_1_graphics_1_1_graphics_component_1a664e72c497c058d3b32073341f71159a">spriteBatch</link>;
+<anchor xml:id="__graphics_component_8cs_source_1l00019"/><link linkend="_class_library_1_1_graphics_1_1_graphics_component_1a42699f9e7969f7104ba11a4a47c9a69b">00019</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">protected</emphasis>&#32;<link linkend="_class_library_1_1_graphics_1_1_sprite">Sprite</link>&#32;<link linkend="_class_library_1_1_graphics_1_1_graphics_component_1a42699f9e7969f7104ba11a4a47c9a69b">sprite</link>;
+<anchor xml:id="__graphics_component_8cs_source_1l00020"/>00020 
+<anchor xml:id="__graphics_component_8cs_source_1l00024"/><link linkend="_class_library_1_1_graphics_1_1_graphics_component_1ae807ff6992bd2a9b486d88a0fa75f3a4">00024</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">abstract</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_library_1_1_graphics_1_1_graphics_component_1ae807ff6992bd2a9b486d88a0fa75f3a4">draw</link>();
+<anchor xml:id="__graphics_component_8cs_source_1l00025"/>00025 
+<anchor xml:id="__graphics_component_8cs_source_1l00030"/><link linkend="_class_library_1_1_graphics_1_1_graphics_component_1ab25cb437b13669e22dba2c8d2fa7e8fe">00030</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_library_1_1_graphics_1_1_graphics_component_1ab25cb437b13669e22dba2c8d2fa7e8fe">setSpriteBatch</link>(SpriteBatch&#32;sb)&#32;{&#32;<link linkend="_class_library_1_1_graphics_1_1_graphics_component_1a664e72c497c058d3b32073341f71159a">spriteBatch</link>&#32;=&#32;sb;&#32;}
+<anchor xml:id="__graphics_component_8cs_source_1l00031"/>00031 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__graphics_component_8cs_source_1l00032"/>00032 }
+</programlisting></section>

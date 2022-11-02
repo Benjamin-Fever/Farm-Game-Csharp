@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="class_library_1_1_mapping_1_1_abstract_map" kind="class" language="C#" prot="public">
+    <compoundname>Library::Mapping::AbstractMap</compoundname>
+    <templateparamlist>
+      <param>
+        <type>T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_library_1_1_mapping_1_1_abstract_map_1a0d3c1fe6e13aa21c42945f68b2feaca5" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Library.Mapping.AbstractMap&lt; T &gt;.name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>Library.Mapping.AbstractMap.name</qualifiedname>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Mapping/Map.cs" line="13" column="23" bodyfile="Library/Mapping/Map.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_library_1_1_mapping_1_1_abstract_map_1a98009bcfecd86a1895b3a6e19ad6d437" prot="public" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 Library.Mapping.AbstractMap&lt; T &gt;.tileSize</definition>
+        <argsstring></argsstring>
+        <name>tileSize</name>
+        <qualifiedname>Library.Mapping.AbstractMap.tileSize</qualifiedname>
+        <initializer>= new Vector2(0,0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Mapping/Map.cs" line="14" column="24" bodyfile="Library/Mapping/Map.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_library_1_1_mapping_1_1_abstract_map_1a5b4e0e5c2ca75e2f9c96fb4ecf9a6eae" prot="public" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 Library.Mapping.AbstractMap&lt; T &gt;.size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <qualifiedname>Library.Mapping.AbstractMap.size</qualifiedname>
+        <initializer>= new Vector2(0, 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Mapping/Map.cs" line="15" column="24" bodyfile="Library/Mapping/Map.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_library_1_1_mapping_1_1_abstract_map_1ac5b4ef2de4b8ecb41b165d9aa472ff50" prot="public" static="no" mutable="no">
+        <type>Color</type>
+        <definition>Color Library.Mapping.AbstractMap&lt; T &gt;.background</definition>
+        <argsstring></argsstring>
+        <name>background</name>
+        <qualifiedname>Library.Mapping.AbstractMap.background</qualifiedname>
+        <initializer>= new Color()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Mapping/Map.cs" line="16" column="22" bodyfile="Library/Mapping/Map.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_library_1_1_mapping_1_1_abstract_map_1a24e37a566c32ddf48e7504fda5d667bf" prot="public" static="no" mutable="no">
+        <type>List&lt; T &gt;</type>
+        <definition>List&lt;T&gt; Library.Mapping.AbstractMap&lt; T &gt;.layers</definition>
+        <argsstring></argsstring>
+        <name>layers</name>
+        <qualifiedname>Library.Mapping.AbstractMap.layers</qualifiedname>
+        <initializer>= new List&lt;T&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Mapping/Map.cs" line="17" column="21" bodyfile="Library/Mapping/Map.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Generic Abstract Layer. Takes a type of T which defines what variable type layers is  </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Define type for layers</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <location file="Library/Mapping/Map.cs" line="11" column="21" bodyfile="Library/Mapping/Map.cs" bodystart="12" bodyend="19"/>
+    <listofallmembers>
+      <member refid="class_library_1_1_mapping_1_1_abstract_map_1ac5b4ef2de4b8ecb41b165d9aa472ff50" prot="public" virt="non-virtual"><scope>Library::Mapping::AbstractMap</scope><name>background</name></member>
+      <member refid="class_library_1_1_mapping_1_1_abstract_map_1a24e37a566c32ddf48e7504fda5d667bf" prot="public" virt="non-virtual"><scope>Library::Mapping::AbstractMap</scope><name>layers</name></member>
+      <member refid="class_library_1_1_mapping_1_1_abstract_map_1a0d3c1fe6e13aa21c42945f68b2feaca5" prot="public" virt="non-virtual"><scope>Library::Mapping::AbstractMap</scope><name>name</name></member>
+      <member refid="class_library_1_1_mapping_1_1_abstract_map_1a5b4e0e5c2ca75e2f9c96fb4ecf9a6eae" prot="public" virt="non-virtual"><scope>Library::Mapping::AbstractMap</scope><name>size</name></member>
+      <member refid="class_library_1_1_mapping_1_1_abstract_map_1a98009bcfecd86a1895b3a6e19ad6d437" prot="public" virt="non-virtual"><scope>Library::Mapping::AbstractMap</scope><name>tileSize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__map_writer_8cs" xml:lang="en-US">
+<title>Content Pipeline/Writer/MapWriter.cs File Reference</title>
+<indexterm><primary>Content Pipeline/Writer/MapWriter.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_content___library_1_1_writer_1_1_map_writer">Content_Library.Writer.MapWriter</link></para>
+
+<para>A public class that writes the map that has been imported through the pipeline and write it into binary  </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_content___library">Content_Library</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_content___library_1_1_writer">Content_Library.Writer</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

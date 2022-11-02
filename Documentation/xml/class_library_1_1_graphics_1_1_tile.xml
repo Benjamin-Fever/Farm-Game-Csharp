@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="class_library_1_1_graphics_1_1_tile" kind="class" language="C#" prot="public">
+    <compoundname>Library::Graphics::Tile</compoundname>
+    <basecompoundref refid="class_library_1_1_graphics_1_1_graphics_component" prot="public" virt="non-virtual">Library.Graphics.GraphicsComponent</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_library_1_1_graphics_1_1_tile_1ad315a6d802f20f45c3a7cd9c5423197b" prot="public" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 Library.Graphics.Tile.tileSize</definition>
+        <argsstring></argsstring>
+        <name>tileSize</name>
+        <qualifiedname>Library.Graphics.Tile.tileSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Graphics/Tile.cs" line="14" column="24" bodyfile="Library/Graphics/Tile.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_library_1_1_graphics_1_1_tile_1acd45540f84d89fa6c9d39bf2062527a3" prot="public" static="no" mutable="no">
+        <type><ref refid="class_library_1_1_mapping_1_1_mapping_pos" kindref="compound">MappingPos</ref></type>
+        <definition>MappingPos Library.Graphics.Tile.position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <qualifiedname>Library.Graphics.Tile.position</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Graphics/Tile.cs" line="15" column="27" bodyfile="Library/Graphics/Tile.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_library_1_1_graphics_1_1_tile_1a49518076f8614f3ff79f6a8849c8112a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Library.Graphics.Tile.tileNum</definition>
+        <argsstring></argsstring>
+        <name>tileNum</name>
+        <qualifiedname>Library.Graphics.Tile.tileNum</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Graphics/Tile.cs" line="16" column="20" bodyfile="Library/Graphics/Tile.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_library_1_1_graphics_1_1_tile_1a36564162d1bde6d032dd9c3a98518402" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Library.Graphics.Tile.columns</definition>
+        <argsstring></argsstring>
+        <name>columns</name>
+        <qualifiedname>Library.Graphics.Tile.columns</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Graphics/Tile.cs" line="17" column="20" bodyfile="Library/Graphics/Tile.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_library_1_1_graphics_1_1_tile_1a10cc32418cfb777daf902c80edc2f9c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Library.Graphics.Tile.Tile</definition>
+        <argsstring>(Sprite sprite, MappingPos position, Vector2 tileSize, int columns, int tileNum)</argsstring>
+        <name>Tile</name>
+        <qualifiedname>Library.Graphics.Tile.Tile</qualifiedname>
+        <param>
+          <type><ref refid="class_library_1_1_graphics_1_1_sprite" kindref="compound">Sprite</ref></type>
+          <declname>sprite</declname>
+        </param>
+        <param>
+          <type><ref refid="class_library_1_1_mapping_1_1_mapping_pos" kindref="compound">MappingPos</ref></type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>Vector2</type>
+          <declname>tileSize</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>columns</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tileNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Graphics/Tile.cs" line="19" column="16" bodyfile="Library/Graphics/Tile.cs" bodystart="19" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_library_1_1_graphics_1_1_tile_1a228df1b1e20efb443153f724b908c3ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Library.Graphics.Tile.draw</definition>
+        <argsstring>()</argsstring>
+        <name>draw</name>
+        <qualifiedname>Library.Graphics.Tile.draw</qualifiedname>
+        <reimplements refid="class_library_1_1_graphics_1_1_graphics_component_1ae807ff6992bd2a9b486d88a0fa75f3a4">draw</reimplements>
+        <briefdescription>
+<para>Draw the graphics component  </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Graphics/Tile.cs" line="28" column="30" bodyfile="Library/Graphics/Tile.cs" bodystart="28" bodyend="38"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A graphics component that represents a map tile  </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>GraphicsComponent</label>
+        <link refid="class_library_1_1_graphics_1_1_graphics_component"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IGraphicsComponent</label>
+        <link refid="interface_library_1_1_graphics_1_1_i_graphics_component"/>
+      </node>
+      <node id="1">
+        <label>Library.Graphics.Tile</label>
+        <link refid="class_library_1_1_graphics_1_1_tile"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>GraphicsComponent</label>
+        <link refid="class_library_1_1_graphics_1_1_graphics_component"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>sprite</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IGraphicsComponent</label>
+        <link refid="interface_library_1_1_graphics_1_1_i_graphics_component"/>
+      </node>
+      <node id="1">
+        <label>Library.Graphics.Tile</label>
+        <link refid="class_library_1_1_graphics_1_1_tile"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>position</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Library.Graphics.Sprite</label>
+        <link refid="class_library_1_1_graphics_1_1_sprite"/>
+      </node>
+      <node id="5">
+        <label>Library.Mapping.MappingPos</label>
+        <link refid="class_library_1_1_mapping_1_1_mapping_pos"/>
+      </node>
+    </collaborationgraph>
+    <location file="Library/Graphics/Tile.cs" line="12" column="11" bodyfile="Library/Graphics/Tile.cs" bodystart="13" bodyend="39"/>
+    <listofallmembers>
+      <member refid="class_library_1_1_graphics_1_1_tile_1a36564162d1bde6d032dd9c3a98518402" prot="public" virt="non-virtual"><scope>Library::Graphics::Tile</scope><name>columns</name></member>
+      <member refid="class_library_1_1_graphics_1_1_tile_1a228df1b1e20efb443153f724b908c3ac" prot="public" virt="virtual"><scope>Library::Graphics::Tile</scope><name>draw</name></member>
+      <member refid="class_library_1_1_graphics_1_1_tile_1acd45540f84d89fa6c9d39bf2062527a3" prot="public" virt="non-virtual"><scope>Library::Graphics::Tile</scope><name>position</name></member>
+      <member refid="class_library_1_1_graphics_1_1_graphics_component_1ab25cb437b13669e22dba2c8d2fa7e8fe" prot="public" virt="non-virtual"><scope>Library::Graphics::Tile</scope><name>setSpriteBatch</name></member>
+      <member refid="class_library_1_1_graphics_1_1_graphics_component_1a42699f9e7969f7104ba11a4a47c9a69b" prot="protected" virt="non-virtual"><scope>Library::Graphics::Tile</scope><name>sprite</name></member>
+      <member refid="class_library_1_1_graphics_1_1_graphics_component_1a664e72c497c058d3b32073341f71159a" prot="protected" virt="non-virtual"><scope>Library::Graphics::Tile</scope><name>spriteBatch</name></member>
+      <member refid="class_library_1_1_graphics_1_1_tile_1a10cc32418cfb777daf902c80edc2f9c8" prot="public" virt="non-virtual"><scope>Library::Graphics::Tile</scope><name>Tile</name></member>
+      <member refid="class_library_1_1_graphics_1_1_tile_1a49518076f8614f3ff79f6a8849c8112a" prot="public" virt="non-virtual"><scope>Library::Graphics::Tile</scope><name>tileNum</name></member>
+      <member refid="class_library_1_1_graphics_1_1_tile_1ad315a6d802f20f45c3a7cd9c5423197b" prot="public" virt="non-virtual"><scope>Library::Graphics::Tile</scope><name>tileSize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

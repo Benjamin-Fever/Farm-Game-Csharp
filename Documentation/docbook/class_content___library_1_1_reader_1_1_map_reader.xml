@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_content___library_1_1_reader_1_1_map_reader" xml:lang="en-US">
+<title>Content_Library.Reader.MapReader Class Reference</title>
+<indexterm><primary>Content_Library.Reader.MapReader</primary></indexterm>
+<para>
+
+<para>Read the binary map file  </para>
+ 
+</para>
+<para>Inheritance diagram for Content_Library.Reader.MapReader:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_content___library_1_1_reader_1_1_map_reader.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Protected Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>override <link linkend="_class_library_1_1_mapping_1_1_tile_map">TileMap</link> <link linkend="_class_content___library_1_1_reader_1_1_map_reader_1a58524ed9485eec46fb55003f002d6219">Read</link> (ContentReader input, <link linkend="_class_library_1_1_mapping_1_1_tile_map">TileMap</link> existingInstance)</para>
+
+<para>Read the compiled map into the program as a TileMap  </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Read the binary map file  </para>
+<para>
+Definition at line <link linkend="__map_reader_8cs_source_1l00016">16</link> of file <link linkend="__map_reader_8cs_source">MapReader.cs</link>.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_content___library_1_1_reader_1_1_map_reader_1a58524ed9485eec46fb55003f002d6219"/><section>
+    <title>Read()</title>
+<indexterm><primary>Read</primary><secondary>Content_Library.Reader.MapReader</secondary></indexterm>
+<indexterm><primary>Content_Library.Reader.MapReader</primary><secondary>Read</secondary></indexterm>
+<para><computeroutput>override <link linkend="_class_library_1_1_mapping_1_1_tile_map">TileMap</link> Content_Library.Reader.MapReader.Read (ContentReader input, <link linkend="_class_library_1_1_mapping_1_1_tile_map">TileMap</link> existingInstance)<computeroutput>[protected]</computeroutput></computeroutput></para><para>
+
+<para>Read the compiled map into the program as a TileMap  </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>input</entry><entry></entry>
+                            </row>
+                            <row>
+<entry>existingInstance</entry><entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Returns a TileMap of the selected map</para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__map_reader_8cs_source_1l00024">24</link> of file <link linkend="__map_reader_8cs_source">MapReader.cs</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+Library/Readers/<link linkend="__map_reader_8cs">MapReader.cs</link></section>
+</section>

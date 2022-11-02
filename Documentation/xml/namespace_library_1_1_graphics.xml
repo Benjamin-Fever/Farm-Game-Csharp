@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="namespace_library_1_1_graphics" kind="namespace" language="C#">
+    <compoundname>Library::Graphics</compoundname>
+    <innerclass refid="class_library_1_1_graphics_1_1_graphics_component" prot="public">Library::Graphics::GraphicsComponent</innerclass>
+    <innerclass refid="interface_library_1_1_graphics_1_1_i_graphics_component" prot="public">Library::Graphics::IGraphicsComponent</innerclass>
+    <innerclass refid="class_library_1_1_graphics_1_1_renderer" prot="public">Library::Graphics::Renderer</innerclass>
+    <innerclass refid="class_library_1_1_graphics_1_1_sprite" prot="public">Library::Graphics::Sprite</innerclass>
+    <innerclass refid="class_library_1_1_graphics_1_1_tile" prot="public">Library::Graphics::Tile</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/Graphics/GraphicsComponent.cs" line="3" column="1"/>
+  </compounddef>
+</doxygen>

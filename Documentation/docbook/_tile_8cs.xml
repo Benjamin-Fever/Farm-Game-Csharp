@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__tile_8cs" xml:lang="en-US">
+<title>Library/Graphics/Tile.cs File Reference</title>
+<indexterm><primary>Library/Graphics/Tile.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_library_1_1_graphics_1_1_tile">Library.Graphics.Tile</link></para>
+
+<para>A graphics component that represents a map tile  </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_library">Library</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_library_1_1_graphics">Library.Graphics</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Typedefs    </title>
+        <itemizedlist>
+            <listitem><para>using <link linkend="__tile_8cs_1a2ace89b8cd37948aa26c3311b2df22e4">Viewport</link> = Library.Camera.Viewport</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Typedef Documentation</title>
+<anchor xml:id="__tile_8cs_1a2ace89b8cd37948aa26c3311b2df22e4"/><section>
+    <title>Viewport</title>
+<indexterm><primary>Viewport</primary><secondary>Tile.cs</secondary></indexterm>
+<indexterm><primary>Tile.cs</primary><secondary>Viewport</secondary></indexterm>
+<para><computeroutput>using <link linkend="__tile_8cs_1a2ace89b8cd37948aa26c3311b2df22e4">Viewport</link> =  Library.Camera.Viewport</computeroutput></para><para>
+Definition at line <link linkend="__tile_8cs_source_1l00005">5</link> of file <link linkend="__tile_8cs_source">Tile.cs</link>.</para>
+</section>
+</section>
+</section>

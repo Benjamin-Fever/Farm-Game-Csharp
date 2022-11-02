@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__sprite_8cs_source" xml:lang="en-US">
+<title>Sprite.cs</title>
+<indexterm><primary>Library/Graphics/Sprite.cs</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__sprite_8cs_source_1l00001"/>00001 <emphasis role="keyword">using&#32;</emphasis>Microsoft.Xna.Framework.Graphics;
+<anchor xml:id="__sprite_8cs_source_1l00002"/>00002 <emphasis role="keyword">using&#32;</emphasis><link linkend="_namespace_library_1_1_util">Library.Util</link>;
+<anchor xml:id="__sprite_8cs_source_1l00003"/>00003 
+<anchor xml:id="__sprite_8cs_source_1l00004"/>00004 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_library_1_1_graphics">Library.Graphics</link>
+<anchor xml:id="__sprite_8cs_source_1l00005"/>00005 {
+<anchor xml:id="__sprite_8cs_source_1l00009"/><link linkend="_class_library_1_1_graphics_1_1_sprite">00009</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_class_library_1_1_graphics_1_1_sprite">Sprite</link>
+<anchor xml:id="__sprite_8cs_source_1l00010"/>00010 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__sprite_8cs_source_1l00011"/>00011 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;Texture2D&#32;texture;
+<anchor xml:id="__sprite_8cs_source_1l00012"/>00012 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<link linkend="_class_library_1_1_util_1_1_box">Box</link>&#32;bbox;
+<anchor xml:id="__sprite_8cs_source_1l00013"/>00013 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;visible;
+<anchor xml:id="__sprite_8cs_source_1l00014"/>00014 
+<anchor xml:id="__sprite_8cs_source_1l00015"/><link linkend="_class_library_1_1_graphics_1_1_sprite_1a646b9a855c0b819869efca81c90c64fa">00015</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_library_1_1_graphics_1_1_sprite_1a646b9a855c0b819869efca81c90c64fa">Sprite</link>(Texture2D&#32;texture)
+<anchor xml:id="__sprite_8cs_source_1l00016"/>00016 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__sprite_8cs_source_1l00017"/>00017 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.texture&#32;=&#32;texture;
+<anchor xml:id="__sprite_8cs_source_1l00018"/>00018 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;bbox&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;<link linkend="_class_library_1_1_util_1_1_box">Box</link>(0,&#32;0,&#32;texture.Width,&#32;texture.Height);
+<anchor xml:id="__sprite_8cs_source_1l00019"/>00019 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__sprite_8cs_source_1l00020"/><link linkend="_class_library_1_1_graphics_1_1_sprite_1a58d198067a86cf96f47ac7f575bc7841">00020</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_library_1_1_graphics_1_1_sprite_1a58d198067a86cf96f47ac7f575bc7841">Sprite</link>(Texture2D&#32;texture,&#32;<emphasis role="keywordtype">bool</emphasis>&#32;visible)
+<anchor xml:id="__sprite_8cs_source_1l00021"/>00021 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__sprite_8cs_source_1l00022"/>00022 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.texture&#32;=&#32;texture;
+<anchor xml:id="__sprite_8cs_source_1l00023"/>00023 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.visible&#32;=&#32;visible;
+<anchor xml:id="__sprite_8cs_source_1l00024"/>00024 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;bbox&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;<link linkend="_class_library_1_1_util_1_1_box">Box</link>(0,&#32;0,&#32;texture.Width,&#32;texture.Height);
+<anchor xml:id="__sprite_8cs_source_1l00025"/>00025 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__sprite_8cs_source_1l00026"/><link linkend="_class_library_1_1_graphics_1_1_sprite_1a6918facedd445727c9571d53257d33b5">00026</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_library_1_1_graphics_1_1_sprite_1a6918facedd445727c9571d53257d33b5">Sprite</link>(Texture2D&#32;texture,&#32;<link linkend="_class_library_1_1_util_1_1_box">Box</link>&#32;bbox)
+<anchor xml:id="__sprite_8cs_source_1l00027"/>00027 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__sprite_8cs_source_1l00028"/>00028 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.texture&#32;=&#32;texture;
+<anchor xml:id="__sprite_8cs_source_1l00029"/>00029 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.bbox&#32;=&#32;bbox;
+<anchor xml:id="__sprite_8cs_source_1l00030"/>00030 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__sprite_8cs_source_1l00031"/><link linkend="_class_library_1_1_graphics_1_1_sprite_1a7b6a7794c578b30033efece9b9930bcc">00031</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_library_1_1_graphics_1_1_sprite_1a7b6a7794c578b30033efece9b9930bcc">Sprite</link>(Texture2D&#32;texture,&#32;<link linkend="_class_library_1_1_util_1_1_box">Box</link>&#32;bbox,&#32;<emphasis role="keywordtype">bool</emphasis>&#32;visible)
+<anchor xml:id="__sprite_8cs_source_1l00032"/>00032 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__sprite_8cs_source_1l00033"/>00033 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.texture&#32;=&#32;texture;
+<anchor xml:id="__sprite_8cs_source_1l00034"/>00034 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.bbox&#32;=&#32;bbox;
+<anchor xml:id="__sprite_8cs_source_1l00035"/>00035 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.visible&#32;=&#32;visible;
+<anchor xml:id="__sprite_8cs_source_1l00036"/>00036 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__sprite_8cs_source_1l00037"/>00037 
+<anchor xml:id="__sprite_8cs_source_1l00042"/><link linkend="_class_library_1_1_graphics_1_1_sprite_1aac73cb8f5466d24b84a5b362cefc596e">00042</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_library_1_1_graphics_1_1_sprite_1aac73cb8f5466d24b84a5b362cefc596e">SetTexture</link>(Texture2D&#32;texture)&#32;{&#32;this.texture&#32;=&#32;texture;&#32;}
+<anchor xml:id="__sprite_8cs_source_1l00043"/>00043 
+<anchor xml:id="__sprite_8cs_source_1l00051"/><link linkend="_class_library_1_1_graphics_1_1_sprite_1aafdeabf9ec69d17eb67ba504f162bbd9">00051</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_library_1_1_graphics_1_1_sprite_1aafdeabf9ec69d17eb67ba504f162bbd9">SetBoundBox</link>(<emphasis role="keywordtype">float</emphasis>&#32;x1,&#32;<emphasis role="keywordtype">float</emphasis>&#32;y1,&#32;<emphasis role="keywordtype">float</emphasis>&#32;x2,&#32;<emphasis role="keywordtype">float</emphasis>&#32;y2)
+<anchor xml:id="__sprite_8cs_source_1l00052"/>00052 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__sprite_8cs_source_1l00053"/>00053 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.bbox&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;<link linkend="_class_library_1_1_util_1_1_box">Box</link>(x1,&#32;y1,&#32;x2,&#32;y2);
+<anchor xml:id="__sprite_8cs_source_1l00054"/>00054 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__sprite_8cs_source_1l00055"/>00055 
+<anchor xml:id="__sprite_8cs_source_1l00060"/><link linkend="_class_library_1_1_graphics_1_1_sprite_1a2a3f87f6d972ceaa76387c18fc6707dc">00060</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_library_1_1_graphics_1_1_sprite_1a2a3f87f6d972ceaa76387c18fc6707dc">SetBoundBox</link>(<link linkend="_class_library_1_1_util_1_1_box">Box</link>&#32;bbox)
+<anchor xml:id="__sprite_8cs_source_1l00061"/>00061 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__sprite_8cs_source_1l00062"/>00062 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.bbox&#32;=&#32;bbox;
+<anchor xml:id="__sprite_8cs_source_1l00063"/>00063 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__sprite_8cs_source_1l00064"/>00064 
+<anchor xml:id="__sprite_8cs_source_1l00069"/><link linkend="_class_library_1_1_graphics_1_1_sprite_1ad791fd4732b3ccdc0f275ba42d6a3c94">00069</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_library_1_1_graphics_1_1_sprite_1ad791fd4732b3ccdc0f275ba42d6a3c94">SetVisible</link>(<emphasis role="keywordtype">bool</emphasis>&#32;visible)&#32;{&#32;this.visible&#32;=&#32;visible;&#32;}
+<anchor xml:id="__sprite_8cs_source_1l00070"/>00070 
+<anchor xml:id="__sprite_8cs_source_1l00075"/><link linkend="_class_library_1_1_graphics_1_1_sprite_1ac88515e3cb97e911041dc38aafcc8d94">00075</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_library_1_1_graphics_1_1_sprite_1ac88515e3cb97e911041dc38aafcc8d94">GetVisibile</link>()&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;visible;&#32;}
+<anchor xml:id="__sprite_8cs_source_1l00076"/>00076 
+<anchor xml:id="__sprite_8cs_source_1l00081"/><link linkend="_class_library_1_1_graphics_1_1_sprite_1a6e50868938e3b3b138f92493e40a5983">00081</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;Texture2D&#32;<link linkend="_class_library_1_1_graphics_1_1_sprite_1a6e50868938e3b3b138f92493e40a5983">GetTexture</link>()&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;texture;&#32;}
+<anchor xml:id="__sprite_8cs_source_1l00082"/>00082 
+<anchor xml:id="__sprite_8cs_source_1l00087"/><link linkend="_class_library_1_1_graphics_1_1_sprite_1a4591f7de48d42f62da2257caeeed0987">00087</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_library_1_1_util_1_1_box">Box</link>&#32;<link linkend="_class_library_1_1_graphics_1_1_sprite_1a4591f7de48d42f62da2257caeeed0987">GetBoundBox</link>()&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;bbox;&#32;}
+<anchor xml:id="__sprite_8cs_source_1l00088"/>00088 
+<anchor xml:id="__sprite_8cs_source_1l00089"/>00089 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__sprite_8cs_source_1l00090"/>00090 }
+</programlisting></section>

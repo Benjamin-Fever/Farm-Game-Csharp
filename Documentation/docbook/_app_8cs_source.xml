@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__app_8cs_source" xml:lang="en-US">
+<title>App.cs</title>
+<indexterm><primary>Game-Project/App.cs</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__app_8cs_source_1l00001"/>00001 <emphasis role="keyword">using&#32;</emphasis><link linkend="_namespace_library_1_1_graphics">Library.Graphics</link>;
+<anchor xml:id="__app_8cs_source_1l00002"/>00002 <emphasis role="keyword">using&#32;</emphasis><link linkend="_namespace_library_1_1_mapping">Library.Mapping</link>;
+<anchor xml:id="__app_8cs_source_1l00003"/>00003 <emphasis role="keyword">using&#32;</emphasis>Microsoft.Xna.Framework;
+<anchor xml:id="__app_8cs_source_1l00004"/>00004 <emphasis role="keyword">using&#32;</emphasis>Microsoft.Xna.Framework.Graphics;
+<anchor xml:id="__app_8cs_source_1l00005"/>00005 <emphasis role="keyword">using&#32;</emphasis>Microsoft.Xna.Framework.Input;
+<anchor xml:id="__app_8cs_source_1l00006"/>00006 <emphasis role="keyword">using&#32;</emphasis><link linkend="_namespace_library_1_1_static">Library.Static</link>;
+<anchor xml:id="__app_8cs_source_1l00007"/>00007 
+<anchor xml:id="__app_8cs_source_1l00008"/><link linkend="_namespace_application">00008</link> <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_application">Application</link>
+<anchor xml:id="__app_8cs_source_1l00009"/>00009 {
+<anchor xml:id="__app_8cs_source_1l00013"/><link linkend="_class_application_1_1_app">00013</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_class_application_1_1_app">App</link>&#32;:&#32;Game
+<anchor xml:id="__app_8cs_source_1l00014"/>00014 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__app_8cs_source_1l00016"/>00016 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;GraphicsDeviceManager&#32;_graphics;
+<anchor xml:id="__app_8cs_source_1l00017"/>00017 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;SpriteBatch&#32;_spriteBatch;
+<anchor xml:id="__app_8cs_source_1l00018"/>00018 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<link linkend="_class_library_1_1_graphics_1_1_renderer">Renderer</link>&#32;_renderer;
+<anchor xml:id="__app_8cs_source_1l00019"/>00019 
+<anchor xml:id="__app_8cs_source_1l00020"/><link linkend="_class_application_1_1_app_1a7f67d3d558792ba3627b2f9881e2eae9">00020</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_application_1_1_app_1a7f67d3d558792ba3627b2f9881e2eae9">App</link>()
+<anchor xml:id="__app_8cs_source_1l00021"/>00021 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__app_8cs_source_1l00022"/>00022 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_graphics&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;GraphicsDeviceManager(<emphasis role="keyword">this</emphasis>);
+<anchor xml:id="__app_8cs_source_1l00023"/>00023 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Content.RootDirectory&#32;=&#32;<emphasis role="stringliteral">&quot;Content&quot;</emphasis>;
+<anchor xml:id="__app_8cs_source_1l00024"/>00024 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;IsMouseVisible&#32;=&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="__app_8cs_source_1l00025"/>00025 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__app_8cs_source_1l00026"/>00026 
+<anchor xml:id="__app_8cs_source_1l00030"/><link linkend="_class_application_1_1_app_1afca44a73b69a572c08b9d707d34d9e91">00030</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">protected</emphasis>&#32;<emphasis role="keyword">override</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_application_1_1_app_1afca44a73b69a572c08b9d707d34d9e91">Initialize</link>()
+<anchor xml:id="__app_8cs_source_1l00031"/>00031 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__app_8cs_source_1l00032"/>00032 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Window.Title&#32;=&#32;<emphasis role="stringliteral">&quot;Video&#32;Game&quot;</emphasis>;
+<anchor xml:id="__app_8cs_source_1l00033"/>00033 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_renderer&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;<link linkend="_class_library_1_1_graphics_1_1_renderer">Renderer</link>(<emphasis role="keyword">this</emphasis>);
+<anchor xml:id="__app_8cs_source_1l00034"/>00034 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_graphics.PreferredBackBufferWidth&#32;=&#32;Global.Window_Width;
+<anchor xml:id="__app_8cs_source_1l00035"/>00035 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_graphics.PreferredBackBufferHeight&#32;=&#32;Global.Window_Height;
+<anchor xml:id="__app_8cs_source_1l00036"/>00036 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_graphics.ApplyChanges();
+<anchor xml:id="__app_8cs_source_1l00037"/>00037 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;base.Initialize();
+<anchor xml:id="__app_8cs_source_1l00038"/>00038 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__app_8cs_source_1l00039"/>00039 
+<anchor xml:id="__app_8cs_source_1l00043"/><link linkend="_class_application_1_1_app_1a9c1ac277eb7629f3e99658b0083bfa71">00043</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">protected</emphasis>&#32;<emphasis role="keyword">override</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_application_1_1_app_1a9c1ac277eb7629f3e99658b0083bfa71">LoadContent</link>()
+<anchor xml:id="__app_8cs_source_1l00044"/>00044 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__app_8cs_source_1l00045"/>00045 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_spriteBatch&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;SpriteBatch(GraphicsDevice);
+<anchor xml:id="__app_8cs_source_1l00046"/>00046 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_library_1_1_graphics_1_1_graphics_component">GraphicsComponent</link>.<link linkend="_class_library_1_1_graphics_1_1_graphics_component_1ab25cb437b13669e22dba2c8d2fa7e8fe">setSpriteBatch</link>(_spriteBatch);
+<anchor xml:id="__app_8cs_source_1l00047"/>00047 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Assets.load(Content);&#32;&#32;<emphasis role="comment">//&#32;Load&#32;all&#32;game&#32;assets</emphasis>
+<anchor xml:id="__app_8cs_source_1l00048"/>00048 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Global.Map&#32;=&#32;Content.Load&lt;<link linkend="_class_library_1_1_mapping_1_1_tile_map">TileMap</link>&gt;(<emphasis role="stringliteral">&quot;assets/maps/map1&quot;</emphasis>);&#32;&#32;<emphasis role="comment">//&#32;Load&#32;map</emphasis>
+<anchor xml:id="__app_8cs_source_1l00049"/>00049 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__app_8cs_source_1l00050"/>00050 
+<anchor xml:id="__app_8cs_source_1l00051"/><link linkend="_class_application_1_1_app_1a700abaa7b52e8b8479c3c08872359619">00051</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">protected</emphasis>&#32;<emphasis role="keyword">override</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_application_1_1_app_1a700abaa7b52e8b8479c3c08872359619">Update</link>(GameTime&#32;gameTime)
+<anchor xml:id="__app_8cs_source_1l00052"/>00052 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__app_8cs_source_1l00053"/>00053 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(GamePad.GetState(PlayerIndex.One).Buttons.Back&#32;==&#32;ButtonState.Pressed&#32;||&#32;Keyboard.GetState().IsKeyDown(Keys.Escape))&#32;Exit();
+<anchor xml:id="__app_8cs_source_1l00054"/>00054 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;base.Update(gameTime);
+<anchor xml:id="__app_8cs_source_1l00055"/>00055 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__app_8cs_source_1l00056"/>00056 
+<anchor xml:id="__app_8cs_source_1l00061"/><link linkend="_class_application_1_1_app_1a8a0a88e3d24e7bf906ee4b0479322292">00061</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">protected</emphasis>&#32;<emphasis role="keyword">override</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_application_1_1_app_1a8a0a88e3d24e7bf906ee4b0479322292">Draw</link>(GameTime&#32;gameTime)
+<anchor xml:id="__app_8cs_source_1l00062"/>00062 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__app_8cs_source_1l00063"/>00063 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_spriteBatch.Begin(SpriteSortMode.Deferred,&#32;<emphasis role="keyword">null</emphasis>,&#32;SamplerState.PointClamp,&#32;<emphasis role="keyword">null</emphasis>,&#32;<emphasis role="keyword">null</emphasis>,&#32;<emphasis role="keyword">null</emphasis>,&#32;<emphasis role="keyword">null</emphasis>);
+<anchor xml:id="__app_8cs_source_1l00064"/>00064 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_renderer.<link linkend="_class_library_1_1_graphics_1_1_renderer_1a6696eb171e4708d5b1e8f869671090eb">draw</link>();
+<anchor xml:id="__app_8cs_source_1l00065"/>00065 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_spriteBatch.End();
+<anchor xml:id="__app_8cs_source_1l00066"/>00066 
+<anchor xml:id="__app_8cs_source_1l00067"/>00067 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;base.Draw(gameTime);
+<anchor xml:id="__app_8cs_source_1l00068"/>00068 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__app_8cs_source_1l00069"/>00069 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__app_8cs_source_1l00070"/>00070 }
+</programlisting></section>

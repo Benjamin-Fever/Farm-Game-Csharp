@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_21c81017b250681221350b9a519a3964" xml:lang="en-US">
+<title>Content Pipeline Directory Reference</title>
+<indexterm><primary>Content Pipeline Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_803c85dee7e0c556cf19dd74e8136986">Importers</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_bef79e8b5354a15cac483d690187cc2e">obj</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_8fd166e0b0695772f03c344c0b01ded6">Processors</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_0ca48ea73e76fa02c23d539eaa1cfdc0">Writer</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

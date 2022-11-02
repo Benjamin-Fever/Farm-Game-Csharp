@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="class_library_1_1_static_1_1_assets" kind="class" language="C#" prot="public">
+    <compoundname>Library::Static::Assets</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_library_1_1_static_1_1_assets_1a2d3dcec131fcb6f9c402a8fd8f2cb597" prot="private" static="yes" mutable="no">
+        <type>Dictionary&lt; string, Texture2D &gt;</type>
+        <definition>Dictionary&lt;string, Texture2D&gt; Library.Static.Assets.textures</definition>
+        <argsstring></argsstring>
+        <name>textures</name>
+        <qualifiedname>Library.Static.Assets.textures</qualifiedname>
+        <initializer>= new Dictionary&lt;string, Texture2D&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Static.cs" line="24" column="35" bodyfile="Library/Static.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_library_1_1_static_1_1_assets_1ac78cc5db29beea917a9504b83fc7b47b" prot="private" static="yes" mutable="no">
+        <type>Dictionary&lt; string, <ref refid="class_library_1_1_mapping_1_1_tile_map" kindref="compound">TileMap</ref> &gt;</type>
+        <definition>Dictionary&lt;string, TileMap&gt; Library.Static.Assets.maps</definition>
+        <argsstring></argsstring>
+        <name>maps</name>
+        <qualifiedname>Library.Static.Assets.maps</qualifiedname>
+        <initializer>= new Dictionary&lt;string, <ref refid="class_library_1_1_mapping_1_1_tile_map" kindref="compound">TileMap</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Static.cs" line="25" column="35" bodyfile="Library/Static.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_library_1_1_static_1_1_assets_1a3a60c9794ebcfd8374427cb8be3912ec" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Library.Static.Assets.load</definition>
+        <argsstring>(ContentManager content)</argsstring>
+        <name>load</name>
+        <qualifiedname>Library.Static.Assets.load</qualifiedname>
+        <param>
+          <type>ContentManager</type>
+          <declname>content</declname>
+        </param>
+        <briefdescription>
+<para>Load all assets  </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>content</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Static.cs" line="31" column="28" bodyfile="Library/Static.cs" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_library_1_1_static_1_1_assets_1a1da7e00ac935d7b39f7c8e0be4d3eed2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>object</type>
+        <definition>static object Library.Static.Assets.get</definition>
+        <argsstring>(string key)</argsstring>
+        <name>get</name>
+        <qualifiedname>Library.Static.Assets.get</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Get asset based on key  </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A asset based on key passed</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IOException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>No content for the given key</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Static.cs" line="42" column="30" bodyfile="Library/Static.cs" bodystart="42" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_library_1_1_static_1_1_assets_1adf55c650491077eb3e774393c0126066" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Library.Static.Assets.loadTexutres</definition>
+        <argsstring>(ContentManager content)</argsstring>
+        <name>loadTexutres</name>
+        <qualifiedname>Library.Static.Assets.loadTexutres</qualifiedname>
+        <param>
+          <type>ContentManager</type>
+          <declname>content</declname>
+        </param>
+        <briefdescription>
+<para>Load all textures in the texures file  </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>content</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Static.cs" line="53" column="29" bodyfile="Library/Static.cs" bodystart="53" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="class_library_1_1_static_1_1_assets_1a00a1d41009aec1fb2d6cf6780412ad72" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string Library.Static.Assets.getContentLocation</definition>
+        <argsstring>(string location)</argsstring>
+        <name>getContentLocation</name>
+        <qualifiedname>Library.Static.Assets.getContentLocation</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>location</declname>
+        </param>
+        <briefdescription>
+<para>Conver the given location into a string for the content loader to refrence  </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>location</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A string of the new location</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Static.cs" line="69" column="31" bodyfile="Library/Static.cs" bodystart="69" bodyend="80"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Assets stored globally  </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/Static.cs" line="22" column="19" bodyfile="Library/Static.cs" bodystart="23" bodyend="81"/>
+    <listofallmembers>
+      <member refid="class_library_1_1_static_1_1_assets_1a1da7e00ac935d7b39f7c8e0be4d3eed2" prot="public" virt="non-virtual"><scope>Library::Static::Assets</scope><name>get</name></member>
+      <member refid="class_library_1_1_static_1_1_assets_1a00a1d41009aec1fb2d6cf6780412ad72" prot="private" virt="non-virtual"><scope>Library::Static::Assets</scope><name>getContentLocation</name></member>
+      <member refid="class_library_1_1_static_1_1_assets_1a3a60c9794ebcfd8374427cb8be3912ec" prot="public" virt="non-virtual"><scope>Library::Static::Assets</scope><name>load</name></member>
+      <member refid="class_library_1_1_static_1_1_assets_1adf55c650491077eb3e774393c0126066" prot="private" virt="non-virtual"><scope>Library::Static::Assets</scope><name>loadTexutres</name></member>
+      <member refid="class_library_1_1_static_1_1_assets_1ac78cc5db29beea917a9504b83fc7b47b" prot="private" virt="non-virtual"><scope>Library::Static::Assets</scope><name>maps</name></member>
+      <member refid="class_library_1_1_static_1_1_assets_1a2d3dcec131fcb6f9c402a8fd8f2cb597" prot="private" virt="non-virtual"><scope>Library::Static::Assets</scope><name>textures</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

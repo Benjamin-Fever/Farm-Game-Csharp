@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="class_content___library_1_1_importer_1_1_map_importer" kind="class" language="C#" prot="package">
+    <compoundname>Content_Library::Importer::MapImporter</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ContentImporter&lt; SerialMap &gt;</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_content___library_1_1_importer_1_1_map_importer_1a0ec1d4823856c05668e44592de8f14e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override <ref refid="class_library_1_1_serializers_1_1_serial_map" kindref="compound">SerialMap</ref></type>
+        <definition>override SerialMap Content_Library.Importer.MapImporter.Import</definition>
+        <argsstring>(string filename, ContentImporterContext context)</argsstring>
+        <name>Import</name>
+        <qualifiedname>Content_Library.Importer.MapImporter.Import</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>ContentImporterContext</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Content Pipeline/Importers/MapImporter.cs" line="15" column="35" bodyfile="Content Pipeline/Importers/MapImporter.cs" bodystart="15" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Internal class that loads the map as a .map into the content pipeline  </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ContentImporter&lt; SerialMap &gt;</label>
+      </node>
+      <node id="1">
+        <label>Content_Library.Importer.MapImporter</label>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ContentImporter&lt; SerialMap &gt;</label>
+      </node>
+      <node id="1">
+        <label>Content_Library.Importer.MapImporter</label>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Content Pipeline/Importers/MapImporter.cs" line="13" column="13" bodyfile="Content Pipeline/Importers/MapImporter.cs" bodystart="14" bodyend="24"/>
+    <listofallmembers>
+      <member refid="class_content___library_1_1_importer_1_1_map_importer_1a0ec1d4823856c05668e44592de8f14e7" prot="public" virt="non-virtual"><scope>Content_Library::Importer::MapImporter</scope><name>Import</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_c23424a3267808464271f6fb9e164fb6" xml:lang="en-US">
+<title>Library/Readers Directory Reference</title>
+<indexterm><primary>Library/Readers Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__map_reader_8cs">MapReader.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

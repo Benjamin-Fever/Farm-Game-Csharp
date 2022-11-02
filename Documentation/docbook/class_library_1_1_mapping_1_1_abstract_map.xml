@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_library_1_1_mapping_1_1_abstract_map" xml:lang="en-US">
+<title>Library.Mapping.AbstractMap&lt; T &gt; Class Template Reference</title>
+<indexterm><primary>Library.Mapping.AbstractMap&lt; T &gt;</primary></indexterm>
+<para>
+
+<para>Generic Abstract Layer. Takes a type of T which defines what variable type layers is  </para>
+ 
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_class_library_1_1_mapping_1_1_abstract_map_1a0d3c1fe6e13aa21c42945f68b2feaca5">name</link> = &quot;&quot;</para>
+</listitem>
+            <listitem><para>Vector2 <link linkend="_class_library_1_1_mapping_1_1_abstract_map_1a98009bcfecd86a1895b3a6e19ad6d437">tileSize</link> = new Vector2(0,0)</para>
+</listitem>
+            <listitem><para>Vector2 <link linkend="_class_library_1_1_mapping_1_1_abstract_map_1a5b4e0e5c2ca75e2f9c96fb4ecf9a6eae">size</link> = new Vector2(0, 0)</para>
+</listitem>
+            <listitem><para>Color <link linkend="_class_library_1_1_mapping_1_1_abstract_map_1ac5b4ef2de4b8ecb41b165d9aa472ff50">background</link> = new Color()</para>
+</listitem>
+            <listitem><para>List&lt; T &gt; <link linkend="_class_library_1_1_mapping_1_1_abstract_map_1a24e37a566c32ddf48e7504fda5d667bf">layers</link> = new List&lt;T&gt;()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Generic Abstract Layer. Takes a type of T which defines what variable type layers is  </para>
+
+
+
+<para>
+                <formalpara>
+                    <title>
+Template Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>T</entry><entry>
+<para>Define type for layers</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__map_8cs_source_1l00011">11</link> of file <link linkend="__map_8cs_source">Map.cs</link>.</para>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_library_1_1_mapping_1_1_abstract_map_1ac5b4ef2de4b8ecb41b165d9aa472ff50"/><section>
+    <title>background</title>
+<indexterm><primary>background</primary><secondary>Library.Mapping.AbstractMap&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Library.Mapping.AbstractMap&lt; T &gt;</primary><secondary>background</secondary></indexterm>
+<para><computeroutput>Color <link linkend="_class_library_1_1_mapping_1_1_abstract_map">Library.Mapping.AbstractMap</link>&lt; T &gt;.background = new Color()</computeroutput></para><para>
+Definition at line <link linkend="__map_8cs_source_1l00016">16</link> of file <link linkend="__map_8cs_source">Map.cs</link>.</para>
+</section>
+<anchor xml:id="_class_library_1_1_mapping_1_1_abstract_map_1a24e37a566c32ddf48e7504fda5d667bf"/><section>
+    <title>layers</title>
+<indexterm><primary>layers</primary><secondary>Library.Mapping.AbstractMap&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Library.Mapping.AbstractMap&lt; T &gt;</primary><secondary>layers</secondary></indexterm>
+<para><computeroutput>List&lt;T&gt; <link linkend="_class_library_1_1_mapping_1_1_abstract_map">Library.Mapping.AbstractMap</link>&lt; T &gt;.layers = new List&lt;T&gt;()</computeroutput></para><para>
+Definition at line <link linkend="__map_8cs_source_1l00017">17</link> of file <link linkend="__map_8cs_source">Map.cs</link>.</para>
+</section>
+<anchor xml:id="_class_library_1_1_mapping_1_1_abstract_map_1a0d3c1fe6e13aa21c42945f68b2feaca5"/><section>
+    <title>name</title>
+<indexterm><primary>name</primary><secondary>Library.Mapping.AbstractMap&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Library.Mapping.AbstractMap&lt; T &gt;</primary><secondary>name</secondary></indexterm>
+<para><computeroutput>string <link linkend="_class_library_1_1_mapping_1_1_abstract_map">Library.Mapping.AbstractMap</link>&lt; T &gt;.name = &quot;&quot;</computeroutput></para><para>
+Definition at line <link linkend="__map_8cs_source_1l00013">13</link> of file <link linkend="__map_8cs_source">Map.cs</link>.</para>
+</section>
+<anchor xml:id="_class_library_1_1_mapping_1_1_abstract_map_1a5b4e0e5c2ca75e2f9c96fb4ecf9a6eae"/><section>
+    <title>size</title>
+<indexterm><primary>size</primary><secondary>Library.Mapping.AbstractMap&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Library.Mapping.AbstractMap&lt; T &gt;</primary><secondary>size</secondary></indexterm>
+<para><computeroutput>Vector2 <link linkend="_class_library_1_1_mapping_1_1_abstract_map">Library.Mapping.AbstractMap</link>&lt; T &gt;.size = new Vector2(0, 0)</computeroutput></para><para>
+Definition at line <link linkend="__map_8cs_source_1l00015">15</link> of file <link linkend="__map_8cs_source">Map.cs</link>.</para>
+</section>
+<anchor xml:id="_class_library_1_1_mapping_1_1_abstract_map_1a98009bcfecd86a1895b3a6e19ad6d437"/><section>
+    <title>tileSize</title>
+<indexterm><primary>tileSize</primary><secondary>Library.Mapping.AbstractMap&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Library.Mapping.AbstractMap&lt; T &gt;</primary><secondary>tileSize</secondary></indexterm>
+<para><computeroutput>Vector2 <link linkend="_class_library_1_1_mapping_1_1_abstract_map">Library.Mapping.AbstractMap</link>&lt; T &gt;.tileSize = new Vector2(0,0)</computeroutput></para><para>
+Definition at line <link linkend="__map_8cs_source_1l00014">14</link> of file <link linkend="__map_8cs_source">Map.cs</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+Library/Mapping/<link linkend="__map_8cs">Map.cs</link></section>
+</section>

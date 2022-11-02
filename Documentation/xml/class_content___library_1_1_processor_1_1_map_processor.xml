@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="class_content___library_1_1_processor_1_1_map_processor" kind="class" language="C#" prot="package">
+    <compoundname>Content_Library::Processor::MapProcessor</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ContentProcessor&lt; SerialMap, SerialMap &gt;</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_content___library_1_1_processor_1_1_map_processor_1aabc0cca59d977572ef63633597474b73" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override <ref refid="class_library_1_1_serializers_1_1_serial_map" kindref="compound">SerialMap</ref></type>
+        <definition>override SerialMap Content_Library.Processor.MapProcessor.Process</definition>
+        <argsstring>(SerialMap input, ContentProcessorContext context)</argsstring>
+        <name>Process</name>
+        <qualifiedname>Content_Library.Processor.MapProcessor.Process</qualifiedname>
+        <param>
+          <type><ref refid="class_library_1_1_serializers_1_1_serial_map" kindref="compound">SerialMap</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>ContentProcessorContext</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Content Pipeline/Processors/MapProcessor.cs" line="13" column="35" bodyfile="Content Pipeline/Processors/MapProcessor.cs" bodystart="13" bodyend="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Internal class that passes the map importeted into the content pipeline  </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ContentProcessor&lt; SerialMap, SerialMap &gt;</label>
+      </node>
+      <node id="1">
+        <label>Content_Library.Processor.MapProcessor</label>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ContentProcessor&lt; SerialMap, SerialMap &gt;</label>
+      </node>
+      <node id="1">
+        <label>Content_Library.Processor.MapProcessor</label>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Content Pipeline/Processors/MapProcessor.cs" line="11" column="13" bodyfile="Content Pipeline/Processors/MapProcessor.cs" bodystart="12" bodyend="17"/>
+    <listofallmembers>
+      <member refid="class_content___library_1_1_processor_1_1_map_processor_1aabc0cca59d977572ef63633597474b73" prot="public" virt="non-virtual"><scope>Content_Library::Processor::MapProcessor</scope><name>Process</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

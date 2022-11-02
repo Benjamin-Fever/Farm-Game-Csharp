@@ -1,0 +1,83 @@
+.TH "Application.App" 3 "Thu Nov 3 2022" "Version 0.1" "Game Engine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Application.App \- \fBApp\fP extends on the monogame class Game to setup and run the game  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits Game\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBApp\fP ()"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "override void \fBInitialize\fP ()"
+.br
+.RI "Initilize game window  "
+.ti -1c
+.RI "override void \fBLoadContent\fP ()"
+.br
+.RI "Load game content compiled using the monogame content pipeline  "
+.ti -1c
+.RI "override void \fBUpdate\fP (GameTime gameTime)"
+.br
+.ti -1c
+.RI "override void \fBDraw\fP (GameTime gameTime)"
+.br
+.RI "The draw method used to display whats on the game window  "
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBApp\fP extends on the monogame class Game to setup and run the game 
+.PP
+Definition at line \fB13\fP of file \fBApp\&.cs\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Application\&.App\&.App ()"
+
+.PP
+Definition at line \fB20\fP of file \fBApp\&.cs\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "override void Application\&.App\&.Draw (GameTime gameTime)\fC [protected]\fP"
+
+.PP
+The draw method used to display whats on the game window  
+.PP
+\fBParameters\fP
+.RS 4
+\fIgameTime\fP Time passed between frames
+.RE
+.PP
+
+.PP
+Definition at line \fB61\fP of file \fBApp\&.cs\fP\&.
+.SS "override void Application\&.App\&.Initialize ()\fC [protected]\fP"
+
+.PP
+Initilize game window  
+.PP
+Definition at line \fB30\fP of file \fBApp\&.cs\fP\&.
+.SS "override void Application\&.App\&.LoadContent ()\fC [protected]\fP"
+
+.PP
+Load game content compiled using the monogame content pipeline  
+.PP
+Definition at line \fB43\fP of file \fBApp\&.cs\fP\&.
+.SS "override void Application\&.App\&.Update (GameTime gameTime)\fC [protected]\fP"
+
+.PP
+Definition at line \fB51\fP of file \fBApp\&.cs\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Game Engine from the source code\&.

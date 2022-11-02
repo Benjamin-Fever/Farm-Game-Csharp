@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="namespace_content___library_1_1_importer" kind="namespace" language="C#">
+    <compoundname>Content_Library::Importer</compoundname>
+    <innerclass refid="class_content___library_1_1_importer_1_1_map_importer" prot="package">Content_Library::Importer::MapImporter</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Content Pipeline/Importers/MapImporter.cs" line="7" column="1"/>
+  </compounddef>
+</doxygen>

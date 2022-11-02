@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_b10eb7d4ec47c939902b9a1d52c7bfbc" kind="dir">
+    <compoundname>Library/Graphics</compoundname>
+    <innerfile refid="_graphics_component_8cs">GraphicsComponent.cs</innerfile>
+    <innerfile refid="_renderer_8cs">Renderer.cs</innerfile>
+    <innerfile refid="_sprite_8cs">Sprite.cs</innerfile>
+    <innerfile refid="_tile_8cs">Tile.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/Graphics/"/>
+  </compounddef>
+</doxygen>

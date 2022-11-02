@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_library_1_1_graphics_1_1_renderer" xml:lang="en-US">
+<title>Library.Graphics.Renderer Class Reference</title>
+<indexterm><primary>Library.Graphics.Renderer</primary></indexterm>
+<para>
+
+<para>Defines whats being rendered and draws it in the screen  </para>
+ 
+</para>
+<para>Inheritance diagram for Library.Graphics.Renderer:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_library_1_1_graphics_1_1_renderer.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_library_1_1_graphics_1_1_renderer_1a545e2caf444dc1730cab8e698252015a">Renderer</link> (Game game)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_library_1_1_graphics_1_1_renderer_1a6696eb171e4708d5b1e8f869671090eb">draw</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Defines whats being rendered and draws it in the screen  </para>
+<para>
+Definition at line <link linkend="__renderer_8cs_source_1l00009">9</link> of file <link linkend="__renderer_8cs_source">Renderer.cs</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_library_1_1_graphics_1_1_renderer_1a545e2caf444dc1730cab8e698252015a"/><section>
+    <title>Renderer()</title>
+<indexterm><primary>Renderer</primary><secondary>Library.Graphics.Renderer</secondary></indexterm>
+<indexterm><primary>Library.Graphics.Renderer</primary><secondary>Renderer</secondary></indexterm>
+<para><computeroutput>Library.Graphics.Renderer.Renderer (Game game)</computeroutput></para><para>
+Definition at line <link linkend="__renderer_8cs_source_1l00013">13</link> of file <link linkend="__renderer_8cs_source">Renderer.cs</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_library_1_1_graphics_1_1_renderer_1a6696eb171e4708d5b1e8f869671090eb"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>Library.Graphics.Renderer</secondary></indexterm>
+<indexterm><primary>Library.Graphics.Renderer</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput>void Library.Graphics.Renderer.draw ( )</computeroutput></para><para>
+Implements <link linkend="_interface_library_1_1_graphics_1_1_i_graphics_component_1acca0d3d372a78a58ced6cb36d2d0d8fb">Library.Graphics.IGraphicsComponent</link>.</para>
+<para>
+Definition at line <link linkend="__renderer_8cs_source_1l00018">18</link> of file <link linkend="__renderer_8cs_source">Renderer.cs</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+Library/Graphics/<link linkend="__renderer_8cs">Renderer.cs</link></section>
+</section>

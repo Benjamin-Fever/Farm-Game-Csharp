@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="namespace_content___library" kind="namespace" language="C#">
+    <compoundname>Content_Library</compoundname>
+    <innernamespace refid="namespace_content___library_1_1_importer">Content_Library::Importer</innernamespace>
+    <innernamespace refid="namespace_content___library_1_1_processor">Content_Library::Processor</innernamespace>
+    <innernamespace refid="namespace_content___library_1_1_reader">Content_Library::Reader</innernamespace>
+    <innernamespace refid="namespace_content___library_1_1_writer">Content_Library::Writer</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Content Pipeline/Importers/MapImporter.cs" line="7" column="1"/>
+  </compounddef>
+</doxygen>

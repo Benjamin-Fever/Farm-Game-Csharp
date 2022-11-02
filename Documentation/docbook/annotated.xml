@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_annotated" xml:lang="en-US">
+<title>Class List</title>
+Here are the classes, structs, unions and interfaces with brief descriptions:<link linkend="_class_library_1_1_mapping_1_1_abstract_layer">Library.Mapping.AbstractLayer&lt; T &gt;</link>
+<para>Generic Abstract Layer. Takes a type of T which defines what variable type tiles is  </para>
+<link linkend="_class_library_1_1_mapping_1_1_abstract_map">Library.Mapping.AbstractMap&lt; T &gt;</link>
+<para>Generic Abstract Layer. Takes a type of T which defines what variable type layers is  </para>
+<link linkend="_class_application_1_1_app">Application.App</link>
+<para><link linkend="_class_application_1_1_app">App</link> extends on the monogame class Game to setup and run the game </para>
+<link linkend="_class_library_1_1_util_1_1_box">Library.Util.Box</link>
+<para>Define a box  </para>
+<link linkend="_class_library_1_1_graphics_1_1_graphics_component">Library.Graphics.GraphicsComponent</link>
+<para>Generic graphics component abstract class  </para>
+<link linkend="_interface_library_1_1_graphics_1_1_i_graphics_component">Library.Graphics.IGraphicsComponent</link>
+<para>Generic graphics component interface  </para>
+<link linkend="_class_library_1_1_mapping_1_1_mapping_pos">Library.Mapping.MappingPos</link>
+<para><link linkend="_class_library_1_1_mapping_1_1_mapping_pos">MappingPos</link> defines a position on the map  </para>
+<link linkend="_class_content___library_1_1_reader_1_1_map_reader">Content_Library.Reader.MapReader</link>
+<para>Read the binary map file  </para>
+<link linkend="_class_content___library_1_1_writer_1_1_map_writer">Content_Library.Writer.MapWriter</link>
+<para>A public class that writes the map that has been imported through the pipeline and write it into binary  </para>
+<link linkend="_class_program">Program</link><link linkend="_class_library_1_1_graphics_1_1_renderer">Library.Graphics.Renderer</link>
+<para>Defines whats being rendered and draws it in the screen  </para>
+<link linkend="_class_library_1_1_serializers_1_1_serial_color">Library.Serializers.SerialColor</link>
+<para>Serializable Color  </para>
+<link linkend="_class_library_1_1_serializers_1_1_serial_layer">Library.Serializers.SerialLayer</link>
+<para>Serializable Layer  </para>
+<link linkend="_class_library_1_1_serializers_1_1_serial_map">Library.Serializers.SerialMap</link>
+<para>Serializable map  </para>
+<link linkend="_class_library_1_1_serializers_1_1_serial_tileset">Library.Serializers.SerialTileset</link>
+<para>Serializable Tileset  </para>
+<link linkend="_class_library_1_1_graphics_1_1_sprite">Library.Graphics.Sprite</link>
+<para><link linkend="_class_library_1_1_graphics_1_1_sprite">Sprite</link> class defines a sprites texure and hitbox  </para>
+<link linkend="_class_library_1_1_graphics_1_1_tile">Library.Graphics.Tile</link>
+<para>A graphics component that represents a map tile  </para>
+<link linkend="_class_library_1_1_mapping_1_1_tile_layer">Library.Mapping.TileLayer</link>
+<para>A tilelayer used to define what tiles are visible at this depth. Tile type is a list of Tile. Extends <link linkend="_class_library_1_1_mapping_1_1_abstract_layer">AbstractLayer</link> and implements comparable and graphics component.  </para>
+<link linkend="_class_library_1_1_mapping_1_1_tile_map">Library.Mapping.TileMap</link>
+<para>A tilemap used to define what layers are in the map. Layer type is a <link linkend="_class_library_1_1_mapping_1_1_tile_layer">TileLayer</link>. Implements IGraphicsComponent.  </para>
+</section>

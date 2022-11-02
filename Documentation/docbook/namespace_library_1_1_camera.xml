@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_library_1_1_camera" xml:lang="en-US">
+<title>Library.Camera Namespace Reference</title>
+<indexterm><primary>Library.Camera</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <emphasis role="strong">Viewport</emphasis></para>
+
+<para>The viewport class defines what space is viewable to the player at a given time.  </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__map_reader_8cs_source" xml:lang="en-US">
+<title>MapReader.cs</title>
+<indexterm><primary>Library/Readers/MapReader.cs</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__map_reader_8cs_source_1l00001"/>00001 <emphasis role="keyword">using&#32;</emphasis><link linkend="_namespace_library_1_1_graphics">Library.Graphics</link>;
+<anchor xml:id="__map_reader_8cs_source_1l00002"/>00002 <emphasis role="keyword">using&#32;</emphasis><link linkend="_namespace_library_1_1_mapping">Library.Mapping</link>;
+<anchor xml:id="__map_reader_8cs_source_1l00003"/>00003 <emphasis role="keyword">using&#32;</emphasis><link linkend="_namespace_library_1_1_serializers">Library.Serializers</link>;
+<anchor xml:id="__map_reader_8cs_source_1l00004"/>00004 <emphasis role="keyword">using&#32;</emphasis>Microsoft.Xna.Framework.Content;
+<anchor xml:id="__map_reader_8cs_source_1l00005"/>00005 <emphasis role="keyword">using&#32;</emphasis>Microsoft.Xna.Framework.Graphics;
+<anchor xml:id="__map_reader_8cs_source_1l00006"/>00006 <emphasis role="keyword">using&#32;</emphasis>System;
+<anchor xml:id="__map_reader_8cs_source_1l00007"/>00007 <emphasis role="keyword">using&#32;</emphasis>System.Collections.Generic;
+<anchor xml:id="__map_reader_8cs_source_1l00008"/>00008 <emphasis role="keyword">using&#32;</emphasis><link linkend="_namespace_library_1_1_static">Library.Static</link>;
+<anchor xml:id="__map_reader_8cs_source_1l00009"/>00009 <emphasis role="keyword">using&#32;</emphasis>Microsoft.Xna.Framework;
+<anchor xml:id="__map_reader_8cs_source_1l00010"/>00010 
+<anchor xml:id="__map_reader_8cs_source_1l00011"/><link linkend="_namespace_content___library_1_1_reader">00011</link> <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_content___library_1_1_reader">Content_Library.Reader</link>
+<anchor xml:id="__map_reader_8cs_source_1l00012"/>00012 {
+<anchor xml:id="__map_reader_8cs_source_1l00016"/><link linkend="_class_content___library_1_1_reader_1_1_map_reader">00016</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_class_content___library_1_1_reader_1_1_map_reader">MapReader</link>&#32;:&#32;ContentTypeReader&lt;TileMap&gt;
+<anchor xml:id="__map_reader_8cs_source_1l00017"/>00017 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__map_reader_8cs_source_1l00024"/><link linkend="_class_content___library_1_1_reader_1_1_map_reader_1a58524ed9485eec46fb55003f002d6219">00024</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">protected</emphasis>&#32;<emphasis role="keyword">override</emphasis>&#32;<link linkend="_class_library_1_1_mapping_1_1_tile_map">TileMap</link>&#32;<link linkend="_class_content___library_1_1_reader_1_1_map_reader_1a58524ed9485eec46fb55003f002d6219">Read</link>(ContentReader&#32;input,&#32;<link linkend="_class_library_1_1_mapping_1_1_tile_map">TileMap</link>&#32;existingInstance)
+<anchor xml:id="__map_reader_8cs_source_1l00025"/>00025 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__map_reader_8cs_source_1l00026"/>00026 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_library_1_1_mapping_1_1_tile_map">TileMap</link>&#32;map&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;<link linkend="_class_library_1_1_mapping_1_1_tile_map">TileMap</link>();
+<anchor xml:id="__map_reader_8cs_source_1l00027"/>00027 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;map.name&#32;=&#32;input.ReadString();
+<anchor xml:id="__map_reader_8cs_source_1l00028"/>00028 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;map.size&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;Vector2(input.ReadInt32(),&#32;input.ReadInt32());
+<anchor xml:id="__map_reader_8cs_source_1l00029"/>00029 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;map.tileSize&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;Vector2(input.ReadInt32(),&#32;input.ReadInt32());
+<anchor xml:id="__map_reader_8cs_source_1l00030"/>00030 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;map.background&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;Color(input.ReadInt32(),&#32;input.ReadInt32(),&#32;input.ReadInt32());
+<anchor xml:id="__map_reader_8cs_source_1l00031"/>00031 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;count&#32;=&#32;input.ReadInt32();
+<anchor xml:id="__map_reader_8cs_source_1l00032"/>00032 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;count;&#32;i++)
+<anchor xml:id="__map_reader_8cs_source_1l00033"/>00033 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__map_reader_8cs_source_1l00034"/>00034 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_library_1_1_mapping_1_1_tile_layer">TileLayer</link>&#32;layer&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;<link linkend="_class_library_1_1_mapping_1_1_tile_layer">TileLayer</link>();
+<anchor xml:id="__map_reader_8cs_source_1l00035"/>00035 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;layer.name&#32;=&#32;input.ReadString();
+<anchor xml:id="__map_reader_8cs_source_1l00036"/>00036 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;layer.depth&#32;=&#32;input.ReadInt32();
+<anchor xml:id="__map_reader_8cs_source_1l00037"/>00037 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_library_1_1_serializers_1_1_serial_tileset">SerialTileset</link>&#32;ts&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;<link linkend="_class_library_1_1_serializers_1_1_serial_tileset">SerialTileset</link>();
+<anchor xml:id="__map_reader_8cs_source_1l00038"/>00038 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ts.Name&#32;=&#32;input.ReadString();
+<anchor xml:id="__map_reader_8cs_source_1l00039"/>00039 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ts.columns&#32;=&#32;input.ReadInt32();
+<anchor xml:id="__map_reader_8cs_source_1l00040"/>00040 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ts.source&#32;=&#32;input.ReadString();
+<anchor xml:id="__map_reader_8cs_source_1l00041"/>00041 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;tiles&#32;=&#32;input.ReadString();
+<anchor xml:id="__map_reader_8cs_source_1l00042"/>00042 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;layer.tiles&#32;=&#32;getTiles(tiles,&#32;map,&#32;ts);
+<anchor xml:id="__map_reader_8cs_source_1l00043"/>00043 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;map.<link linkend="_class_library_1_1_mapping_1_1_abstract_map_1a24e37a566c32ddf48e7504fda5d667bf">layers</link>.Add(layer);
+<anchor xml:id="__map_reader_8cs_source_1l00044"/>00044 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__map_reader_8cs_source_1l00045"/>00045 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;map;
+<anchor xml:id="__map_reader_8cs_source_1l00046"/>00046 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__map_reader_8cs_source_1l00047"/>00047 
+<anchor xml:id="__map_reader_8cs_source_1l00055"/>00055 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keyword">static</emphasis>&#32;List&lt;Tile&gt;&#32;getTiles(<emphasis role="keywordtype">string</emphasis>&#32;data,&#32;<link linkend="_class_library_1_1_mapping_1_1_tile_map">TileMap</link>&#32;m,&#32;<link linkend="_class_library_1_1_serializers_1_1_serial_tileset">SerialTileset</link>&#32;ts)
+<anchor xml:id="__map_reader_8cs_source_1l00056"/>00056 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__map_reader_8cs_source_1l00057"/>00057 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_library_1_1_graphics_1_1_sprite">Sprite</link>&#32;sp&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;<link linkend="_class_library_1_1_graphics_1_1_sprite">Sprite</link>((Texture2D)Assets.get(ts.<link linkend="_class_library_1_1_serializers_1_1_serial_tileset_1ac4972794d0a8d33fc54ad74b24416cc2">source</link>));
+<anchor xml:id="__map_reader_8cs_source_1l00058"/>00058 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;List&lt;Tile&gt;&#32;tiles&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;List&lt;Tile&gt;();
+<anchor xml:id="__map_reader_8cs_source_1l00059"/>00059 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;List&lt;string&gt;&#32;cols&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;List&lt;string&gt;(data.Split(<emphasis role="charliteral">&apos;\n&apos;</emphasis>));
+<anchor xml:id="__map_reader_8cs_source_1l00060"/>00060 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;y&#32;=&#32;0;
+<anchor xml:id="__map_reader_8cs_source_1l00061"/>00061 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;x&#32;=&#32;0;
+<anchor xml:id="__map_reader_8cs_source_1l00062"/>00062 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">foreach</emphasis>&#32;(<emphasis role="keywordtype">string</emphasis>&#32;col&#32;<emphasis role="keywordflow">in</emphasis>&#32;cols)
+<anchor xml:id="__map_reader_8cs_source_1l00063"/>00063 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__map_reader_8cs_source_1l00064"/>00064 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;List&lt;string&gt;&#32;rows&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;List&lt;string&gt;(col.Split(<emphasis role="charliteral">&apos;,&apos;</emphasis>));
+<anchor xml:id="__map_reader_8cs_source_1l00065"/>00065 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">foreach</emphasis>&#32;(<emphasis role="keywordtype">string</emphasis>&#32;value&#32;<emphasis role="keywordflow">in</emphasis>&#32;rows)
+<anchor xml:id="__map_reader_8cs_source_1l00066"/>00066 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__map_reader_8cs_source_1l00067"/>00067 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(value&#32;==&#32;<emphasis role="stringliteral">&quot;&quot;</emphasis>)&#32;{&#32;<emphasis role="keywordflow">continue</emphasis>;&#32;}
+<anchor xml:id="__map_reader_8cs_source_1l00068"/>00068 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_library_1_1_graphics_1_1_tile">Tile</link>&#32;t&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;<link linkend="_class_library_1_1_graphics_1_1_tile">Tile</link>(sp,&#32;<emphasis role="keyword">new</emphasis>&#32;<link linkend="_class_library_1_1_mapping_1_1_mapping_pos">MappingPos</link>(x,&#32;y),&#32;m.<link linkend="_class_library_1_1_mapping_1_1_abstract_map_1a98009bcfecd86a1895b3a6e19ad6d437">tileSize</link>,&#32;ts.<link linkend="_class_library_1_1_serializers_1_1_serial_tileset_1af384ece3892b9d313f01647c70cdd5b6">columns</link>,&#32;Int32.Parse(value));
+<anchor xml:id="__map_reader_8cs_source_1l00069"/>00069 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tiles.Add(t);
+<anchor xml:id="__map_reader_8cs_source_1l00070"/>00070 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;x++;
+<anchor xml:id="__map_reader_8cs_source_1l00071"/>00071 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__map_reader_8cs_source_1l00072"/>00072 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;x&#32;=&#32;0;
+<anchor xml:id="__map_reader_8cs_source_1l00073"/>00073 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;y++;
+<anchor xml:id="__map_reader_8cs_source_1l00074"/>00074 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__map_reader_8cs_source_1l00075"/>00075 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;tiles;
+<anchor xml:id="__map_reader_8cs_source_1l00076"/>00076 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__map_reader_8cs_source_1l00077"/>00077 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__map_reader_8cs_source_1l00078"/>00078 }
+</programlisting></section>

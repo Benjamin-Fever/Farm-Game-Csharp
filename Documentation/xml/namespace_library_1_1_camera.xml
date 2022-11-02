@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="namespace_library_1_1_camera" kind="namespace" language="C#">
+    <compoundname>Library::Camera</compoundname>
+    <innerclass refid="class_library_1_1_camera_1_1_viewport" prot="public">Library::Camera::Viewport</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/Camera/Viewport.cs" line="5" column="1"/>
+  </compounddef>
+</doxygen>

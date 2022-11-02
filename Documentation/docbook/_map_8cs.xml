@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__map_8cs" xml:lang="en-US">
+<title>Library/Mapping/Map.cs File Reference</title>
+<indexterm><primary>Library/Mapping/Map.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_library_1_1_mapping_1_1_abstract_map">Library.Mapping.AbstractMap&lt; T &gt;</link></para>
+
+<para>Generic Abstract Layer. Takes a type of T which defines what variable type layers is  </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_library_1_1_mapping_1_1_tile_map">Library.Mapping.TileMap</link></para>
+
+<para>A tilemap used to define what layers are in the map. Layer type is a <link linkend="_class_library_1_1_mapping_1_1_tile_layer">TileLayer</link>. Implements IGraphicsComponent.  </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_library">Library</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_library_1_1_mapping">Library.Mapping</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

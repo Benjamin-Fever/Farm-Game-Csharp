@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__map_importer_8cs" xml:lang="en-US">
+<title>Content Pipeline/Importers/MapImporter.cs File Reference</title>
+<indexterm><primary>Content Pipeline/Importers/MapImporter.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <emphasis role="strong">Content_Library.Importer.MapImporter</emphasis></para>
+
+<para>Internal class that loads the map as a .map into the content pipeline  </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_content___library">Content_Library</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_content___library_1_1_importer">Content_Library.Importer</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

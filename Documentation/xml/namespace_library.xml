@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="namespace_library" kind="namespace" language="C#">
+    <compoundname>Library</compoundname>
+    <innernamespace refid="namespace_library_1_1_camera">Library::Camera</innernamespace>
+    <innernamespace refid="namespace_library_1_1_graphics">Library::Graphics</innernamespace>
+    <innernamespace refid="namespace_library_1_1_mapping">Library::Mapping</innernamespace>
+    <innernamespace refid="namespace_library_1_1_serializers">Library::Serializers</innernamespace>
+    <innernamespace refid="namespace_library_1_1_static">Library::Static</innernamespace>
+    <innernamespace refid="namespace_library_1_1_util">Library::Util</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/Camera/Viewport.cs" line="5" column="1"/>
+  </compounddef>
+</doxygen>

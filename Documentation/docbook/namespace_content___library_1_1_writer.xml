@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_content___library_1_1_writer" xml:lang="en-US">
+<title>Content_Library.Writer Namespace Reference</title>
+<indexterm><primary>Content_Library.Writer</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_content___library_1_1_writer_1_1_map_writer">MapWriter</link></para>
+
+<para>A public class that writes the map that has been imported through the pipeline and write it into binary  </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

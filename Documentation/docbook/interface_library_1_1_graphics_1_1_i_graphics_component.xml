@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_interface_library_1_1_graphics_1_1_i_graphics_component" xml:lang="en-US">
+<title>Library.Graphics.IGraphicsComponent Interface Reference</title>
+<indexterm><primary>Library.Graphics.IGraphicsComponent</primary></indexterm>
+<para>
+
+<para>Generic graphics component interface  </para>
+ 
+</para>
+<para>Inheritance diagram for Library.Graphics.IGraphicsComponent:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="interface_library_1_1_graphics_1_1_i_graphics_component.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_interface_library_1_1_graphics_1_1_i_graphics_component_1acca0d3d372a78a58ced6cb36d2d0d8fb">draw</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Generic graphics component interface  </para>
+<para>
+Definition at line <link linkend="__graphics_component_8cs_source_1l00008">8</link> of file <link linkend="__graphics_component_8cs_source">GraphicsComponent.cs</link>.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_interface_library_1_1_graphics_1_1_i_graphics_component_1acca0d3d372a78a58ced6cb36d2d0d8fb"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>Library.Graphics.IGraphicsComponent</secondary></indexterm>
+<indexterm><primary>Library.Graphics.IGraphicsComponent</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput>void Library.Graphics.IGraphicsComponent.draw ( )</computeroutput></para><para>
+Implemented in <link linkend="_class_library_1_1_graphics_1_1_graphics_component_1ae807ff6992bd2a9b486d88a0fa75f3a4">Library.Graphics.GraphicsComponent</link>, <link linkend="_class_library_1_1_graphics_1_1_renderer_1a6696eb171e4708d5b1e8f869671090eb">Library.Graphics.Renderer</link>, <link linkend="_class_library_1_1_graphics_1_1_tile_1a228df1b1e20efb443153f724b908c3ac">Library.Graphics.Tile</link>, <link linkend="_class_library_1_1_mapping_1_1_tile_layer_1abbbf9e9c4ba471a42f2775d88d7502b8">Library.Mapping.TileLayer</link>, and <link linkend="_class_library_1_1_mapping_1_1_tile_map_1ab283074c478918bf8ee465d729dd1a31">Library.Mapping.TileMap</link>.</para>
+</section>
+<para>
+The documentation for this interface was generated from the following file:</para>
+Library/Graphics/<link linkend="__graphics_component_8cs">GraphicsComponent.cs</link></section>
+</section>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_74bb85d020315f17d40b6e909f9f663a" xml:lang="en-US">
+<title>Library/Mapping Directory Reference</title>
+<indexterm><primary>Library/Mapping Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__layer_8cs">Layer.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__map_8cs">Map.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__mapping_pos_8cs">MappingPos.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -4,6 +4,9 @@ using System;
 
 namespace Content_Library.Processor
 {
+    /// <summary>
+    /// Internal class that passes the map importeted into the content pipeline 
+    /// </summary>
     [ContentProcessor(DisplayName = "Map Processor - Map.Pipeline")]
     internal class MapProcessor : ContentProcessor<SerialMap, SerialMap>
     {

@@ -6,6 +6,9 @@ using Microsoft.Xna.Framework;
 
 namespace Library.Serializers
 {
+    /// <summary>
+    /// Serializable map
+    /// </summary>
     [XmlRoot("Map"), Serializable]
     public class SerialMap : AbstractMap<SerialLayer>
     {
@@ -56,7 +59,7 @@ namespace Library.Serializers
             }
             set { background = new Color(value.red, value.green, value.blue); }
         }
-        // TODO: Figure our why xml isnt deseralizing 
+
         [XmlArray("Layers")]
         [XmlArrayItem("Layer")]
         public List<SerialLayer> Layers

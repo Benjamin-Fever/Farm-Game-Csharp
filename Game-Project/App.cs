@@ -4,15 +4,18 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Library.Static;
-using System;
-using Viewport = Library.Camera.Viewport;
 
 namespace Application
 {
+    /**
+     * <summary>App extends on the monogame class Game to setup and run the game</summary>
+     */
     public class App : Game
     {
+        /// Initilize Varaibles
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
+        private Renderer _renderer;
 
         public App()
         {
@@ -21,41 +24,44 @@ namespace Application
             IsMouseVisible = true;
         }
 
+        /// <summary>
+        /// Initilize game window
+        /// </summary>
         protected override void Initialize()
         {
-            // TODO: Add your init code here
-            base.Window.Title = "Video Game";
+            Window.Title = "Video Game";
+            _renderer = new Renderer(this);
             _graphics.PreferredBackBufferWidth = Global.Window_Width;
             _graphics.PreferredBackBufferHeight = Global.Window_Height;
             _graphics.ApplyChanges();
             base.Initialize();
         }
 
+        /// <summary>
+        /// Load game content compiled using the monogame content pipeline
+        /// </summary>
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             GraphicsComponent.setSpriteBatch(_spriteBatch);
-            Assets.load(Content);
-            Global.Map = Content.Load<TileMap>("assets/maps/map1");
-            Console.WriteLine(Assets.get("assets\\textures\\overworld"));
+            Assets.load(Content);  // Load all game assets
+            Global.Map = Content.Load<TileMap>("assets/maps/map1");  // Load map
         }
 
         protected override void Update(GameTime gameTime)
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape)) Exit();
-            if (Keyboard.GetState().IsKeyDown(Keys.W)) { Viewport.move(0, -1); }
-            if (Keyboard.GetState().IsKeyDown(Keys.S)) { Viewport.move(0, 1); }
-            if (Keyboard.GetState().IsKeyDown(Keys.A)) { Viewport.move(-1, 0); }
-            if (Keyboard.GetState().IsKeyDown(Keys.D)) { Viewport.move(1, 0); ; }
             base.Update(gameTime);
         }
 
+        /// <summary>
+        /// The draw method used to display whats on the game window
+        /// </summary>
+        /// <param name="gameTime">Time passed between frames</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Global.Map.background);
-
             _spriteBatch.Begin(SpriteSortMode.Deferred, null, SamplerState.PointClamp, null, null, null, null);
-            Global.Map.draw();
+            _renderer.draw();
             _spriteBatch.End();
 
             base.Draw(gameTime);

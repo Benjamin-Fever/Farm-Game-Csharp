@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_0ca48ea73e76fa02c23d539eaa1cfdc0" xml:lang="en-US">
+<title>Content Pipeline/Writer Directory Reference</title>
+<indexterm><primary>Content Pipeline/Writer Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__map_writer_8cs">MapWriter.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

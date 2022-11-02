@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_library" xml:lang="en-US">
+<title>Library Namespace Reference</title>
+<indexterm><primary>Library</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_library_1_1_camera">Camera</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_library_1_1_graphics">Graphics</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_library_1_1_mapping">Mapping</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_library_1_1_serializers">Serializers</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_library_1_1_static">Static</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_library_1_1_util">Util</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

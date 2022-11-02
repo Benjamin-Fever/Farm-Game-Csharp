@@ -1,10 +1,13 @@
 ﻿using Library.Graphics;
 using Microsoft.Xna.Framework;
-using System;
 using System.Collections.Generic;
 
 namespace Library.Mapping
 {
+    /// <summary>
+    /// Generic Abstract Layer. Takes a type of T which defines what variable type layers is
+    /// </summary>
+    /// <typeparam name="T">Define type for layers</typeparam>
     public abstract class AbstractMap<T>
     {
         public string name = "";
@@ -15,13 +18,20 @@ namespace Library.Mapping
 
     }
 
-    public class TileMap : AbstractMap<Layer>, IGraphicsComponent
+    /// <summary>
+    /// A tilemap used to define what layers are in the map. Layer type is a TileLayer.
+    /// Implements IGraphicsComponent.
+    /// </summary>
+    public class TileMap : AbstractMap<TileLayer>, IGraphicsComponent
     {
+        /// <summary>
+        /// Draw the map
+        /// </summary>
         public void draw()
         {
             
-            layers.Sort();
-            foreach (Layer layer in layers)
+            layers.Sort(); // Sort layers by depth
+            foreach (TileLayer layer in layers)
             {
                 layer.draw();
             }

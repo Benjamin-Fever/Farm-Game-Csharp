@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__serial_map_8cs_source" xml:lang="en-US">
+<title>SerialMap.cs</title>
+<indexterm><primary>Library/Serializers/SerialMap.cs</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__serial_map_8cs_source_1l00001"/>00001 <emphasis role="keyword">using&#32;</emphasis><link linkend="_namespace_library_1_1_mapping">Library.Mapping</link>;
+<anchor xml:id="__serial_map_8cs_source_1l00002"/>00002 <emphasis role="keyword">using&#32;</emphasis>System.Xml.Serialization;
+<anchor xml:id="__serial_map_8cs_source_1l00003"/>00003 <emphasis role="keyword">using&#32;</emphasis>System;
+<anchor xml:id="__serial_map_8cs_source_1l00004"/>00004 <emphasis role="keyword">using&#32;</emphasis>System.Collections.Generic;
+<anchor xml:id="__serial_map_8cs_source_1l00005"/>00005 <emphasis role="keyword">using&#32;</emphasis>Microsoft.Xna.Framework;
+<anchor xml:id="__serial_map_8cs_source_1l00006"/>00006 
+<anchor xml:id="__serial_map_8cs_source_1l00007"/>00007 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_library_1_1_serializers">Library.Serializers</link>
+<anchor xml:id="__serial_map_8cs_source_1l00008"/>00008 {
+<anchor xml:id="__serial_map_8cs_source_1l00012"/>00012 &#32;&#32;&#32;&#32;[XmlRoot(<emphasis role="stringliteral">&quot;Map&quot;</emphasis>),&#32;Serializable]
+<anchor xml:id="__serial_map_8cs_source_1l00013"/><link linkend="_class_library_1_1_serializers_1_1_serial_map">00013</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_class_library_1_1_serializers_1_1_serial_map">SerialMap</link>&#32;:&#32;<link linkend="_class_library_1_1_mapping_1_1_abstract_map">AbstractMap</link>&lt;SerialLayer&gt;
+<anchor xml:id="__serial_map_8cs_source_1l00014"/>00014 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__serial_map_8cs_source_1l00015"/>00015 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[XmlAttribute(<emphasis role="stringliteral">&quot;name&quot;</emphasis>)]
+<anchor xml:id="__serial_map_8cs_source_1l00016"/><link linkend="_class_library_1_1_serializers_1_1_serial_map_1ab9812c4d5210a523746afb9d21fddb6d">00016</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">string</emphasis>&#32;<link linkend="_class_library_1_1_serializers_1_1_serial_map_1ab9812c4d5210a523746afb9d21fddb6d">Name</link>
+<anchor xml:id="__serial_map_8cs_source_1l00017"/>00017 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__serial_map_8cs_source_1l00018"/>00018 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">set</emphasis>&#32;{&#32;<link linkend="_class_library_1_1_mapping_1_1_abstract_map_1a0d3c1fe6e13aa21c42945f68b2feaca5">name</link>&#32;=&#32;value;&#32;}
+<anchor xml:id="__serial_map_8cs_source_1l00019"/>00019 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">get</emphasis>&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_library_1_1_mapping_1_1_abstract_map_1a0d3c1fe6e13aa21c42945f68b2feaca5">name</link>;&#32;}
+<anchor xml:id="__serial_map_8cs_source_1l00020"/>00020 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__serial_map_8cs_source_1l00021"/>00021 
+<anchor xml:id="__serial_map_8cs_source_1l00022"/>00022 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[XmlAttribute(<emphasis role="stringliteral">&quot;tilewidth&quot;</emphasis>)]
+<anchor xml:id="__serial_map_8cs_source_1l00023"/><link linkend="_class_library_1_1_serializers_1_1_serial_map_1a3bea6074fef1e7519e8f07e3156ca805">00023</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_library_1_1_serializers_1_1_serial_map_1a3bea6074fef1e7519e8f07e3156ca805">TileWidth</link>
+<anchor xml:id="__serial_map_8cs_source_1l00024"/>00024 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__serial_map_8cs_source_1l00025"/>00025 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">set</emphasis>&#32;{&#32;tileSize.X&#32;=&#32;value;&#32;}
+<anchor xml:id="__serial_map_8cs_source_1l00026"/>00026 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">get</emphasis>&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>)<link linkend="_class_library_1_1_mapping_1_1_abstract_map_1a98009bcfecd86a1895b3a6e19ad6d437">tileSize</link>.X;&#32;}
+<anchor xml:id="__serial_map_8cs_source_1l00027"/>00027 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__serial_map_8cs_source_1l00028"/>00028 
+<anchor xml:id="__serial_map_8cs_source_1l00029"/>00029 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[XmlAttribute(<emphasis role="stringliteral">&quot;tileheight&quot;</emphasis>)]
+<anchor xml:id="__serial_map_8cs_source_1l00030"/><link linkend="_class_library_1_1_serializers_1_1_serial_map_1aa68ea27264d13948e07e8e9090f3e4c8">00030</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_library_1_1_serializers_1_1_serial_map_1aa68ea27264d13948e07e8e9090f3e4c8">TileHeight</link>
+<anchor xml:id="__serial_map_8cs_source_1l00031"/>00031 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__serial_map_8cs_source_1l00032"/>00032 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">set</emphasis>&#32;{&#32;tileSize.Y&#32;=&#32;value;&#32;}
+<anchor xml:id="__serial_map_8cs_source_1l00033"/>00033 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">get</emphasis>&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>)<link linkend="_class_library_1_1_mapping_1_1_abstract_map_1a98009bcfecd86a1895b3a6e19ad6d437">tileSize</link>.Y;&#32;}
+<anchor xml:id="__serial_map_8cs_source_1l00034"/>00034 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__serial_map_8cs_source_1l00035"/>00035 
+<anchor xml:id="__serial_map_8cs_source_1l00036"/>00036 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[XmlAttribute(<emphasis role="stringliteral">&quot;width&quot;</emphasis>)]
+<anchor xml:id="__serial_map_8cs_source_1l00037"/><link linkend="_class_library_1_1_serializers_1_1_serial_map_1a520d171b8963786acac5e9591a359905">00037</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_library_1_1_serializers_1_1_serial_map_1a520d171b8963786acac5e9591a359905">Width</link>
+<anchor xml:id="__serial_map_8cs_source_1l00038"/>00038 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__serial_map_8cs_source_1l00039"/>00039 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">set</emphasis>&#32;{&#32;size.X&#32;=&#32;value;&#32;}
+<anchor xml:id="__serial_map_8cs_source_1l00040"/>00040 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">get</emphasis>&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>)<link linkend="_class_library_1_1_mapping_1_1_abstract_map_1a5b4e0e5c2ca75e2f9c96fb4ecf9a6eae">size</link>.X;&#32;}
+<anchor xml:id="__serial_map_8cs_source_1l00041"/>00041 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__serial_map_8cs_source_1l00042"/>00042 
+<anchor xml:id="__serial_map_8cs_source_1l00043"/>00043 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[XmlAttribute(<emphasis role="stringliteral">&quot;height&quot;</emphasis>)]
+<anchor xml:id="__serial_map_8cs_source_1l00044"/><link linkend="_class_library_1_1_serializers_1_1_serial_map_1acc3a993b8a38e7e9f32ad500161bec38">00044</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_library_1_1_serializers_1_1_serial_map_1acc3a993b8a38e7e9f32ad500161bec38">Height</link>
+<anchor xml:id="__serial_map_8cs_source_1l00045"/>00045 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__serial_map_8cs_source_1l00046"/>00046 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">set</emphasis>&#32;{&#32;size.Y&#32;=&#32;value;&#32;}
+<anchor xml:id="__serial_map_8cs_source_1l00047"/>00047 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">get</emphasis>&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>)<link linkend="_class_library_1_1_mapping_1_1_abstract_map_1a5b4e0e5c2ca75e2f9c96fb4ecf9a6eae">size</link>.Y;&#32;}
+<anchor xml:id="__serial_map_8cs_source_1l00048"/>00048 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__serial_map_8cs_source_1l00049"/>00049 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[XmlElement]
+<anchor xml:id="__serial_map_8cs_source_1l00050"/><link linkend="_class_library_1_1_serializers_1_1_serial_map_1aef142e59fe69a1154d70cfe83df6e310">00050</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_library_1_1_serializers_1_1_serial_color">SerialColor</link>&#32;<link linkend="_class_library_1_1_serializers_1_1_serial_map_1aef142e59fe69a1154d70cfe83df6e310">Background</link>
+<anchor xml:id="__serial_map_8cs_source_1l00051"/>00051 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__serial_map_8cs_source_1l00052"/>00052 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">get</emphasis>&#32;
+<anchor xml:id="__serial_map_8cs_source_1l00053"/>00053 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{&#32;
+<anchor xml:id="__serial_map_8cs_source_1l00054"/>00054 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_library_1_1_serializers_1_1_serial_color">SerialColor</link>&#32;sc&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;<link linkend="_class_library_1_1_serializers_1_1_serial_color">SerialColor</link>();
+<anchor xml:id="__serial_map_8cs_source_1l00055"/>00055 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;sc.red&#32;=&#32;<link linkend="_class_library_1_1_mapping_1_1_abstract_map_1ac5b4ef2de4b8ecb41b165d9aa472ff50">background</link>.R;
+<anchor xml:id="__serial_map_8cs_source_1l00056"/>00056 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;sc.green&#32;=&#32;<link linkend="_class_library_1_1_mapping_1_1_abstract_map_1ac5b4ef2de4b8ecb41b165d9aa472ff50">background</link>.G;
+<anchor xml:id="__serial_map_8cs_source_1l00057"/>00057 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;sc.blue&#32;=&#32;<link linkend="_class_library_1_1_mapping_1_1_abstract_map_1ac5b4ef2de4b8ecb41b165d9aa472ff50">background</link>.B;
+<anchor xml:id="__serial_map_8cs_source_1l00058"/>00058 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;sc;
+<anchor xml:id="__serial_map_8cs_source_1l00059"/>00059 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__serial_map_8cs_source_1l00060"/>00060 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">set</emphasis>&#32;{&#32;<link linkend="_class_library_1_1_mapping_1_1_abstract_map_1ac5b4ef2de4b8ecb41b165d9aa472ff50">background</link>&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;Color(value.red,&#32;value.green,&#32;value.blue);&#32;}
+<anchor xml:id="__serial_map_8cs_source_1l00061"/>00061 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__serial_map_8cs_source_1l00062"/>00062 
+<anchor xml:id="__serial_map_8cs_source_1l00063"/>00063 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[XmlArray(<emphasis role="stringliteral">&quot;Layers&quot;</emphasis>)]
+<anchor xml:id="__serial_map_8cs_source_1l00064"/>00064 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[XmlArrayItem(<emphasis role="stringliteral">&quot;Layer&quot;</emphasis>)]
+<anchor xml:id="__serial_map_8cs_source_1l00065"/><link linkend="_class_library_1_1_serializers_1_1_serial_map_1a20e7ca9cadd32e55635bede2587631b0">00065</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;List&lt;SerialLayer&gt;&#32;<link linkend="_class_library_1_1_serializers_1_1_serial_map_1a20e7ca9cadd32e55635bede2587631b0">Layers</link>
+<anchor xml:id="__serial_map_8cs_source_1l00066"/>00066 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__serial_map_8cs_source_1l00067"/>00067 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">get</emphasis>&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_library_1_1_mapping_1_1_abstract_map_1a24e37a566c32ddf48e7504fda5d667bf">layers</link>;&#32;}
+<anchor xml:id="__serial_map_8cs_source_1l00068"/>00068 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">set</emphasis>&#32;{&#32;<link linkend="_class_library_1_1_mapping_1_1_abstract_map_1a24e37a566c32ddf48e7504fda5d667bf">layers</link>&#32;=&#32;value;&#32;}
+<anchor xml:id="__serial_map_8cs_source_1l00069"/>00069 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__serial_map_8cs_source_1l00070"/>00070 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__serial_map_8cs_source_1l00071"/>00071 }
+</programlisting></section>

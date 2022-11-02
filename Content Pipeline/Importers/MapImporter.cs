@@ -6,6 +6,9 @@ using System.Xml.Serialization;
 
 namespace Content_Library.Importer
 {
+    /// <summary>
+    /// Internal class that loads the map as a .map into the content pipeline 
+    /// </summary>
     [ContentImporter(".map", DisplayName = "Map Importer - Map.Pipeline", DefaultProcessor = "MapProcessor")]
     internal class MapImporter : ContentImporter<SerialMap>
     {

@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="class_library_1_1_mapping_1_1_abstract_layer" kind="class" language="C#" prot="public">
+    <compoundname>Library::Mapping::AbstractLayer</compoundname>
+    <templateparamlist>
+      <param>
+        <type>T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_library_1_1_mapping_1_1_abstract_layer_1a177d64ac5ff09429fa2b552782f2df93" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Library.Mapping.AbstractLayer&lt; T &gt;.name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>Library.Mapping.AbstractLayer.name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Mapping/Layer.cs" line="14" column="23" bodyfile="Library/Mapping/Layer.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_library_1_1_mapping_1_1_abstract_layer_1a897ac86eb61859d79c468b1f09349af8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Library.Mapping.AbstractLayer&lt; T &gt;.depth</definition>
+        <argsstring></argsstring>
+        <name>depth</name>
+        <qualifiedname>Library.Mapping.AbstractLayer.depth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Mapping/Layer.cs" line="15" column="20" bodyfile="Library/Mapping/Layer.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_library_1_1_mapping_1_1_abstract_layer_1aefc1f3ba7193a82c17dec4e95a24fd2d" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T Library.Mapping.AbstractLayer&lt; T &gt;.tiles</definition>
+        <argsstring></argsstring>
+        <name>tiles</name>
+        <qualifiedname>Library.Mapping.AbstractLayer.tiles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Mapping/Layer.cs" line="16" column="18" bodyfile="Library/Mapping/Layer.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Generic Abstract Layer. Takes a type of T which defines what variable type tiles is  </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Define type for tiles</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <location file="Library/Mapping/Layer.cs" line="12" column="21" bodyfile="Library/Mapping/Layer.cs" bodystart="13" bodyend="17"/>
+    <listofallmembers>
+      <member refid="class_library_1_1_mapping_1_1_abstract_layer_1a897ac86eb61859d79c468b1f09349af8" prot="public" virt="non-virtual"><scope>Library::Mapping::AbstractLayer</scope><name>depth</name></member>
+      <member refid="class_library_1_1_mapping_1_1_abstract_layer_1a177d64ac5ff09429fa2b552782f2df93" prot="public" virt="non-virtual"><scope>Library::Mapping::AbstractLayer</scope><name>name</name></member>
+      <member refid="class_library_1_1_mapping_1_1_abstract_layer_1aefc1f3ba7193a82c17dec4e95a24fd2d" prot="public" virt="non-virtual"><scope>Library::Mapping::AbstractLayer</scope><name>tiles</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

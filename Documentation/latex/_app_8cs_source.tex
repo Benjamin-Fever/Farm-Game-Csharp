@@ -1,0 +1,62 @@
+\hypertarget{_app_8cs_source}{}\doxysection{App.\+cs}
+\label{_app_8cs_source}\index{Game-\/Project/App.cs@{Game-\/Project/App.cs}}
+\mbox{\hyperlink{_app_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00001}00001 \textcolor{keyword}{using }\mbox{\hyperlink{namespace_library_1_1_graphics}{Library.Graphics}};}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00002}00002 \textcolor{keyword}{using }\mbox{\hyperlink{namespace_library_1_1_mapping}{Library.Mapping}};}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00003}00003 \textcolor{keyword}{using }Microsoft.Xna.Framework;}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00004}00004 \textcolor{keyword}{using }Microsoft.Xna.Framework.Graphics;}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00005}00005 \textcolor{keyword}{using }Microsoft.Xna.Framework.Input;}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00006}00006 \textcolor{keyword}{using }\mbox{\hyperlink{namespace_library_1_1_static}{Library.Static}};}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00008}\mbox{\hyperlink{namespace_application}{00008}} \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_application}{Application}}}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00009}00009 \{}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00013}\mbox{\hyperlink{class_application_1_1_app}{00013}}     \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{class_application_1_1_app}{App}} : Game}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00014}00014     \{}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00016}00016         \textcolor{keyword}{private} GraphicsDeviceManager \_graphics;}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00017}00017         \textcolor{keyword}{private} SpriteBatch \_spriteBatch;}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00018}00018         \textcolor{keyword}{private} \mbox{\hyperlink{class_library_1_1_graphics_1_1_renderer}{Renderer}} \_renderer;}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00020}\mbox{\hyperlink{class_application_1_1_app_a7f67d3d558792ba3627b2f9881e2eae9}{00020}}         \textcolor{keyword}{public} \mbox{\hyperlink{class_application_1_1_app_a7f67d3d558792ba3627b2f9881e2eae9}{App}}()}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00021}00021         \{}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00022}00022             \_graphics = \textcolor{keyword}{new} GraphicsDeviceManager(\textcolor{keyword}{this});}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00023}00023             Content.RootDirectory = \textcolor{stringliteral}{"{}Content"{}};}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00024}00024             IsMouseVisible = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00025}00025         \}}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00030}\mbox{\hyperlink{class_application_1_1_app_afca44a73b69a572c08b9d707d34d9e91}{00030}}         \textcolor{keyword}{protected} \textcolor{keyword}{override} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_application_1_1_app_afca44a73b69a572c08b9d707d34d9e91}{Initialize}}()}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00031}00031         \{}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00032}00032             Window.Title = \textcolor{stringliteral}{"{}Video Game"{}};}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00033}00033             \_renderer = \textcolor{keyword}{new} \mbox{\hyperlink{class_library_1_1_graphics_1_1_renderer}{Renderer}}(\textcolor{keyword}{this});}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00034}00034             \_graphics.PreferredBackBufferWidth = Global.Window\_Width;}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00035}00035             \_graphics.PreferredBackBufferHeight = Global.Window\_Height;}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00036}00036             \_graphics.ApplyChanges();}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00037}00037             base.Initialize();}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00038}00038         \}}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00043}\mbox{\hyperlink{class_application_1_1_app_a9c1ac277eb7629f3e99658b0083bfa71}{00043}}         \textcolor{keyword}{protected} \textcolor{keyword}{override} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_application_1_1_app_a9c1ac277eb7629f3e99658b0083bfa71}{LoadContent}}()}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00044}00044         \{}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00045}00045             \_spriteBatch = \textcolor{keyword}{new} SpriteBatch(GraphicsDevice);}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00046}00046             \mbox{\hyperlink{class_library_1_1_graphics_1_1_graphics_component}{GraphicsComponent}}.\mbox{\hyperlink{class_library_1_1_graphics_1_1_graphics_component_ab25cb437b13669e22dba2c8d2fa7e8fe}{setSpriteBatch}}(\_spriteBatch);}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00047}00047             Assets.load(Content);  \textcolor{comment}{// Load all game assets}}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00048}00048             Global.Map = Content.Load<\mbox{\hyperlink{class_library_1_1_mapping_1_1_tile_map}{TileMap}}>(\textcolor{stringliteral}{"{}assets/maps/map1"{}});  \textcolor{comment}{// Load map}}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00049}00049         \}}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00050}00050 }
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00051}\mbox{\hyperlink{class_application_1_1_app_a700abaa7b52e8b8479c3c08872359619}{00051}}         \textcolor{keyword}{protected} \textcolor{keyword}{override} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_application_1_1_app_a700abaa7b52e8b8479c3c08872359619}{Update}}(GameTime gameTime)}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00052}00052         \{}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00053}00053             \textcolor{keywordflow}{if} (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape)) Exit();}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00054}00054             base.Update(gameTime);}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00055}00055         \}}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00061}\mbox{\hyperlink{class_application_1_1_app_a8a0a88e3d24e7bf906ee4b0479322292}{00061}}         \textcolor{keyword}{protected} \textcolor{keyword}{override} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_application_1_1_app_a8a0a88e3d24e7bf906ee4b0479322292}{Draw}}(GameTime gameTime)}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00062}00062         \{}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00063}00063             \_spriteBatch.Begin(SpriteSortMode.Deferred, \textcolor{keyword}{null}, SamplerState.PointClamp, \textcolor{keyword}{null}, \textcolor{keyword}{null}, \textcolor{keyword}{null}, \textcolor{keyword}{null});}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00064}00064             \_renderer.\mbox{\hyperlink{class_library_1_1_graphics_1_1_renderer_a6696eb171e4708d5b1e8f869671090eb}{draw}}();}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00065}00065             \_spriteBatch.End();}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00066}00066 }
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00067}00067             base.Draw(gameTime);}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00068}00068         \}}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00069}00069     \}}
+\DoxyCodeLine{\Hypertarget{_app_8cs_source_l00070}00070 \}}
+
+\end{DoxyCode}

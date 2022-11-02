@@ -1,0 +1,28 @@
+\hypertarget{_map_importer_8cs_source}{}\doxysection{Map\+Importer.\+cs}
+\label{_map_importer_8cs_source}\index{Content Pipeline/Importers/MapImporter.cs@{Content Pipeline/Importers/MapImporter.cs}}
+\mbox{\hyperlink{_map_importer_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_map_importer_8cs_source_l00001}00001 \textcolor{keyword}{using }\mbox{\hyperlink{namespace_library_1_1_serializers}{Library.Serializers}};}
+\DoxyCodeLine{\Hypertarget{_map_importer_8cs_source_l00002}00002 \textcolor{keyword}{using }Microsoft.Xna.Framework.Content.Pipeline;}
+\DoxyCodeLine{\Hypertarget{_map_importer_8cs_source_l00003}00003 \textcolor{keyword}{using }System;}
+\DoxyCodeLine{\Hypertarget{_map_importer_8cs_source_l00004}00004 \textcolor{keyword}{using }System.IO;}
+\DoxyCodeLine{\Hypertarget{_map_importer_8cs_source_l00005}00005 \textcolor{keyword}{using }System.Xml.Serialization;}
+\DoxyCodeLine{\Hypertarget{_map_importer_8cs_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{_map_importer_8cs_source_l00007}\mbox{\hyperlink{namespace_content___library}{00007}} \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_content___library_1_1_importer}{Content\_Library.Importer}}}
+\DoxyCodeLine{\Hypertarget{_map_importer_8cs_source_l00008}00008 \{}
+\DoxyCodeLine{\Hypertarget{_map_importer_8cs_source_l00012}00012     [ContentImporter(\textcolor{stringliteral}{"{}.map"{}}, DisplayName = \textcolor{stringliteral}{"{}Map Importer -\/ Map.Pipeline"{}}, DefaultProcessor = \textcolor{stringliteral}{"{}MapProcessor"{}})]}
+\DoxyCodeLine{\Hypertarget{_map_importer_8cs_source_l00013}00013     \textcolor{keyword}{internal} \textcolor{keyword}{class }MapImporter : ContentImporter<SerialMap>}
+\DoxyCodeLine{\Hypertarget{_map_importer_8cs_source_l00014}00014     \{}
+\DoxyCodeLine{\Hypertarget{_map_importer_8cs_source_l00015}00015         \textcolor{keyword}{public} \textcolor{keyword}{override} \mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_map}{SerialMap}} Import(\textcolor{keywordtype}{string} filename, ContentImporterContext context)}
+\DoxyCodeLine{\Hypertarget{_map_importer_8cs_source_l00016}00016         \{}
+\DoxyCodeLine{\Hypertarget{_map_importer_8cs_source_l00017}00017             \textcolor{keyword}{using} (var streamReader = \textcolor{keyword}{new} StreamReader(filename))}
+\DoxyCodeLine{\Hypertarget{_map_importer_8cs_source_l00018}00018             \{}
+\DoxyCodeLine{\Hypertarget{_map_importer_8cs_source_l00019}00019                 var deserializer = \textcolor{keyword}{new} XmlSerializer(typeof(\mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_map}{SerialMap}}));}
+\DoxyCodeLine{\Hypertarget{_map_importer_8cs_source_l00020}00020                 \mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_map}{SerialMap}} m = (\mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_map}{SerialMap}})deserializer.Deserialize(streamReader);}
+\DoxyCodeLine{\Hypertarget{_map_importer_8cs_source_l00021}00021                 \textcolor{keywordflow}{return} m;}
+\DoxyCodeLine{\Hypertarget{_map_importer_8cs_source_l00022}00022             \}}
+\DoxyCodeLine{\Hypertarget{_map_importer_8cs_source_l00023}00023         \}}
+\DoxyCodeLine{\Hypertarget{_map_importer_8cs_source_l00024}00024     \}}
+\DoxyCodeLine{\Hypertarget{_map_importer_8cs_source_l00025}00025 \}}
+
+\end{DoxyCode}

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_5ad7f572bbca03234e8e621e192fc099" kind="dir">
+    <compoundname>Library</compoundname>
+    <innerdir refid="dir_dfb1655f96ee4dea8f21c19c94ceb155">Library/Camera</innerdir>
+    <innerdir refid="dir_b10eb7d4ec47c939902b9a1d52c7bfbc">Library/Graphics</innerdir>
+    <innerdir refid="dir_74bb85d020315f17d40b6e909f9f663a">Library/Mapping</innerdir>
+    <innerdir refid="dir_7070724669190ad519985f89ee867359">Library/obj</innerdir>
+    <innerdir refid="dir_c23424a3267808464271f6fb9e164fb6">Library/Readers</innerdir>
+    <innerdir refid="dir_33bf8cf36cf2ea60606f84e079166b1a">Library/Serializers</innerdir>
+    <innerfile refid="_static_8cs">Static.cs</innerfile>
+    <innerfile refid="_util_8cs">Util.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/"/>
+  </compounddef>
+</doxygen>

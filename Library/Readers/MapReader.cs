@@ -10,8 +10,17 @@ using Microsoft.Xna.Framework;
 
 namespace Content_Library.Reader
 {
+    /// <summary>
+    /// Read the binary map file
+    /// </summary>
     public class MapReader : ContentTypeReader<TileMap>
     {
+        /// <summary>
+        /// Read the compiled map into the program as a TileMap
+        /// </summary>
+        /// <param name="input"></param>
+        /// <param name="existingInstance"></param>
+        /// <returns>Returns a TileMap of the selected map</returns>
         protected override TileMap Read(ContentReader input, TileMap existingInstance)
         {
             TileMap map = new TileMap();
@@ -22,7 +31,7 @@ namespace Content_Library.Reader
             int count = input.ReadInt32();
             for (int i = 0; i < count; i++)
             {
-                Layer layer = new Layer();
+                TileLayer layer = new TileLayer();
                 layer.name = input.ReadString();
                 layer.depth = input.ReadInt32();
                 SerialTileset ts = new SerialTileset();
@@ -36,6 +45,13 @@ namespace Content_Library.Reader
             return map;
         }
 
+        /// <summary>
+        /// Conver the nested list of ints into a list of tiles.
+        /// </summary>
+        /// <param name="data"></param>
+        /// <param name="m"></param>
+        /// <param name="ts"></param>
+        /// <returns>A list of tiles</returns>
         private static List<Tile> getTiles(string data, TileMap m, SerialTileset ts)
         {
             Sprite sp = new Sprite((Texture2D)Assets.get(ts.source));

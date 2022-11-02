@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__map_importer_8cs_source" xml:lang="en-US">
+<title>MapImporter.cs</title>
+<indexterm><primary>Content Pipeline/Importers/MapImporter.cs</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__map_importer_8cs_source_1l00001"/>00001 <emphasis role="keyword">using&#32;</emphasis><link linkend="_namespace_library_1_1_serializers">Library.Serializers</link>;
+<anchor xml:id="__map_importer_8cs_source_1l00002"/>00002 <emphasis role="keyword">using&#32;</emphasis>Microsoft.Xna.Framework.Content.Pipeline;
+<anchor xml:id="__map_importer_8cs_source_1l00003"/>00003 <emphasis role="keyword">using&#32;</emphasis>System;
+<anchor xml:id="__map_importer_8cs_source_1l00004"/>00004 <emphasis role="keyword">using&#32;</emphasis>System.IO;
+<anchor xml:id="__map_importer_8cs_source_1l00005"/>00005 <emphasis role="keyword">using&#32;</emphasis>System.Xml.Serialization;
+<anchor xml:id="__map_importer_8cs_source_1l00006"/>00006 
+<anchor xml:id="__map_importer_8cs_source_1l00007"/><link linkend="_namespace_content___library">00007</link> <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_content___library_1_1_importer">Content_Library.Importer</link>
+<anchor xml:id="__map_importer_8cs_source_1l00008"/>00008 {
+<anchor xml:id="__map_importer_8cs_source_1l00012"/>00012 &#32;&#32;&#32;&#32;[ContentImporter(<emphasis role="stringliteral">&quot;.map&quot;</emphasis>,&#32;DisplayName&#32;=&#32;<emphasis role="stringliteral">&quot;Map&#32;Importer&#32;-&#32;Map.Pipeline&quot;</emphasis>,&#32;DefaultProcessor&#32;=&#32;<emphasis role="stringliteral">&quot;MapProcessor&quot;</emphasis>)]
+<anchor xml:id="__map_importer_8cs_source_1l00013"/>00013 &#32;&#32;&#32;&#32;<emphasis role="keyword">internal</emphasis>&#32;<emphasis role="keyword">class&#32;</emphasis>MapImporter&#32;:&#32;ContentImporter&lt;SerialMap&gt;
+<anchor xml:id="__map_importer_8cs_source_1l00014"/>00014 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__map_importer_8cs_source_1l00015"/>00015 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">override</emphasis>&#32;<link linkend="_class_library_1_1_serializers_1_1_serial_map">SerialMap</link>&#32;Import(<emphasis role="keywordtype">string</emphasis>&#32;filename,&#32;ContentImporterContext&#32;context)
+<anchor xml:id="__map_importer_8cs_source_1l00016"/>00016 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__map_importer_8cs_source_1l00017"/>00017 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">using</emphasis>&#32;(var&#32;streamReader&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;StreamReader(filename))
+<anchor xml:id="__map_importer_8cs_source_1l00018"/>00018 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__map_importer_8cs_source_1l00019"/>00019 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;deserializer&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;XmlSerializer(typeof(<link linkend="_class_library_1_1_serializers_1_1_serial_map">SerialMap</link>));
+<anchor xml:id="__map_importer_8cs_source_1l00020"/>00020 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_library_1_1_serializers_1_1_serial_map">SerialMap</link>&#32;m&#32;=&#32;(<link linkend="_class_library_1_1_serializers_1_1_serial_map">SerialMap</link>)deserializer.Deserialize(streamReader);
+<anchor xml:id="__map_importer_8cs_source_1l00021"/>00021 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;m;
+<anchor xml:id="__map_importer_8cs_source_1l00022"/>00022 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__map_importer_8cs_source_1l00023"/>00023 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__map_importer_8cs_source_1l00024"/>00024 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__map_importer_8cs_source_1l00025"/>00025 }
+</programlisting></section>

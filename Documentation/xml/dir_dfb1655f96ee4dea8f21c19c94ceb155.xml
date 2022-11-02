@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_dfb1655f96ee4dea8f21c19c94ceb155" kind="dir">
+    <compoundname>Library/Camera</compoundname>
+    <innerfile refid="_viewport_8cs">Viewport.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/Camera/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__mapping_pos_8cs" xml:lang="en-US">
+<title>Library/Mapping/MappingPos.cs File Reference</title>
+<indexterm><primary>Library/Mapping/MappingPos.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_library_1_1_mapping_1_1_mapping_pos">Library.Mapping.MappingPos</link></para>
+
+<para><link linkend="_class_library_1_1_mapping_1_1_mapping_pos">MappingPos</link> defines a position on the map  </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_library">Library</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_library_1_1_mapping">Library.Mapping</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

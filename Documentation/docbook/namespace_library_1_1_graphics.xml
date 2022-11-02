@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_library_1_1_graphics" xml:lang="en-US">
+<title>Library.Graphics Namespace Reference</title>
+<indexterm><primary>Library.Graphics</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_library_1_1_graphics_1_1_graphics_component">GraphicsComponent</link></para>
+
+<para>Generic graphics component abstract class  </para>
+</listitem>
+            <listitem><para>interface <link linkend="_interface_library_1_1_graphics_1_1_i_graphics_component">IGraphicsComponent</link></para>
+
+<para>Generic graphics component interface  </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_library_1_1_graphics_1_1_renderer">Renderer</link></para>
+
+<para>Defines whats being rendered and draws it in the screen  </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_library_1_1_graphics_1_1_sprite">Sprite</link></para>
+
+<para><link linkend="_class_library_1_1_graphics_1_1_sprite">Sprite</link> class defines a sprites texure and hitbox  </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_library_1_1_graphics_1_1_tile">Tile</link></para>
+
+<para>A graphics component that represents a map tile  </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

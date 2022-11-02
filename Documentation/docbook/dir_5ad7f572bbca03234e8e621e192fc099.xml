@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_5ad7f572bbca03234e8e621e192fc099" xml:lang="en-US">
+<title>Library Directory Reference</title>
+<indexterm><primary>Library Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_dfb1655f96ee4dea8f21c19c94ceb155">Camera</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_b10eb7d4ec47c939902b9a1d52c7bfbc">Graphics</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_74bb85d020315f17d40b6e909f9f663a">Mapping</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_7070724669190ad519985f89ee867359">obj</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_c23424a3267808464271f6fb9e164fb6">Readers</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_33bf8cf36cf2ea60606f84e079166b1a">Serializers</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__static_8cs">Static.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__util_8cs">Util.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

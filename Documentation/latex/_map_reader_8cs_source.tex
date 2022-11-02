@@ -1,0 +1,68 @@
+\hypertarget{_map_reader_8cs_source}{}\doxysection{Map\+Reader.\+cs}
+\label{_map_reader_8cs_source}\index{Library/Readers/MapReader.cs@{Library/Readers/MapReader.cs}}
+\mbox{\hyperlink{_map_reader_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00001}00001 \textcolor{keyword}{using }\mbox{\hyperlink{namespace_library_1_1_graphics}{Library.Graphics}};}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00002}00002 \textcolor{keyword}{using }\mbox{\hyperlink{namespace_library_1_1_mapping}{Library.Mapping}};}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00003}00003 \textcolor{keyword}{using }\mbox{\hyperlink{namespace_library_1_1_serializers}{Library.Serializers}};}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00004}00004 \textcolor{keyword}{using }Microsoft.Xna.Framework.Content;}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00005}00005 \textcolor{keyword}{using }Microsoft.Xna.Framework.Graphics;}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00006}00006 \textcolor{keyword}{using }System;}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00007}00007 \textcolor{keyword}{using }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00008}00008 \textcolor{keyword}{using }\mbox{\hyperlink{namespace_library_1_1_static}{Library.Static}};}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00009}00009 \textcolor{keyword}{using }Microsoft.Xna.Framework;}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00011}\mbox{\hyperlink{namespace_content___library_1_1_reader}{00011}} \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_content___library_1_1_reader}{Content\_Library.Reader}}}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00012}00012 \{}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00016}\mbox{\hyperlink{class_content___library_1_1_reader_1_1_map_reader}{00016}}     \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{class_content___library_1_1_reader_1_1_map_reader}{MapReader}} : ContentTypeReader<TileMap>}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00017}00017     \{}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00024}\mbox{\hyperlink{class_content___library_1_1_reader_1_1_map_reader_a58524ed9485eec46fb55003f002d6219}{00024}}         \textcolor{keyword}{protected} \textcolor{keyword}{override} \mbox{\hyperlink{class_library_1_1_mapping_1_1_tile_map}{TileMap}} \mbox{\hyperlink{class_content___library_1_1_reader_1_1_map_reader_a58524ed9485eec46fb55003f002d6219}{Read}}(ContentReader input, \mbox{\hyperlink{class_library_1_1_mapping_1_1_tile_map}{TileMap}} existingInstance)}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00025}00025         \{}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00026}00026             \mbox{\hyperlink{class_library_1_1_mapping_1_1_tile_map}{TileMap}} map = \textcolor{keyword}{new} \mbox{\hyperlink{class_library_1_1_mapping_1_1_tile_map}{TileMap}}();}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00027}00027             map.name = input.ReadString();}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00028}00028             map.size = \textcolor{keyword}{new} Vector2(input.ReadInt32(), input.ReadInt32());}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00029}00029             map.tileSize = \textcolor{keyword}{new} Vector2(input.ReadInt32(), input.ReadInt32());}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00030}00030             map.background = \textcolor{keyword}{new} Color(input.ReadInt32(), input.ReadInt32(), input.ReadInt32());}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00031}00031             \textcolor{keywordtype}{int} count = input.ReadInt32();}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00032}00032             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < count; i++)}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00033}00033             \{}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00034}00034                 \mbox{\hyperlink{class_library_1_1_mapping_1_1_tile_layer}{TileLayer}} layer = \textcolor{keyword}{new} \mbox{\hyperlink{class_library_1_1_mapping_1_1_tile_layer}{TileLayer}}();}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00035}00035                 layer.name = input.ReadString();}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00036}00036                 layer.depth = input.ReadInt32();}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00037}00037                 \mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_tileset}{SerialTileset}} ts = \textcolor{keyword}{new} \mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_tileset}{SerialTileset}}();}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00038}00038                 ts.Name = input.ReadString();}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00039}00039                 ts.columns = input.ReadInt32();}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00040}00040                 ts.source = input.ReadString();}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00041}00041                 \textcolor{keywordtype}{string} tiles = input.ReadString();}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00042}00042                 layer.tiles = getTiles(tiles, map, ts);}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00043}00043                 map.\mbox{\hyperlink{class_library_1_1_mapping_1_1_abstract_map_a24e37a566c32ddf48e7504fda5d667bf}{layers}}.Add(layer);}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00044}00044             \}}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00045}00045             \textcolor{keywordflow}{return} map;}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00046}00046         \}}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00055}00055         \textcolor{keyword}{private} \textcolor{keyword}{static} List<Tile> getTiles(\textcolor{keywordtype}{string} data, \mbox{\hyperlink{class_library_1_1_mapping_1_1_tile_map}{TileMap}} m, \mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_tileset}{SerialTileset}} ts)}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00056}00056         \{}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00057}00057             \mbox{\hyperlink{class_library_1_1_graphics_1_1_sprite}{Sprite}} sp = \textcolor{keyword}{new} \mbox{\hyperlink{class_library_1_1_graphics_1_1_sprite}{Sprite}}((Texture2D)Assets.get(ts.\mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_tileset_ac4972794d0a8d33fc54ad74b24416cc2}{source}}));}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00058}00058             List<Tile> tiles = \textcolor{keyword}{new} List<Tile>();}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00059}00059             List<string> cols = \textcolor{keyword}{new} List<string>(data.Split(\textcolor{charliteral}{'\(\backslash\)n'}));}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00060}00060             \textcolor{keywordtype}{int} y = 0;}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00061}00061             \textcolor{keywordtype}{int} x = 0;}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00062}00062             \textcolor{keywordflow}{foreach} (\textcolor{keywordtype}{string} col \textcolor{keywordflow}{in} cols)}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00063}00063             \{}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00064}00064                 List<string> rows = \textcolor{keyword}{new} List<string>(col.Split(\textcolor{charliteral}{','}));}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00065}00065                 \textcolor{keywordflow}{foreach} (\textcolor{keywordtype}{string} value \textcolor{keywordflow}{in} rows)}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00066}00066                 \{}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00067}00067                     \textcolor{keywordflow}{if} (value == \textcolor{stringliteral}{"{}"{}}) \{ \textcolor{keywordflow}{continue}; \}}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00068}00068                     \mbox{\hyperlink{class_library_1_1_graphics_1_1_tile}{Tile}} t = \textcolor{keyword}{new} \mbox{\hyperlink{class_library_1_1_graphics_1_1_tile}{Tile}}(sp, \textcolor{keyword}{new} \mbox{\hyperlink{class_library_1_1_mapping_1_1_mapping_pos}{MappingPos}}(x, y), m.\mbox{\hyperlink{class_library_1_1_mapping_1_1_abstract_map_a98009bcfecd86a1895b3a6e19ad6d437}{tileSize}}, ts.\mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_tileset_af384ece3892b9d313f01647c70cdd5b6}{columns}}, Int32.Parse(value));}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00069}00069                     tiles.Add(t);}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00070}00070                     x++;}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00071}00071                 \}}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00072}00072                 x = 0;}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00073}00073                 y++;}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00074}00074             \}}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00075}00075             \textcolor{keywordflow}{return} tiles;}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00076}00076         \}}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00077}00077     \}}
+\DoxyCodeLine{\Hypertarget{_map_reader_8cs_source_l00078}00078 \}}
+
+\end{DoxyCode}

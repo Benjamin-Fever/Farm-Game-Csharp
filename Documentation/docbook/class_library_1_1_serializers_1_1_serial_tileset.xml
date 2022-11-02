@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_library_1_1_serializers_1_1_serial_tileset" xml:lang="en-US">
+<title>Library.Serializers.SerialTileset Class Reference</title>
+<indexterm><primary>Library.Serializers.SerialTileset</primary></indexterm>
+<para>
+
+<para>Serializable Tileset  </para>
+ 
+</para>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_class_library_1_1_serializers_1_1_serial_tileset_1a06178cafacce5c0d377b8df4a6607d7a">Name</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>string <link linkend="_class_library_1_1_serializers_1_1_serial_tileset_1ac4972794d0a8d33fc54ad74b24416cc2">source</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_library_1_1_serializers_1_1_serial_tileset_1af384ece3892b9d313f01647c70cdd5b6">columns</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Serializable Tileset  </para>
+<para>
+Definition at line <link linkend="__serial_tileset_8cs_source_1l00008">8</link> of file <link linkend="__serial_tileset_8cs_source">SerialTileset.cs</link>.</para>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_library_1_1_serializers_1_1_serial_tileset_1af384ece3892b9d313f01647c70cdd5b6"/><section>
+    <title>columns</title>
+<indexterm><primary>columns</primary><secondary>Library.Serializers.SerialTileset</secondary></indexterm>
+<indexterm><primary>Library.Serializers.SerialTileset</primary><secondary>columns</secondary></indexterm>
+<para><computeroutput>int Library.Serializers.SerialTileset.columns<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__serial_tileset_8cs_source_1l00017">17</link> of file <link linkend="__serial_tileset_8cs_source">SerialTileset.cs</link>.</para>
+</section>
+<anchor xml:id="_class_library_1_1_serializers_1_1_serial_tileset_1a06178cafacce5c0d377b8df4a6607d7a"/><section>
+    <title>Name</title>
+<indexterm><primary>Name</primary><secondary>Library.Serializers.SerialTileset</secondary></indexterm>
+<indexterm><primary>Library.Serializers.SerialTileset</primary><secondary>Name</secondary></indexterm>
+<para><computeroutput>string Library.Serializers.SerialTileset.Name<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__serial_tileset_8cs_source_1l00011">11</link> of file <link linkend="__serial_tileset_8cs_source">SerialTileset.cs</link>.</para>
+</section>
+<anchor xml:id="_class_library_1_1_serializers_1_1_serial_tileset_1ac4972794d0a8d33fc54ad74b24416cc2"/><section>
+    <title>source</title>
+<indexterm><primary>source</primary><secondary>Library.Serializers.SerialTileset</secondary></indexterm>
+<indexterm><primary>Library.Serializers.SerialTileset</primary><secondary>source</secondary></indexterm>
+<para><computeroutput>string Library.Serializers.SerialTileset.source<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__serial_tileset_8cs_source_1l00014">14</link> of file <link linkend="__serial_tileset_8cs_source">SerialTileset.cs</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+Library/Serializers/<link linkend="__serial_tileset_8cs">SerialTileset.cs</link></section>
+</section>

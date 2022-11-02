@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_library_1_1_mapping_1_1_tile_map" xml:lang="en-US">
+<title>Library.Mapping.TileMap Class Reference</title>
+<indexterm><primary>Library.Mapping.TileMap</primary></indexterm>
+<para>
+
+<para>A tilemap used to define what layers are in the map. Layer type is a <link linkend="_class_library_1_1_mapping_1_1_tile_layer">TileLayer</link>. Implements IGraphicsComponent.  </para>
+ 
+</para>
+<para>Inheritance diagram for Library.Mapping.TileMap:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_library_1_1_mapping_1_1_tile_map.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_library_1_1_mapping_1_1_tile_map_1ab283074c478918bf8ee465d729dd1a31">draw</link> ()</para>
+
+<para>Draw the map  </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>A tilemap used to define what layers are in the map. Layer type is a <link linkend="_class_library_1_1_mapping_1_1_tile_layer">TileLayer</link>. Implements IGraphicsComponent.  </para>
+<para>
+Definition at line <link linkend="__map_8cs_source_1l00025">25</link> of file <link linkend="__map_8cs_source">Map.cs</link>.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_library_1_1_mapping_1_1_tile_map_1ab283074c478918bf8ee465d729dd1a31"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>Library.Mapping.TileMap</secondary></indexterm>
+<indexterm><primary>Library.Mapping.TileMap</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput>void Library.Mapping.TileMap.draw ( )</computeroutput></para><para>
+
+<para>Draw the map  </para>
+</para>
+<para>
+Implements <link linkend="_interface_library_1_1_graphics_1_1_i_graphics_component_1acca0d3d372a78a58ced6cb36d2d0d8fb">Library.Graphics.IGraphicsComponent</link>.</para>
+<para>
+Definition at line <link linkend="__map_8cs_source_1l00030">30</link> of file <link linkend="__map_8cs_source">Map.cs</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+Library/Mapping/<link linkend="__map_8cs">Map.cs</link></section>
+</section>

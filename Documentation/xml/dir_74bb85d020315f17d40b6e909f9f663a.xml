@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_74bb85d020315f17d40b6e909f9f663a" kind="dir">
+    <compoundname>Library/Mapping</compoundname>
+    <innerfile refid="_layer_8cs">Layer.cs</innerfile>
+    <innerfile refid="_map_8cs">Map.cs</innerfile>
+    <innerfile refid="_mapping_pos_8cs">MappingPos.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/Mapping/"/>
+  </compounddef>
+</doxygen>

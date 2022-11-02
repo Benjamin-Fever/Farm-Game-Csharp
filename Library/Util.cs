@@ -10,6 +10,9 @@ using System.Linq;
 
 namespace Library.Util
 {
+    /// <summary>
+    /// Define a box
+    /// </summary>
     public class Box
     {
         public float x1;
@@ -38,7 +41,11 @@ namespace Library.Util
             return "Square:\n    Top Left:\n        X: " + x1 + "\n        Y: " + y1 + "\n    Bottom Right:\n        X: " + x1 + "\n        Y: " + y1;
         }
 
-        public Rectangle convertXnaRect()
+        /// <summary>
+        /// Convert between box to xna rect
+        /// </summary>
+        /// <returns>A rect from XNA</returns>
+        public Rectangle ConvertXnaRect()
         {
             return new Rectangle((int)x1, (int)y1, (int)(x2 - x1), (int)(y2 - y1));
         }

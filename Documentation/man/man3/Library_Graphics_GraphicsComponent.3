@@ -1,0 +1,91 @@
+.TH "Library.Graphics.GraphicsComponent" 3 "Thu Nov 3 2022" "Version 0.1" "Game Engine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Library.Graphics.GraphicsComponent \- Generic graphics component abstract class   
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBLibrary\&.Graphics\&.IGraphicsComponent\fP\&.
+.PP
+Inherited by \fBLibrary\&.Graphics\&.Tile\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "abstract void \fBdraw\fP ()"
+.br
+.RI "Draw the graphics component  "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBsetSpriteBatch\fP (SpriteBatch sb)"
+.br
+.RI "Set the spritebatch used by all graphics components  "
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBSprite\fP \fBsprite\fP"
+.br
+.in -1c
+.SS "Static Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "static SpriteBatch \fBspriteBatch\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Generic graphics component abstract class  
+.PP
+Definition at line \fB16\fP of file \fBGraphicsComponent\&.cs\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "abstract void Library\&.Graphics\&.GraphicsComponent\&.draw ()\fC [pure virtual]\fP"
+
+.PP
+Draw the graphics component  
+.PP
+Implements \fBLibrary\&.Graphics\&.IGraphicsComponent\fP\&.
+.PP
+Implemented in \fBLibrary\&.Graphics\&.Tile\fP\&.
+.SS "static void Library\&.Graphics\&.GraphicsComponent\&.setSpriteBatch (SpriteBatch sb)\fC [static]\fP"
+
+.PP
+Set the spritebatch used by all graphics components  
+.PP
+\fBParameters\fP
+.RS 4
+\fIsb\fP 
+.PP
+.nf
+SpriteBatch
+
+.fi
+.PP
+.RE
+.PP
+
+.PP
+Definition at line \fB30\fP of file \fBGraphicsComponent\&.cs\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBSprite\fP Library\&.Graphics\&.GraphicsComponent\&.sprite\fC [protected]\fP"
+
+.PP
+Definition at line \fB19\fP of file \fBGraphicsComponent\&.cs\fP\&.
+.SS "SpriteBatch Library\&.Graphics\&.GraphicsComponent\&.spriteBatch\fC [static]\fP, \fC [protected]\fP"
+
+.PP
+Definition at line \fB18\fP of file \fBGraphicsComponent\&.cs\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Game Engine from the source code\&.

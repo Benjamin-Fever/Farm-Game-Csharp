@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__serial_layer_8cs_source" xml:lang="en-US">
+<title>SerialLayer.cs</title>
+<indexterm><primary>Library/Serializers/SerialLayer.cs</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__serial_layer_8cs_source_1l00001"/>00001 <emphasis role="keyword">using&#32;</emphasis><link linkend="_namespace_library_1_1_mapping">Library.Mapping</link>;
+<anchor xml:id="__serial_layer_8cs_source_1l00002"/>00002 <emphasis role="keyword">using&#32;</emphasis>System;
+<anchor xml:id="__serial_layer_8cs_source_1l00003"/>00003 <emphasis role="keyword">using&#32;</emphasis>System.Xml.Serialization;
+<anchor xml:id="__serial_layer_8cs_source_1l00004"/>00004 
+<anchor xml:id="__serial_layer_8cs_source_1l00005"/>00005 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_library_1_1_serializers">Library.Serializers</link>
+<anchor xml:id="__serial_layer_8cs_source_1l00006"/>00006 {
+<anchor xml:id="__serial_layer_8cs_source_1l00010"/>00010 &#32;&#32;&#32;&#32;[XmlRoot(<emphasis role="stringliteral">&quot;layer&quot;</emphasis>),&#32;Serializable]
+<anchor xml:id="__serial_layer_8cs_source_1l00011"/><link linkend="_class_library_1_1_serializers_1_1_serial_layer">00011</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_class_library_1_1_serializers_1_1_serial_layer">SerialLayer</link>&#32;:&#32;<link linkend="_class_library_1_1_mapping_1_1_abstract_layer">AbstractLayer</link>&lt;string&gt;
+<anchor xml:id="__serial_layer_8cs_source_1l00012"/>00012 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__serial_layer_8cs_source_1l00013"/>00013 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[XmlAttribute(<emphasis role="stringliteral">&quot;name&quot;</emphasis>)]
+<anchor xml:id="__serial_layer_8cs_source_1l00014"/><link linkend="_class_library_1_1_serializers_1_1_serial_layer_1a1a2b2bc617c519b5df04481b7b6ba094">00014</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">string</emphasis>&#32;<link linkend="_class_library_1_1_serializers_1_1_serial_layer_1a1a2b2bc617c519b5df04481b7b6ba094">Name</link>
+<anchor xml:id="__serial_layer_8cs_source_1l00015"/>00015 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__serial_layer_8cs_source_1l00016"/>00016 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">set</emphasis>&#32;{&#32;<link linkend="_class_library_1_1_mapping_1_1_abstract_layer_1a177d64ac5ff09429fa2b552782f2df93">name</link>&#32;=&#32;value;&#32;}
+<anchor xml:id="__serial_layer_8cs_source_1l00017"/>00017 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">get</emphasis>&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_library_1_1_mapping_1_1_abstract_layer_1a177d64ac5ff09429fa2b552782f2df93">name</link>;&#32;}
+<anchor xml:id="__serial_layer_8cs_source_1l00018"/>00018 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__serial_layer_8cs_source_1l00019"/>00019 
+<anchor xml:id="__serial_layer_8cs_source_1l00020"/>00020 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[XmlAttribute(<emphasis role="stringliteral">&quot;depth&quot;</emphasis>)]
+<anchor xml:id="__serial_layer_8cs_source_1l00021"/><link linkend="_class_library_1_1_serializers_1_1_serial_layer_1a43b82e29794fe085b020f53c3e1e8e90">00021</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_library_1_1_serializers_1_1_serial_layer_1a43b82e29794fe085b020f53c3e1e8e90">Depth</link>
+<anchor xml:id="__serial_layer_8cs_source_1l00022"/>00022 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__serial_layer_8cs_source_1l00023"/>00023 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">set</emphasis>&#32;{&#32;<link linkend="_class_library_1_1_mapping_1_1_abstract_layer_1a897ac86eb61859d79c468b1f09349af8">depth</link>&#32;=&#32;value;&#32;}
+<anchor xml:id="__serial_layer_8cs_source_1l00024"/>00024 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">get</emphasis>&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_library_1_1_mapping_1_1_abstract_layer_1a897ac86eb61859d79c468b1f09349af8">depth</link>;&#32;}
+<anchor xml:id="__serial_layer_8cs_source_1l00025"/>00025 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__serial_layer_8cs_source_1l00026"/>00026 
+<anchor xml:id="__serial_layer_8cs_source_1l00027"/>00027 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[XmlElement]
+<anchor xml:id="__serial_layer_8cs_source_1l00028"/><link linkend="_class_library_1_1_serializers_1_1_serial_layer_1ad49008ba5610bec2041c31eddcc0953c">00028</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_library_1_1_serializers_1_1_serial_tileset">SerialTileset</link>&#32;<link linkend="_class_library_1_1_serializers_1_1_serial_layer_1ad49008ba5610bec2041c31eddcc0953c">Tileset</link>&#32;{&#32;<emphasis role="keyword">get</emphasis>;&#32;<emphasis role="keyword">set</emphasis>;&#32;}
+<anchor xml:id="__serial_layer_8cs_source_1l00029"/>00029 
+<anchor xml:id="__serial_layer_8cs_source_1l00030"/>00030 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[XmlElement]
+<anchor xml:id="__serial_layer_8cs_source_1l00031"/><link linkend="_class_library_1_1_serializers_1_1_serial_layer_1af2e14890c1acec4eb78d15075a4da7d5">00031</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">string</emphasis>&#32;<link linkend="_class_library_1_1_serializers_1_1_serial_layer_1af2e14890c1acec4eb78d15075a4da7d5">Data</link>
+<anchor xml:id="__serial_layer_8cs_source_1l00032"/>00032 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__serial_layer_8cs_source_1l00033"/>00033 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">set</emphasis>&#32;
+<anchor xml:id="__serial_layer_8cs_source_1l00034"/>00034 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{&#32;
+<anchor xml:id="__serial_layer_8cs_source_1l00035"/>00035 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Tidy&#32;up&#32;data&#32;input&#32;remove&#32;formats&#32;etc</emphasis>
+<anchor xml:id="__serial_layer_8cs_source_1l00036"/>00036 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_library_1_1_mapping_1_1_abstract_layer_1aefc1f3ba7193a82c17dec4e95a24fd2d">tiles</link>&#32;=&#32;value;
+<anchor xml:id="__serial_layer_8cs_source_1l00037"/>00037 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_library_1_1_mapping_1_1_abstract_layer_1aefc1f3ba7193a82c17dec4e95a24fd2d">tiles</link>&#32;=&#32;<link linkend="_class_library_1_1_mapping_1_1_abstract_layer_1aefc1f3ba7193a82c17dec4e95a24fd2d">tiles</link>.Replace(<emphasis role="stringliteral">&quot;\t&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;&quot;</emphasis>);
+<anchor xml:id="__serial_layer_8cs_source_1l00038"/>00038 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_library_1_1_mapping_1_1_abstract_layer_1aefc1f3ba7193a82c17dec4e95a24fd2d">tiles</link>&#32;=&#32;<link linkend="_class_library_1_1_mapping_1_1_abstract_layer_1aefc1f3ba7193a82c17dec4e95a24fd2d">tiles</link>.Replace(<emphasis role="stringliteral">&quot;&#32;&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;&quot;</emphasis>);
+<anchor xml:id="__serial_layer_8cs_source_1l00039"/>00039 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_library_1_1_mapping_1_1_abstract_layer_1aefc1f3ba7193a82c17dec4e95a24fd2d">tiles</link>&#32;=&#32;<link linkend="_class_library_1_1_mapping_1_1_abstract_layer_1aefc1f3ba7193a82c17dec4e95a24fd2d">tiles</link>.Substring(1,<link linkend="_class_library_1_1_mapping_1_1_abstract_layer_1aefc1f3ba7193a82c17dec4e95a24fd2d">tiles</link>.Length-2);
+<anchor xml:id="__serial_layer_8cs_source_1l00040"/>00040 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__serial_layer_8cs_source_1l00041"/>00041 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">get</emphasis>&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_library_1_1_mapping_1_1_abstract_layer_1aefc1f3ba7193a82c17dec4e95a24fd2d">tiles</link>;&#32;}
+<anchor xml:id="__serial_layer_8cs_source_1l00042"/>00042 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__serial_layer_8cs_source_1l00043"/>00043 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__serial_layer_8cs_source_1l00044"/>00044 }
+</programlisting></section>

@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_library_1_1_mapping_1_1_tile_layer" xml:lang="en-US">
+<title>Library.Mapping.TileLayer Class Reference</title>
+<indexterm><primary>Library.Mapping.TileLayer</primary></indexterm>
+<para>
+
+<para>A tilelayer used to define what tiles are visible at this depth. Tile type is a list of Tile. Extends <link linkend="_class_library_1_1_mapping_1_1_abstract_layer">AbstractLayer</link> and implements comparable and graphics component.  </para>
+ 
+</para>
+<para>Inheritance diagram for Library.Mapping.TileLayer:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_library_1_1_mapping_1_1_tile_layer.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_class_library_1_1_mapping_1_1_tile_layer_1a0ae81fe4be6ca201053a76a01dabe24d">CompareTo</link> (<link linkend="_class_library_1_1_mapping_1_1_tile_layer">TileLayer</link> other)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_library_1_1_mapping_1_1_tile_layer_1abbbf9e9c4ba471a42f2775d88d7502b8">draw</link> ()</para>
+
+<para>Draw the layer  </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_library_1_1_mapping_1_1_tile_layer_1a3d6def6f8721ba89005de03cd425d870">GetDepth</link> ()</para>
+
+<para>Get layer depth  </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>A tilelayer used to define what tiles are visible at this depth. Tile type is a list of Tile. Extends <link linkend="_class_library_1_1_mapping_1_1_abstract_layer">AbstractLayer</link> and implements comparable and graphics component.  </para>
+<para>
+Definition at line <link linkend="__layer_8cs_source_1l00023">23</link> of file <link linkend="__layer_8cs_source">Layer.cs</link>.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_library_1_1_mapping_1_1_tile_layer_1a0ae81fe4be6ca201053a76a01dabe24d"/><section>
+    <title>CompareTo()</title>
+<indexterm><primary>CompareTo</primary><secondary>Library.Mapping.TileLayer</secondary></indexterm>
+<indexterm><primary>Library.Mapping.TileLayer</primary><secondary>CompareTo</secondary></indexterm>
+<para><computeroutput>int Library.Mapping.TileLayer.CompareTo (<link linkend="_class_library_1_1_mapping_1_1_tile_layer">TileLayer</link> other)</computeroutput></para><para>
+Definition at line <link linkend="__layer_8cs_source_1l00025">25</link> of file <link linkend="__layer_8cs_source">Layer.cs</link>.</para>
+</section>
+<anchor xml:id="_class_library_1_1_mapping_1_1_tile_layer_1abbbf9e9c4ba471a42f2775d88d7502b8"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>Library.Mapping.TileLayer</secondary></indexterm>
+<indexterm><primary>Library.Mapping.TileLayer</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput>void Library.Mapping.TileLayer.draw ( )</computeroutput></para><para>
+
+<para>Draw the layer  </para>
+</para>
+<para>
+Implements <link linkend="_interface_library_1_1_graphics_1_1_i_graphics_component_1acca0d3d372a78a58ced6cb36d2d0d8fb">Library.Graphics.IGraphicsComponent</link>.</para>
+<para>
+Definition at line <link linkend="__layer_8cs_source_1l00036">36</link> of file <link linkend="__layer_8cs_source">Layer.cs</link>.</para>
+</section>
+<anchor xml:id="_class_library_1_1_mapping_1_1_tile_layer_1a3d6def6f8721ba89005de03cd425d870"/><section>
+    <title>GetDepth()</title>
+<indexterm><primary>GetDepth</primary><secondary>Library.Mapping.TileLayer</secondary></indexterm>
+<indexterm><primary>Library.Mapping.TileLayer</primary><secondary>GetDepth</secondary></indexterm>
+<para><computeroutput>int Library.Mapping.TileLayer.GetDepth ( )</computeroutput></para><para>
+
+<para>Get layer depth  </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>A int of the layers depth</para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__layer_8cs_source_1l00051">51</link> of file <link linkend="__layer_8cs_source">Layer.cs</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+Library/Mapping/<link linkend="__layer_8cs">Layer.cs</link></section>
+</section>

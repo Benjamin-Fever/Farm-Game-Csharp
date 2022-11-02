@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="interface_library_1_1_graphics_1_1_i_graphics_component" kind="interface" language="C#" prot="public">
+    <compoundname>Library::Graphics::IGraphicsComponent</compoundname>
+    <derivedcompoundref refid="class_library_1_1_graphics_1_1_graphics_component" prot="public" virt="non-virtual">Library.Graphics.GraphicsComponent</derivedcompoundref>
+    <derivedcompoundref refid="class_library_1_1_graphics_1_1_renderer" prot="public" virt="non-virtual">Library.Graphics.Renderer</derivedcompoundref>
+    <derivedcompoundref refid="class_library_1_1_mapping_1_1_tile_layer" prot="public" virt="non-virtual">Library.Mapping.TileLayer</derivedcompoundref>
+    <derivedcompoundref refid="class_library_1_1_mapping_1_1_tile_map" prot="public" virt="non-virtual">Library.Mapping.TileMap</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_library_1_1_graphics_1_1_i_graphics_component_1acca0d3d372a78a58ced6cb36d2d0d8fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Library.Graphics.IGraphicsComponent.draw</definition>
+        <argsstring>()</argsstring>
+        <name>draw</name>
+        <qualifiedname>Library.Graphics.IGraphicsComponent.draw</qualifiedname>
+        <reimplementedby refid="class_library_1_1_graphics_1_1_graphics_component_1ae807ff6992bd2a9b486d88a0fa75f3a4">draw</reimplementedby>
+        <reimplementedby refid="class_library_1_1_graphics_1_1_renderer_1a6696eb171e4708d5b1e8f869671090eb">draw</reimplementedby>
+        <reimplementedby refid="class_library_1_1_graphics_1_1_tile_1a228df1b1e20efb443153f724b908c3ac">draw</reimplementedby>
+        <reimplementedby refid="class_library_1_1_mapping_1_1_tile_layer_1abbbf9e9c4ba471a42f2775d88d7502b8">draw</reimplementedby>
+        <reimplementedby refid="class_library_1_1_mapping_1_1_tile_map_1ab283074c478918bf8ee465d729dd1a31">draw</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Graphics/GraphicsComponent.cs" line="10" column="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Generic graphics component interface  </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Library.Graphics.IGraphicsComponent</label>
+        <link refid="interface_library_1_1_graphics_1_1_i_graphics_component"/>
+      </node>
+      <node id="2">
+        <label>Library.Graphics.GraphicsComponent</label>
+        <link refid="class_library_1_1_graphics_1_1_graphics_component"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Library.Graphics.Renderer</label>
+        <link refid="class_library_1_1_graphics_1_1_renderer"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Library.Graphics.Tile</label>
+        <link refid="class_library_1_1_graphics_1_1_tile"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Library.Mapping.TileLayer</label>
+        <link refid="class_library_1_1_mapping_1_1_tile_layer"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Library.Mapping.TileMap</label>
+        <link refid="class_library_1_1_mapping_1_1_tile_map"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="Library/Graphics/GraphicsComponent.cs" line="8" column="22" bodyfile="Library/Graphics/GraphicsComponent.cs" bodystart="9" bodyend="11"/>
+    <listofallmembers>
+      <member refid="interface_library_1_1_graphics_1_1_i_graphics_component_1acca0d3d372a78a58ced6cb36d2d0d8fb" prot="public" virt="non-virtual"><scope>Library::Graphics::IGraphicsComponent</scope><name>draw</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_d1aac78aafa71c5031d6e4927160fed2" kind="dir">
+    <compoundname>Game-Project/obj</compoundname>
+    <innerdir refid="dir_fc460679b34691475d05692113be918f">Game-Project/obj/Debug</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Game-Project/obj/"/>
+  </compounddef>
+</doxygen>

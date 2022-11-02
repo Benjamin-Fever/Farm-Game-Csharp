@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__map_8cs_source" xml:lang="en-US">
+<title>Map.cs</title>
+<indexterm><primary>Library/Mapping/Map.cs</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__map_8cs_source_1l00001"/>00001 <emphasis role="keyword">using&#32;</emphasis><link linkend="_namespace_library_1_1_graphics">Library.Graphics</link>;
+<anchor xml:id="__map_8cs_source_1l00002"/>00002 <emphasis role="keyword">using&#32;</emphasis>Microsoft.Xna.Framework;
+<anchor xml:id="__map_8cs_source_1l00003"/>00003 <emphasis role="keyword">using&#32;</emphasis>System.Collections.Generic;
+<anchor xml:id="__map_8cs_source_1l00004"/>00004 
+<anchor xml:id="__map_8cs_source_1l00005"/>00005 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_library_1_1_mapping">Library.Mapping</link>
+<anchor xml:id="__map_8cs_source_1l00006"/>00006 {
+<anchor xml:id="__map_8cs_source_1l00011"/><link linkend="_class_library_1_1_mapping_1_1_abstract_map">00011</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">abstract</emphasis>&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_class_library_1_1_mapping_1_1_abstract_map">AbstractMap</link>&lt;T&gt;
+<anchor xml:id="__map_8cs_source_1l00012"/>00012 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__map_8cs_source_1l00013"/><link linkend="_class_library_1_1_mapping_1_1_abstract_map_1a0d3c1fe6e13aa21c42945f68b2feaca5">00013</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">string</emphasis>&#32;<link linkend="_class_library_1_1_mapping_1_1_abstract_map_1a0d3c1fe6e13aa21c42945f68b2feaca5">name</link>&#32;=&#32;<emphasis role="stringliteral">&quot;&quot;</emphasis>;
+<anchor xml:id="__map_8cs_source_1l00014"/><link linkend="_class_library_1_1_mapping_1_1_abstract_map_1a98009bcfecd86a1895b3a6e19ad6d437">00014</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;Vector2&#32;<link linkend="_class_library_1_1_mapping_1_1_abstract_map_1a98009bcfecd86a1895b3a6e19ad6d437">tileSize</link>&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;Vector2(0,0);
+<anchor xml:id="__map_8cs_source_1l00015"/><link linkend="_class_library_1_1_mapping_1_1_abstract_map_1a5b4e0e5c2ca75e2f9c96fb4ecf9a6eae">00015</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;Vector2&#32;<link linkend="_class_library_1_1_mapping_1_1_abstract_map_1a5b4e0e5c2ca75e2f9c96fb4ecf9a6eae">size</link>&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;Vector2(0,&#32;0);
+<anchor xml:id="__map_8cs_source_1l00016"/><link linkend="_class_library_1_1_mapping_1_1_abstract_map_1ac5b4ef2de4b8ecb41b165d9aa472ff50">00016</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;Color&#32;<link linkend="_class_library_1_1_mapping_1_1_abstract_map_1ac5b4ef2de4b8ecb41b165d9aa472ff50">background</link>&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;Color();
+<anchor xml:id="__map_8cs_source_1l00017"/><link linkend="_class_library_1_1_mapping_1_1_abstract_map_1a24e37a566c32ddf48e7504fda5d667bf">00017</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;List&lt;T&gt;&#32;<link linkend="_class_library_1_1_mapping_1_1_abstract_map_1a24e37a566c32ddf48e7504fda5d667bf">layers</link>&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;List&lt;T&gt;();
+<anchor xml:id="__map_8cs_source_1l00018"/>00018 
+<anchor xml:id="__map_8cs_source_1l00019"/>00019 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__map_8cs_source_1l00020"/>00020 
+<anchor xml:id="__map_8cs_source_1l00025"/><link linkend="_class_library_1_1_mapping_1_1_tile_map">00025</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_class_library_1_1_mapping_1_1_tile_map">TileMap</link>&#32;:&#32;<link linkend="_class_library_1_1_mapping_1_1_abstract_map">AbstractMap</link>&lt;TileLayer&gt;,&#32;<link linkend="_interface_library_1_1_graphics_1_1_i_graphics_component">IGraphicsComponent</link>
+<anchor xml:id="__map_8cs_source_1l00026"/>00026 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__map_8cs_source_1l00030"/><link linkend="_class_library_1_1_mapping_1_1_tile_map_1ab283074c478918bf8ee465d729dd1a31">00030</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_library_1_1_mapping_1_1_tile_map_1ab283074c478918bf8ee465d729dd1a31">draw</link>()
+<anchor xml:id="__map_8cs_source_1l00031"/>00031 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__map_8cs_source_1l00032"/>00032 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+<anchor xml:id="__map_8cs_source_1l00033"/>00033 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_library_1_1_mapping_1_1_abstract_map_1a24e37a566c32ddf48e7504fda5d667bf">layers</link>.Sort();&#32;<emphasis role="comment">//&#32;Sort&#32;layers&#32;by&#32;depth</emphasis>
+<anchor xml:id="__map_8cs_source_1l00034"/>00034 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">foreach</emphasis>&#32;(<link linkend="_class_library_1_1_mapping_1_1_tile_layer">TileLayer</link>&#32;layer&#32;<emphasis role="keywordflow">in</emphasis>&#32;<link linkend="_class_library_1_1_mapping_1_1_abstract_map_1a24e37a566c32ddf48e7504fda5d667bf">layers</link>)
+<anchor xml:id="__map_8cs_source_1l00035"/>00035 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__map_8cs_source_1l00036"/>00036 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;layer.<link linkend="_class_library_1_1_mapping_1_1_tile_layer_1abbbf9e9c4ba471a42f2775d88d7502b8">draw</link>();
+<anchor xml:id="__map_8cs_source_1l00037"/>00037 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__map_8cs_source_1l00038"/>00038 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__map_8cs_source_1l00039"/>00039 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__map_8cs_source_1l00040"/>00040 }
+</programlisting></section>

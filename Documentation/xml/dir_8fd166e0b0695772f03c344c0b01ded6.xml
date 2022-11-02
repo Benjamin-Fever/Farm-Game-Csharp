@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_8fd166e0b0695772f03c344c0b01ded6" kind="dir">
+    <compoundname>Content Pipeline/Processors</compoundname>
+    <innerfile refid="_map_processor_8cs">MapProcessor.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Content Pipeline/Processors/"/>
+  </compounddef>
+</doxygen>

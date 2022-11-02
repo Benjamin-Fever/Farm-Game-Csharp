@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__util_8cs_source" xml:lang="en-US">
+<title>Util.cs</title>
+<indexterm><primary>Library/Util.cs</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__util_8cs_source_1l00001"/>00001 <emphasis role="keyword">using&#32;</emphasis><link linkend="_namespace_library_1_1_mapping">Library.Mapping</link>;
+<anchor xml:id="__util_8cs_source_1l00002"/>00002 <emphasis role="keyword">using&#32;</emphasis>Microsoft.Xna.Framework;
+<anchor xml:id="__util_8cs_source_1l00003"/>00003 <emphasis role="keyword">using&#32;</emphasis>Microsoft.Xna.Framework.Content;
+<anchor xml:id="__util_8cs_source_1l00004"/>00004 <emphasis role="keyword">using&#32;</emphasis>Microsoft.Xna.Framework.Graphics;
+<anchor xml:id="__util_8cs_source_1l00005"/>00005 <emphasis role="keyword">using&#32;</emphasis>Microsoft.Xna.Framework.Input;
+<anchor xml:id="__util_8cs_source_1l00006"/>00006 <emphasis role="keyword">using&#32;</emphasis>System;
+<anchor xml:id="__util_8cs_source_1l00007"/>00007 <emphasis role="keyword">using&#32;</emphasis>System.Collections.Generic;
+<anchor xml:id="__util_8cs_source_1l00008"/>00008 <emphasis role="keyword">using&#32;</emphasis>System.IO;
+<anchor xml:id="__util_8cs_source_1l00009"/>00009 <emphasis role="keyword">using&#32;</emphasis>System.Linq;
+<anchor xml:id="__util_8cs_source_1l00010"/>00010 
+<anchor xml:id="__util_8cs_source_1l00011"/><link linkend="_namespace_library_1_1_util">00011</link> <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_library_1_1_util">Library.Util</link>
+<anchor xml:id="__util_8cs_source_1l00012"/>00012 {
+<anchor xml:id="__util_8cs_source_1l00016"/><link linkend="_class_library_1_1_util_1_1_box">00016</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_class_library_1_1_util_1_1_box">Box</link>
+<anchor xml:id="__util_8cs_source_1l00017"/>00017 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__util_8cs_source_1l00018"/><link linkend="_class_library_1_1_util_1_1_box_1a6e1a48967a9e0cf26e0655b2bb23e196">00018</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_class_library_1_1_util_1_1_box_1a6e1a48967a9e0cf26e0655b2bb23e196">x1</link>;
+<anchor xml:id="__util_8cs_source_1l00019"/><link linkend="_class_library_1_1_util_1_1_box_1a474d646e2791df41e3eec171d11bec4b">00019</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_class_library_1_1_util_1_1_box_1a474d646e2791df41e3eec171d11bec4b">x2</link>;
+<anchor xml:id="__util_8cs_source_1l00020"/><link linkend="_class_library_1_1_util_1_1_box_1aa7805ee1a87289086eda19eaa892de2c">00020</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_class_library_1_1_util_1_1_box_1aa7805ee1a87289086eda19eaa892de2c">y1</link>;
+<anchor xml:id="__util_8cs_source_1l00021"/><link linkend="_class_library_1_1_util_1_1_box_1a2fe0779515a91fd8ee051deb07ec692e">00021</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_class_library_1_1_util_1_1_box_1a2fe0779515a91fd8ee051deb07ec692e">y2</link>;
+<anchor xml:id="__util_8cs_source_1l00022"/>00022 
+<anchor xml:id="__util_8cs_source_1l00023"/><link linkend="_class_library_1_1_util_1_1_box_1a19f2280d8876d473d8db80c2bd321f77">00023</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_library_1_1_util_1_1_box_1a19f2280d8876d473d8db80c2bd321f77">Box</link>(<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_class_library_1_1_util_1_1_box_1a6e1a48967a9e0cf26e0655b2bb23e196">x1</link>,&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_class_library_1_1_util_1_1_box_1aa7805ee1a87289086eda19eaa892de2c">y1</link>,&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_class_library_1_1_util_1_1_box_1a474d646e2791df41e3eec171d11bec4b">x2</link>,&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_class_library_1_1_util_1_1_box_1a2fe0779515a91fd8ee051deb07ec692e">y2</link>)
+<anchor xml:id="__util_8cs_source_1l00024"/>00024 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__util_8cs_source_1l00025"/>00025 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.x1&#32;=&#32;<link linkend="_class_library_1_1_util_1_1_box_1a6e1a48967a9e0cf26e0655b2bb23e196">x1</link>;
+<anchor xml:id="__util_8cs_source_1l00026"/>00026 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.x2&#32;=&#32;<link linkend="_class_library_1_1_util_1_1_box_1a474d646e2791df41e3eec171d11bec4b">x2</link>;
+<anchor xml:id="__util_8cs_source_1l00027"/>00027 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.y1&#32;=&#32;<link linkend="_class_library_1_1_util_1_1_box_1aa7805ee1a87289086eda19eaa892de2c">y1</link>;
+<anchor xml:id="__util_8cs_source_1l00028"/>00028 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.y2&#32;=&#32;<link linkend="_class_library_1_1_util_1_1_box_1a2fe0779515a91fd8ee051deb07ec692e">y2</link>;
+<anchor xml:id="__util_8cs_source_1l00029"/>00029 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__util_8cs_source_1l00030"/>00030 
+<anchor xml:id="__util_8cs_source_1l00031"/><link linkend="_class_library_1_1_util_1_1_box_1a46042c9aee96eb186c39f28e7b8c3e01">00031</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_library_1_1_util_1_1_box_1a46042c9aee96eb186c39f28e7b8c3e01">Box</link>(Vector2&#32;topLeft,&#32;Vector2&#32;bottomRight)
+<anchor xml:id="__util_8cs_source_1l00032"/>00032 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__util_8cs_source_1l00033"/>00033 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.x1&#32;=&#32;topLeft.X;
+<anchor xml:id="__util_8cs_source_1l00034"/>00034 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.x2&#32;=&#32;bottomRight.X;
+<anchor xml:id="__util_8cs_source_1l00035"/>00035 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.y1&#32;=&#32;topLeft.Y;
+<anchor xml:id="__util_8cs_source_1l00036"/>00036 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.y2&#32;=&#32;bottomRight.Y;
+<anchor xml:id="__util_8cs_source_1l00037"/>00037 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__util_8cs_source_1l00038"/>00038 
+<anchor xml:id="__util_8cs_source_1l00039"/><link linkend="_class_library_1_1_util_1_1_box_1a8c5b20a25981f409bd93c73b0eb307ee">00039</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">override</emphasis>&#32;<emphasis role="keywordtype">string</emphasis>&#32;<link linkend="_class_library_1_1_util_1_1_box_1a8c5b20a25981f409bd93c73b0eb307ee">ToString</link>()
+<anchor xml:id="__util_8cs_source_1l00040"/>00040 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__util_8cs_source_1l00041"/>00041 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="stringliteral">&quot;Square:\n&#32;&#32;&#32;&#32;Top&#32;Left:\n&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;X:&#32;&quot;</emphasis>&#32;+&#32;<link linkend="_class_library_1_1_util_1_1_box_1a6e1a48967a9e0cf26e0655b2bb23e196">x1</link>&#32;+&#32;<emphasis role="stringliteral">&quot;\n&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Y:&#32;&quot;</emphasis>&#32;+&#32;<link linkend="_class_library_1_1_util_1_1_box_1aa7805ee1a87289086eda19eaa892de2c">y1</link>&#32;+&#32;<emphasis role="stringliteral">&quot;\n&#32;&#32;&#32;&#32;Bottom&#32;Right:\n&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;X:&#32;&quot;</emphasis>&#32;+&#32;<link linkend="_class_library_1_1_util_1_1_box_1a6e1a48967a9e0cf26e0655b2bb23e196">x1</link>&#32;+&#32;<emphasis role="stringliteral">&quot;\n&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Y:&#32;&quot;</emphasis>&#32;+&#32;<link linkend="_class_library_1_1_util_1_1_box_1aa7805ee1a87289086eda19eaa892de2c">y1</link>;
+<anchor xml:id="__util_8cs_source_1l00042"/>00042 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__util_8cs_source_1l00043"/>00043 
+<anchor xml:id="__util_8cs_source_1l00048"/><link linkend="_class_library_1_1_util_1_1_box_1a7f2c35d927f47aa410fef8afd4d5e4aa">00048</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;Rectangle&#32;<link linkend="_class_library_1_1_util_1_1_box_1a7f2c35d927f47aa410fef8afd4d5e4aa">ConvertXnaRect</link>()
+<anchor xml:id="__util_8cs_source_1l00049"/>00049 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__util_8cs_source_1l00050"/>00050 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">new</emphasis>&#32;Rectangle((<emphasis role="keywordtype">int</emphasis>)<link linkend="_class_library_1_1_util_1_1_box_1a6e1a48967a9e0cf26e0655b2bb23e196">x1</link>,&#32;(<emphasis role="keywordtype">int</emphasis>)<link linkend="_class_library_1_1_util_1_1_box_1aa7805ee1a87289086eda19eaa892de2c">y1</link>,&#32;(<emphasis role="keywordtype">int</emphasis>)(<link linkend="_class_library_1_1_util_1_1_box_1a474d646e2791df41e3eec171d11bec4b">x2</link>&#32;-&#32;<link linkend="_class_library_1_1_util_1_1_box_1a6e1a48967a9e0cf26e0655b2bb23e196">x1</link>),&#32;(<emphasis role="keywordtype">int</emphasis>)(<link linkend="_class_library_1_1_util_1_1_box_1a2fe0779515a91fd8ee051deb07ec692e">y2</link>&#32;-&#32;<link linkend="_class_library_1_1_util_1_1_box_1aa7805ee1a87289086eda19eaa892de2c">y1</link>));
+<anchor xml:id="__util_8cs_source_1l00051"/>00051 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__util_8cs_source_1l00052"/>00052 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__util_8cs_source_1l00053"/>00053 }
+</programlisting></section>

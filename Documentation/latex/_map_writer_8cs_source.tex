@@ -1,0 +1,41 @@
+\hypertarget{_map_writer_8cs_source}{}\doxysection{Map\+Writer.\+cs}
+\label{_map_writer_8cs_source}\index{Content Pipeline/Writer/MapWriter.cs@{Content Pipeline/Writer/MapWriter.cs}}
+\mbox{\hyperlink{_map_writer_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_map_writer_8cs_source_l00001}00001 \textcolor{keyword}{using }\mbox{\hyperlink{namespace_content___library_1_1_reader}{Content\_Library.Reader}};}
+\DoxyCodeLine{\Hypertarget{_map_writer_8cs_source_l00002}00002 \textcolor{keyword}{using }\mbox{\hyperlink{namespace_library_1_1_serializers}{Library.Serializers}};}
+\DoxyCodeLine{\Hypertarget{_map_writer_8cs_source_l00003}00003 \textcolor{keyword}{using }Microsoft.Xna.Framework.Content.Pipeline;}
+\DoxyCodeLine{\Hypertarget{_map_writer_8cs_source_l00004}00004 \textcolor{keyword}{using }Microsoft.Xna.Framework.Content.Pipeline.Serialization.Compiler;}
+\DoxyCodeLine{\Hypertarget{_map_writer_8cs_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{_map_writer_8cs_source_l00006}\mbox{\hyperlink{namespace_content___library_1_1_writer}{00006}} \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_content___library_1_1_writer}{Content\_Library.Writer}}}
+\DoxyCodeLine{\Hypertarget{_map_writer_8cs_source_l00007}00007 \{}
+\DoxyCodeLine{\Hypertarget{_map_writer_8cs_source_l00012}00012     [ContentTypeWriter]}
+\DoxyCodeLine{\Hypertarget{_map_writer_8cs_source_l00013}\mbox{\hyperlink{class_content___library_1_1_writer_1_1_map_writer}{00013}}     \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{class_content___library_1_1_writer_1_1_map_writer}{MapWriter}} : ContentTypeWriter<SerialMap>}
+\DoxyCodeLine{\Hypertarget{_map_writer_8cs_source_l00014}00014     \{}
+\DoxyCodeLine{\Hypertarget{_map_writer_8cs_source_l00015}\mbox{\hyperlink{class_content___library_1_1_writer_1_1_map_writer_ae71669631ad1eb8a744ea4e8d33698f5}{00015}}         \textcolor{keyword}{protected} \textcolor{keyword}{override} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_content___library_1_1_writer_1_1_map_writer_ae71669631ad1eb8a744ea4e8d33698f5}{Write}}(ContentWriter output, \mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_map}{SerialMap}} value)}
+\DoxyCodeLine{\Hypertarget{_map_writer_8cs_source_l00016}00016         \{}
+\DoxyCodeLine{\Hypertarget{_map_writer_8cs_source_l00017}00017             output.Write(value.\mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_map_ab9812c4d5210a523746afb9d21fddb6d}{Name}});}
+\DoxyCodeLine{\Hypertarget{_map_writer_8cs_source_l00018}00018             output.Write(value.\mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_map_a520d171b8963786acac5e9591a359905}{Width}});}
+\DoxyCodeLine{\Hypertarget{_map_writer_8cs_source_l00019}00019             output.Write(value.\mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_map_acc3a993b8a38e7e9f32ad500161bec38}{Height}});}
+\DoxyCodeLine{\Hypertarget{_map_writer_8cs_source_l00020}00020             output.Write(value.\mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_map_a3bea6074fef1e7519e8f07e3156ca805}{TileWidth}});}
+\DoxyCodeLine{\Hypertarget{_map_writer_8cs_source_l00021}00021             output.Write(value.\mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_map_aa68ea27264d13948e07e8e9090f3e4c8}{TileHeight}});}
+\DoxyCodeLine{\Hypertarget{_map_writer_8cs_source_l00022}00022             output.Write(value.\mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_map_aef142e59fe69a1154d70cfe83df6e310}{Background}}.\mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_color_a3f7f82e20549a176bbdc5f4cc0c41021}{red}});}
+\DoxyCodeLine{\Hypertarget{_map_writer_8cs_source_l00023}00023             output.Write(value.\mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_map_aef142e59fe69a1154d70cfe83df6e310}{Background}}.\mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_color_ae191845f4fec1fa00a6fe0145a93fa39}{green}});}
+\DoxyCodeLine{\Hypertarget{_map_writer_8cs_source_l00024}00024             output.Write(value.\mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_map_aef142e59fe69a1154d70cfe83df6e310}{Background}}.\mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_color_a2b98a2023c3d6cd7c32e213238618d00}{blue}});}
+\DoxyCodeLine{\Hypertarget{_map_writer_8cs_source_l00025}00025             output.Write(value.\mbox{\hyperlink{class_library_1_1_mapping_1_1_abstract_map_a24e37a566c32ddf48e7504fda5d667bf}{layers}}.Count);}
+\DoxyCodeLine{\Hypertarget{_map_writer_8cs_source_l00026}00026             \textcolor{keywordflow}{foreach} (\mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_layer}{SerialLayer}} layer \textcolor{keywordflow}{in} value.layers)}
+\DoxyCodeLine{\Hypertarget{_map_writer_8cs_source_l00027}00027             \{}
+\DoxyCodeLine{\Hypertarget{_map_writer_8cs_source_l00028}00028                 output.Write(layer.\mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_layer_a1a2b2bc617c519b5df04481b7b6ba094}{Name}});}
+\DoxyCodeLine{\Hypertarget{_map_writer_8cs_source_l00029}00029                 output.Write(layer.\mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_layer_a43b82e29794fe085b020f53c3e1e8e90}{Depth}});}
+\DoxyCodeLine{\Hypertarget{_map_writer_8cs_source_l00030}00030                 output.Write(layer.\mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_layer_ad49008ba5610bec2041c31eddcc0953c}{Tileset}}.\mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_tileset_a06178cafacce5c0d377b8df4a6607d7a}{Name}});}
+\DoxyCodeLine{\Hypertarget{_map_writer_8cs_source_l00031}00031                 output.Write(layer.\mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_layer_ad49008ba5610bec2041c31eddcc0953c}{Tileset}}.\mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_tileset_af384ece3892b9d313f01647c70cdd5b6}{columns}});}
+\DoxyCodeLine{\Hypertarget{_map_writer_8cs_source_l00032}00032                 output.Write(layer.\mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_layer_ad49008ba5610bec2041c31eddcc0953c}{Tileset}}.\mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_tileset_ac4972794d0a8d33fc54ad74b24416cc2}{source}});}
+\DoxyCodeLine{\Hypertarget{_map_writer_8cs_source_l00033}00033                 output.Write(layer.\mbox{\hyperlink{class_library_1_1_mapping_1_1_abstract_layer_aefc1f3ba7193a82c17dec4e95a24fd2d}{tiles}});}
+\DoxyCodeLine{\Hypertarget{_map_writer_8cs_source_l00034}00034             \}}
+\DoxyCodeLine{\Hypertarget{_map_writer_8cs_source_l00035}00035         \}}
+\DoxyCodeLine{\Hypertarget{_map_writer_8cs_source_l00036}\mbox{\hyperlink{class_content___library_1_1_writer_1_1_map_writer_a166967a7913d9001f2444670ae6a42ae}{00036}}         \textcolor{keyword}{public} \textcolor{keyword}{override} \textcolor{keywordtype}{string} \mbox{\hyperlink{class_content___library_1_1_writer_1_1_map_writer_a166967a7913d9001f2444670ae6a42ae}{GetRuntimeType}}(TargetPlatform targetPlatform) \{ \textcolor{keywordflow}{return} typeof(\mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_map}{SerialMap}}).AssemblyQualifiedName; \}}
+\DoxyCodeLine{\Hypertarget{_map_writer_8cs_source_l00037}\mbox{\hyperlink{class_content___library_1_1_writer_1_1_map_writer_a6e42abdcebd1c908d4f43581dc569a74}{00037}}         \textcolor{keyword}{public} \textcolor{keyword}{override} \textcolor{keywordtype}{string} \mbox{\hyperlink{class_content___library_1_1_writer_1_1_map_writer_a6e42abdcebd1c908d4f43581dc569a74}{GetRuntimeReader}}(TargetPlatform targetPlatform) \{ \textcolor{keywordflow}{return} typeof(\mbox{\hyperlink{class_content___library_1_1_reader_1_1_map_reader}{MapReader}}).AssemblyQualifiedName; \}}
+\DoxyCodeLine{\Hypertarget{_map_writer_8cs_source_l00038}00038     \}}
+\DoxyCodeLine{\Hypertarget{_map_writer_8cs_source_l00039}00039 \}}
+
+\end{DoxyCode}

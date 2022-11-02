@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_0ca48ea73e76fa02c23d539eaa1cfdc0" kind="dir">
+    <compoundname>Content Pipeline/Writer</compoundname>
+    <innerfile refid="_map_writer_8cs">MapWriter.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Content Pipeline/Writer/"/>
+  </compounddef>
+</doxygen>

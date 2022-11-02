@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_c23424a3267808464271f6fb9e164fb6" kind="dir">
+    <compoundname>Library/Readers</compoundname>
+    <innerfile refid="_map_reader_8cs">MapReader.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/Readers/"/>
+  </compounddef>
+</doxygen>

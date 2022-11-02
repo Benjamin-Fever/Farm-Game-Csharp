@@ -1,12 +1,20 @@
 ﻿using Microsoft.Xna.Framework;
-using System;
-using System.Drawing;
 
 namespace Library.Mapping
 {
+    /// <summary>
+    /// MappingPos defines a position on the map
+    /// </summary>
     public class MappingPos
     {
+        /// <summary>
+        /// X position
+        /// </summary>
         public int X { get; set; }
+
+        /// <summary>
+        /// Y position
+        /// </summary>
         public int Y { get; set; }
 
         public MappingPos()
@@ -27,12 +35,22 @@ namespace Library.Mapping
             Y = constant;
         }
 
-        public Vector2 convertToCoord(Vector2 tileSize)
+        /// <summary>
+        /// Convert the mapping position to coordinates
+        /// </summary>
+        /// <param name="tileSize">The size of each tile</param>
+        /// <returns>A vector2 of the coordinate positon of the tile</returns>
+        public Vector2 ConvertToCoord(Vector2 tileSize)
         {
             return new Vector2(X * tileSize.X, Y * tileSize.Y);
         }
 
-        public MappingPos add(MappingPos p2) { return new MappingPos(X + p2.X, Y + p2.Y); }
+        /// <summary>
+        /// Add a MappingPos to another
+        /// </summary>
+        /// <param name="p2">MappingPosition to add</param>
+        /// <returns>A new MappingPos with the same of the two positions</returns>
+        public MappingPos Add(MappingPos p2) { return new MappingPos(X + p2.X, Y + p2.Y); }
 
         public override string ToString()
         {

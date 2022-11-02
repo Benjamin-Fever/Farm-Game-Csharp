@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="class_library_1_1_serializers_1_1_serial_layer" kind="class" language="C#" prot="public">
+    <compoundname>Library::Serializers::SerialLayer</compoundname>
+    <basecompoundref refid="class_library_1_1_mapping_1_1_abstract_layer" prot="public" virt="non-virtual">Library.Mapping.AbstractLayer&lt; string &gt;</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_library_1_1_serializers_1_1_serial_layer_1a1a2b2bc617c519b5df04481b7b6ba094" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Library.Serializers.SerialLayer.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <qualifiedname>Library.Serializers.SerialLayer.Name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Serializers/SerialLayer.cs" line="14" column="23" bodyfile="Library/Serializers/SerialLayer.cs" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="property" id="class_library_1_1_serializers_1_1_serial_layer_1a43b82e29794fe085b020f53c3e1e8e90" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Library.Serializers.SerialLayer.Depth</definition>
+        <argsstring></argsstring>
+        <name>Depth</name>
+        <qualifiedname>Library.Serializers.SerialLayer.Depth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Serializers/SerialLayer.cs" line="21" column="20" bodyfile="Library/Serializers/SerialLayer.cs" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="property" id="class_library_1_1_serializers_1_1_serial_layer_1ad49008ba5610bec2041c31eddcc0953c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_library_1_1_serializers_1_1_serial_tileset" kindref="compound">SerialTileset</ref></type>
+        <definition>SerialTileset Library.Serializers.SerialLayer.Tileset</definition>
+        <argsstring></argsstring>
+        <name>Tileset</name>
+        <qualifiedname>Library.Serializers.SerialLayer.Tileset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Serializers/SerialLayer.cs" line="28" column="30" bodyfile="Library/Serializers/SerialLayer.cs" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="property" id="class_library_1_1_serializers_1_1_serial_layer_1af2e14890c1acec4eb78d15075a4da7d5" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Library.Serializers.SerialLayer.Data</definition>
+        <argsstring></argsstring>
+        <name>Data</name>
+        <qualifiedname>Library.Serializers.SerialLayer.Data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Serializers/SerialLayer.cs" line="31" column="23" bodyfile="Library/Serializers/SerialLayer.cs" bodystart="32" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Serializable Layer  </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AbstractLayer&lt; string &gt;</label>
+        <link refid="class_library_1_1_mapping_1_1_abstract_layer"/>
+      </node>
+      <node id="1">
+        <label>Library.Serializers.SerialLayer</label>
+        <link refid="class_library_1_1_serializers_1_1_serial_layer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AbstractLayer&lt; string &gt;</label>
+        <link refid="class_library_1_1_mapping_1_1_abstract_layer"/>
+      </node>
+      <node id="1">
+        <label>Library.Serializers.SerialLayer</label>
+        <link refid="class_library_1_1_serializers_1_1_serial_layer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Library/Serializers/SerialLayer.cs" line="11" column="11" bodyfile="Library/Serializers/SerialLayer.cs" bodystart="12" bodyend="43"/>
+    <listofallmembers>
+      <member refid="class_library_1_1_serializers_1_1_serial_layer_1af2e14890c1acec4eb78d15075a4da7d5" prot="public" virt="non-virtual"><scope>Library::Serializers::SerialLayer</scope><name>Data</name></member>
+      <member refid="class_library_1_1_serializers_1_1_serial_layer_1a43b82e29794fe085b020f53c3e1e8e90" prot="public" virt="non-virtual"><scope>Library::Serializers::SerialLayer</scope><name>Depth</name></member>
+      <member refid="class_library_1_1_mapping_1_1_abstract_layer_1a897ac86eb61859d79c468b1f09349af8" prot="public" virt="non-virtual"><scope>Library::Serializers::SerialLayer</scope><name>depth</name></member>
+      <member refid="class_library_1_1_serializers_1_1_serial_layer_1a1a2b2bc617c519b5df04481b7b6ba094" prot="public" virt="non-virtual"><scope>Library::Serializers::SerialLayer</scope><name>Name</name></member>
+      <member refid="class_library_1_1_mapping_1_1_abstract_layer_1a177d64ac5ff09429fa2b552782f2df93" prot="public" virt="non-virtual"><scope>Library::Serializers::SerialLayer</scope><name>name</name></member>
+      <member refid="class_library_1_1_mapping_1_1_abstract_layer_1aefc1f3ba7193a82c17dec4e95a24fd2d" prot="public" virt="non-virtual"><scope>Library::Serializers::SerialLayer</scope><name>tiles</name></member>
+      <member refid="class_library_1_1_serializers_1_1_serial_layer_1ad49008ba5610bec2041c31eddcc0953c" prot="public" virt="non-virtual"><scope>Library::Serializers::SerialLayer</scope><name>Tileset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

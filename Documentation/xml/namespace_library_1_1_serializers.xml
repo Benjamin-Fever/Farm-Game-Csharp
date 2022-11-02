@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="namespace_library_1_1_serializers" kind="namespace" language="C#">
+    <compoundname>Library::Serializers</compoundname>
+    <innerclass refid="class_library_1_1_serializers_1_1_serial_color" prot="public">Library::Serializers::SerialColor</innerclass>
+    <innerclass refid="class_library_1_1_serializers_1_1_serial_layer" prot="public">Library::Serializers::SerialLayer</innerclass>
+    <innerclass refid="class_library_1_1_serializers_1_1_serial_map" prot="public">Library::Serializers::SerialMap</innerclass>
+    <innerclass refid="class_library_1_1_serializers_1_1_serial_tileset" prot="public">Library::Serializers::SerialTileset</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/Serializers/SerialColor.cs" line="8" column="1"/>
+  </compounddef>
+</doxygen>

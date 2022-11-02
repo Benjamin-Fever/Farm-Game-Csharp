@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_33bf8cf36cf2ea60606f84e079166b1a" xml:lang="en-US">
+<title>Library/Serializers Directory Reference</title>
+<indexterm><primary>Library/Serializers Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__serial_color_8cs">SerialColor.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__serial_layer_8cs">SerialLayer.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__serial_map_8cs">SerialMap.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__serial_tileset_8cs">SerialTileset.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

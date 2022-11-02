@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__viewport_8cs_source" xml:lang="en-US">
+<title>Viewport.cs</title>
+<indexterm><primary>Library/Camera/Viewport.cs</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__viewport_8cs_source_1l00001"/>00001 <emphasis role="keyword">using&#32;</emphasis><link linkend="_namespace_library_1_1_mapping">Library.Mapping</link>;
+<anchor xml:id="__viewport_8cs_source_1l00002"/>00002 <emphasis role="keyword">using&#32;</emphasis>Microsoft.Xna.Framework;
+<anchor xml:id="__viewport_8cs_source_1l00003"/>00003 <emphasis role="keyword">using&#32;</emphasis><link linkend="_namespace_library_1_1_static">Library.Static</link>;
+<anchor xml:id="__viewport_8cs_source_1l00004"/>00004 
+<anchor xml:id="__viewport_8cs_source_1l00005"/><link linkend="_namespace_library">00005</link> <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_library_1_1_camera">Library.Camera</link>
+<anchor xml:id="__viewport_8cs_source_1l00006"/>00006 {
+<anchor xml:id="__viewport_8cs_source_1l00010"/>00010 &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="__tile_8cs_1a2ace89b8cd37948aa26c3311b2df22e4">Viewport</link>
+<anchor xml:id="__viewport_8cs_source_1l00011"/>00011 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__viewport_8cs_source_1l00012"/>00012 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keyword">static</emphasis>&#32;Vector2&#32;resolution&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;Vector2(160,&#32;128);
+<anchor xml:id="__viewport_8cs_source_1l00013"/>00013 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keyword">static</emphasis>&#32;<link linkend="_class_library_1_1_mapping_1_1_mapping_pos">MappingPos</link>&#32;position&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;<link linkend="_class_library_1_1_mapping_1_1_mapping_pos">MappingPos</link>(0,&#32;0);
+<anchor xml:id="__viewport_8cs_source_1l00014"/>00014 
+<anchor xml:id="__viewport_8cs_source_1l00020"/>00020 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;posInViewport(<link linkend="_class_library_1_1_mapping_1_1_mapping_pos">MappingPos</link>&#32;pos)
+<anchor xml:id="__viewport_8cs_source_1l00021"/>00021 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__viewport_8cs_source_1l00022"/>00022 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;
+<anchor xml:id="__viewport_8cs_source_1l00023"/>00023 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(pos.<link linkend="_class_library_1_1_mapping_1_1_mapping_pos_1a7536ce0ca23b9d06ea6e9b49f8cc664a">X</link>&#32;&gt;=&#32;position.<link linkend="_class_library_1_1_mapping_1_1_mapping_pos_1a7536ce0ca23b9d06ea6e9b49f8cc664a">X</link>)&#32;&amp;&amp;
+<anchor xml:id="__viewport_8cs_source_1l00024"/>00024 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(pos.Y&#32;&gt;=&#32;position.<link linkend="_class_library_1_1_mapping_1_1_mapping_pos_1ae1322c42edad7b832771d3eb0238c6aa">Y</link>)&#32;&amp;&amp;&#32;
+<anchor xml:id="__viewport_8cs_source_1l00025"/>00025 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(pos.<link linkend="_class_library_1_1_mapping_1_1_mapping_pos_1a7536ce0ca23b9d06ea6e9b49f8cc664a">X</link>&#32;&lt;&#32;(position.<link linkend="_class_library_1_1_mapping_1_1_mapping_pos_1a7536ce0ca23b9d06ea6e9b49f8cc664a">X</link>&#32;+&#32;resolution.X))&#32;&amp;&amp;
+<anchor xml:id="__viewport_8cs_source_1l00026"/>00026 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(pos.<link linkend="_class_library_1_1_mapping_1_1_mapping_pos_1ae1322c42edad7b832771d3eb0238c6aa">Y</link>&#32;&lt;&#32;(position.<link linkend="_class_library_1_1_mapping_1_1_mapping_pos_1ae1322c42edad7b832771d3eb0238c6aa">Y</link>&#32;+&#32;resolution.Y));
+<anchor xml:id="__viewport_8cs_source_1l00027"/>00027 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__viewport_8cs_source_1l00028"/>00028 
+<anchor xml:id="__viewport_8cs_source_1l00034"/>00034 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;Move(<emphasis role="keywordtype">int</emphasis>&#32;x,&#32;<emphasis role="keywordtype">int</emphasis>&#32;y)
+<anchor xml:id="__viewport_8cs_source_1l00035"/>00035 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__viewport_8cs_source_1l00036"/>00036 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;position.X&#32;+=&#32;x;&#32;
+<anchor xml:id="__viewport_8cs_source_1l00037"/>00037 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;position.Y&#32;+=&#32;y;
+<anchor xml:id="__viewport_8cs_source_1l00038"/>00038 
+<anchor xml:id="__viewport_8cs_source_1l00039"/>00039 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;position.X&#32;=&#32;position.X&#32;&gt;&#32;0&#32;?&#32;position.X&#32;:&#32;0;
+<anchor xml:id="__viewport_8cs_source_1l00040"/>00040 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;position.Y&#32;=&#32;position.Y&#32;&gt;&#32;0&#32;?&#32;position.Y&#32;:&#32;0;
+<anchor xml:id="__viewport_8cs_source_1l00041"/>00041 
+<anchor xml:id="__viewport_8cs_source_1l00042"/>00042 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;width&#32;&#32;=&#32;(int)(resolution.X&#32;/&#32;Global.Map.tileSize.X);
+<anchor xml:id="__viewport_8cs_source_1l00043"/>00043 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;height&#32;=&#32;(int)(resolution.Y&#32;/&#32;Global.Map.tileSize.Y);
+<anchor xml:id="__viewport_8cs_source_1l00044"/>00044 
+<anchor xml:id="__viewport_8cs_source_1l00045"/>00045 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;position.X&#32;=&#32;(int)(position.<link linkend="_class_library_1_1_mapping_1_1_mapping_pos_1a7536ce0ca23b9d06ea6e9b49f8cc664a">X</link>&#32;+&#32;width&#32;&#32;&gt;&#32;Global.Map.size.X&#32;?&#32;Global.Map.size.X&#32;-&#32;width&#32;&#32;:&#32;position.<link linkend="_class_library_1_1_mapping_1_1_mapping_pos_1a7536ce0ca23b9d06ea6e9b49f8cc664a">X</link>);
+<anchor xml:id="__viewport_8cs_source_1l00046"/>00046 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;position.Y&#32;=&#32;(int)(position.<link linkend="_class_library_1_1_mapping_1_1_mapping_pos_1ae1322c42edad7b832771d3eb0238c6aa">Y</link>&#32;+&#32;height&#32;&gt;&#32;Global.Map.size.Y&#32;?&#32;Global.Map.size.Y&#32;-&#32;height&#32;:&#32;position.<link linkend="_class_library_1_1_mapping_1_1_mapping_pos_1ae1322c42edad7b832771d3eb0238c6aa">Y</link>);
+<anchor xml:id="__viewport_8cs_source_1l00047"/>00047 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__viewport_8cs_source_1l00048"/>00048 
+<anchor xml:id="__viewport_8cs_source_1l00053"/>00053 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;GetX()&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;position.<link linkend="_class_library_1_1_mapping_1_1_mapping_pos_1a7536ce0ca23b9d06ea6e9b49f8cc664a">X</link>;&#32;}
+<anchor xml:id="__viewport_8cs_source_1l00054"/>00054 
+<anchor xml:id="__viewport_8cs_source_1l00059"/>00059 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;GetY()&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;position.<link linkend="_class_library_1_1_mapping_1_1_mapping_pos_1ae1322c42edad7b832771d3eb0238c6aa">Y</link>;&#32;}
+<anchor xml:id="__viewport_8cs_source_1l00060"/>00060 
+<anchor xml:id="__viewport_8cs_source_1l00065"/>00065 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">static</emphasis>&#32;Vector2&#32;GetScale()&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">new</emphasis>&#32;Vector2(Global.Window_Width&#32;/&#32;resolution.X,&#32;Global.Window_Height&#32;/&#32;resolution.Y);&#32;}
+<anchor xml:id="__viewport_8cs_source_1l00066"/>00066 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__viewport_8cs_source_1l00067"/>00067 }
+</programlisting></section>

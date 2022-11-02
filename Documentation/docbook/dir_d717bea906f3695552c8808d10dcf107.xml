@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_d717bea906f3695552c8808d10dcf107" xml:lang="en-US">
+<title>DiscordGameSDK Directory Reference</title>
+<indexterm><primary>DiscordGameSDK Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_fbc1cefe508f47f52c36042d43a3febf">obj</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -7,6 +7,9 @@ using System.Xml.Serialization;
 
 namespace Library.Serializers
 {
+    /// <summary>
+    /// Serializable Color
+    /// </summary>
     [Serializable]
     public class SerialColor
     {

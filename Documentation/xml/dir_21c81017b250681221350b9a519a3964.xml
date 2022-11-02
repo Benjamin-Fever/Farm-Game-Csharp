@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_21c81017b250681221350b9a519a3964" kind="dir">
+    <compoundname>Content Pipeline</compoundname>
+    <innerdir refid="dir_803c85dee7e0c556cf19dd74e8136986">Content Pipeline/Importers</innerdir>
+    <innerdir refid="dir_bef79e8b5354a15cac483d690187cc2e">Content Pipeline/obj</innerdir>
+    <innerdir refid="dir_8fd166e0b0695772f03c344c0b01ded6">Content Pipeline/Processors</innerdir>
+    <innerdir refid="dir_0ca48ea73e76fa02c23d539eaa1cfdc0">Content Pipeline/Writer</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Content Pipeline/"/>
+  </compounddef>
+</doxygen>

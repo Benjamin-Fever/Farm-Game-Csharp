@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_content___library" xml:lang="en-US">
+<title>Content_Library Namespace Reference</title>
+<indexterm><primary>Content_Library</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_content___library_1_1_importer">Importer</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_content___library_1_1_processor">Processor</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_content___library_1_1_reader">Reader</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_content___library_1_1_writer">Writer</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

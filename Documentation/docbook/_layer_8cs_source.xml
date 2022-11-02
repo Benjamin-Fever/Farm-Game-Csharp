@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__layer_8cs_source" xml:lang="en-US">
+<title>Layer.cs</title>
+<indexterm><primary>Library/Mapping/Layer.cs</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__layer_8cs_source_1l00001"/>00001 <emphasis role="keyword">using&#32;</emphasis><link linkend="_namespace_library_1_1_camera">Library.Camera</link>;
+<anchor xml:id="__layer_8cs_source_1l00002"/>00002 <emphasis role="keyword">using&#32;</emphasis><link linkend="_namespace_library_1_1_graphics">Library.Graphics</link>;
+<anchor xml:id="__layer_8cs_source_1l00003"/>00003 <emphasis role="keyword">using&#32;</emphasis>System;
+<anchor xml:id="__layer_8cs_source_1l00004"/>00004 <emphasis role="keyword">using&#32;</emphasis>System.Collections.Generic;
+<anchor xml:id="__layer_8cs_source_1l00005"/>00005 
+<anchor xml:id="__layer_8cs_source_1l00006"/><link linkend="_namespace_library_1_1_mapping">00006</link> <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_library_1_1_mapping">Library.Mapping</link>
+<anchor xml:id="__layer_8cs_source_1l00007"/>00007 {
+<anchor xml:id="__layer_8cs_source_1l00012"/><link linkend="_class_library_1_1_mapping_1_1_abstract_layer">00012</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">abstract</emphasis>&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_class_library_1_1_mapping_1_1_abstract_layer">AbstractLayer</link>&lt;T&gt;
+<anchor xml:id="__layer_8cs_source_1l00013"/>00013 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__layer_8cs_source_1l00014"/><link linkend="_class_library_1_1_mapping_1_1_abstract_layer_1a177d64ac5ff09429fa2b552782f2df93">00014</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">string</emphasis>&#32;<link linkend="_class_library_1_1_mapping_1_1_abstract_layer_1a177d64ac5ff09429fa2b552782f2df93">name</link>;
+<anchor xml:id="__layer_8cs_source_1l00015"/><link linkend="_class_library_1_1_mapping_1_1_abstract_layer_1a897ac86eb61859d79c468b1f09349af8">00015</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_library_1_1_mapping_1_1_abstract_layer_1a897ac86eb61859d79c468b1f09349af8">depth</link>;
+<anchor xml:id="__layer_8cs_source_1l00016"/><link linkend="_class_library_1_1_mapping_1_1_abstract_layer_1aefc1f3ba7193a82c17dec4e95a24fd2d">00016</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;T&#32;<link linkend="_class_library_1_1_mapping_1_1_abstract_layer_1aefc1f3ba7193a82c17dec4e95a24fd2d">tiles</link>;
+<anchor xml:id="__layer_8cs_source_1l00017"/>00017 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__layer_8cs_source_1l00018"/>00018 
+<anchor xml:id="__layer_8cs_source_1l00023"/><link linkend="_class_library_1_1_mapping_1_1_tile_layer">00023</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_class_library_1_1_mapping_1_1_tile_layer">TileLayer</link>&#32;:&#32;<link linkend="_class_library_1_1_mapping_1_1_abstract_layer">AbstractLayer</link>&lt;List&lt;Tile&gt;&gt;,&#32;IComparable&lt;TileLayer&gt;,&#32;<link linkend="_interface_library_1_1_graphics_1_1_i_graphics_component">IGraphicsComponent</link>
+<anchor xml:id="__layer_8cs_source_1l00024"/>00024 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__layer_8cs_source_1l00025"/><link linkend="_class_library_1_1_mapping_1_1_tile_layer_1a0ae81fe4be6ca201053a76a01dabe24d">00025</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_library_1_1_mapping_1_1_tile_layer_1a0ae81fe4be6ca201053a76a01dabe24d">CompareTo</link>(<link linkend="_class_library_1_1_mapping_1_1_tile_layer">TileLayer</link>&#32;other)
+<anchor xml:id="__layer_8cs_source_1l00026"/>00026 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__layer_8cs_source_1l00027"/>00027 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(other&#32;==&#32;<emphasis role="keyword">null</emphasis>)&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;1;&#32;}
+<anchor xml:id="__layer_8cs_source_1l00028"/>00028 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(<link linkend="_class_library_1_1_mapping_1_1_abstract_layer_1a897ac86eb61859d79c468b1f09349af8">depth</link>&#32;==&#32;other.<link linkend="_class_library_1_1_mapping_1_1_abstract_layer_1a897ac86eb61859d79c468b1f09349af8">depth</link>)&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;0;&#32;}
+<anchor xml:id="__layer_8cs_source_1l00029"/>00029 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(<link linkend="_class_library_1_1_mapping_1_1_abstract_layer_1a897ac86eb61859d79c468b1f09349af8">depth</link>&#32;&gt;&#32;other.<link linkend="_class_library_1_1_mapping_1_1_abstract_layer_1a897ac86eb61859d79c468b1f09349af8">depth</link>)&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;-1;&#32;}
+<anchor xml:id="__layer_8cs_source_1l00030"/>00030 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;1;
+<anchor xml:id="__layer_8cs_source_1l00031"/>00031 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__layer_8cs_source_1l00032"/>00032 
+<anchor xml:id="__layer_8cs_source_1l00036"/><link linkend="_class_library_1_1_mapping_1_1_tile_layer_1abbbf9e9c4ba471a42f2775d88d7502b8">00036</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_library_1_1_mapping_1_1_tile_layer_1abbbf9e9c4ba471a42f2775d88d7502b8">draw</link>()
+<anchor xml:id="__layer_8cs_source_1l00037"/>00037 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__layer_8cs_source_1l00038"/>00038 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">foreach</emphasis>&#32;(<link linkend="_class_library_1_1_graphics_1_1_tile">Tile</link>&#32;tile&#32;<emphasis role="keywordflow">in</emphasis>&#32;<link linkend="_class_library_1_1_mapping_1_1_abstract_layer_1aefc1f3ba7193a82c17dec4e95a24fd2d">tiles</link>)
+<anchor xml:id="__layer_8cs_source_1l00039"/>00039 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__layer_8cs_source_1l00040"/>00040 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(<link linkend="__tile_8cs_1a2ace89b8cd37948aa26c3311b2df22e4">Viewport</link>.posInViewport(tile.<link linkend="_class_library_1_1_graphics_1_1_tile_1acd45540f84d89fa6c9d39bf2062527a3">position</link>))
+<anchor xml:id="__layer_8cs_source_1l00041"/>00041 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__layer_8cs_source_1l00042"/>00042 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tile.<link linkend="_class_library_1_1_graphics_1_1_tile_1a228df1b1e20efb443153f724b908c3ac">draw</link>();
+<anchor xml:id="__layer_8cs_source_1l00043"/>00043 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__layer_8cs_source_1l00044"/>00044 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__layer_8cs_source_1l00045"/>00045 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__layer_8cs_source_1l00046"/>00046 
+<anchor xml:id="__layer_8cs_source_1l00051"/><link linkend="_class_library_1_1_mapping_1_1_tile_layer_1a3d6def6f8721ba89005de03cd425d870">00051</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_library_1_1_mapping_1_1_tile_layer_1a3d6def6f8721ba89005de03cd425d870">GetDepth</link>()&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_library_1_1_mapping_1_1_abstract_layer_1a897ac86eb61859d79c468b1f09349af8">depth</link>;&#32;}
+<anchor xml:id="__layer_8cs_source_1l00052"/>00052 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__layer_8cs_source_1l00053"/>00053 }
+</programlisting></section>

@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_library_1_1_util_1_1_box" xml:lang="en-US">
+<title>Library.Util.Box Class Reference</title>
+<indexterm><primary>Library.Util.Box</primary></indexterm>
+<para>
+
+<para>Define a box  </para>
+ 
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_library_1_1_util_1_1_box_1a19f2280d8876d473d8db80c2bd321f77">Box</link> (float <link linkend="_class_library_1_1_util_1_1_box_1a6e1a48967a9e0cf26e0655b2bb23e196">x1</link>, float <link linkend="_class_library_1_1_util_1_1_box_1aa7805ee1a87289086eda19eaa892de2c">y1</link>, float <link linkend="_class_library_1_1_util_1_1_box_1a474d646e2791df41e3eec171d11bec4b">x2</link>, float <link linkend="_class_library_1_1_util_1_1_box_1a2fe0779515a91fd8ee051deb07ec692e">y2</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_class_library_1_1_util_1_1_box_1a46042c9aee96eb186c39f28e7b8c3e01">Box</link> (Vector2 topLeft, Vector2 bottomRight)</para>
+</listitem>
+            <listitem><para>override string <link linkend="_class_library_1_1_util_1_1_box_1a8c5b20a25981f409bd93c73b0eb307ee">ToString</link> ()</para>
+</listitem>
+            <listitem><para>Rectangle <link linkend="_class_library_1_1_util_1_1_box_1a7f2c35d927f47aa410fef8afd4d5e4aa">ConvertXnaRect</link> ()</para>
+
+<para>Convert between box to xna rect  </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>float <link linkend="_class_library_1_1_util_1_1_box_1a6e1a48967a9e0cf26e0655b2bb23e196">x1</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_class_library_1_1_util_1_1_box_1a474d646e2791df41e3eec171d11bec4b">x2</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_class_library_1_1_util_1_1_box_1aa7805ee1a87289086eda19eaa892de2c">y1</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_class_library_1_1_util_1_1_box_1a2fe0779515a91fd8ee051deb07ec692e">y2</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Define a box  </para>
+<para>
+Definition at line <link linkend="__util_8cs_source_1l00016">16</link> of file <link linkend="__util_8cs_source">Util.cs</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_library_1_1_util_1_1_box_1a19f2280d8876d473d8db80c2bd321f77"/><section>
+    <title>Box()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>Box</primary><secondary>Library.Util.Box</secondary></indexterm>
+<indexterm><primary>Library.Util.Box</primary><secondary>Box</secondary></indexterm>
+<para><computeroutput>Library.Util.Box.Box (float x1, float y1, float x2, float y2)</computeroutput></para><para>
+Definition at line <link linkend="__util_8cs_source_1l00023">23</link> of file <link linkend="__util_8cs_source">Util.cs</link>.</para>
+</section>
+<anchor xml:id="_class_library_1_1_util_1_1_box_1a46042c9aee96eb186c39f28e7b8c3e01"/><section>
+    <title>Box()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>Box</primary><secondary>Library.Util.Box</secondary></indexterm>
+<indexterm><primary>Library.Util.Box</primary><secondary>Box</secondary></indexterm>
+<para><computeroutput>Library.Util.Box.Box (Vector2 topLeft, Vector2 bottomRight)</computeroutput></para><para>
+Definition at line <link linkend="__util_8cs_source_1l00031">31</link> of file <link linkend="__util_8cs_source">Util.cs</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_library_1_1_util_1_1_box_1a7f2c35d927f47aa410fef8afd4d5e4aa"/><section>
+    <title>ConvertXnaRect()</title>
+<indexterm><primary>ConvertXnaRect</primary><secondary>Library.Util.Box</secondary></indexterm>
+<indexterm><primary>Library.Util.Box</primary><secondary>ConvertXnaRect</secondary></indexterm>
+<para><computeroutput>Rectangle Library.Util.Box.ConvertXnaRect ( )</computeroutput></para><para>
+
+<para>Convert between box to xna rect  </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>A rect from XNA</para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__util_8cs_source_1l00048">48</link> of file <link linkend="__util_8cs_source">Util.cs</link>.</para>
+</section>
+<anchor xml:id="_class_library_1_1_util_1_1_box_1a8c5b20a25981f409bd93c73b0eb307ee"/><section>
+    <title>ToString()</title>
+<indexterm><primary>ToString</primary><secondary>Library.Util.Box</secondary></indexterm>
+<indexterm><primary>Library.Util.Box</primary><secondary>ToString</secondary></indexterm>
+<para><computeroutput>override string Library.Util.Box.ToString ( )</computeroutput></para><para>
+Definition at line <link linkend="__util_8cs_source_1l00039">39</link> of file <link linkend="__util_8cs_source">Util.cs</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_library_1_1_util_1_1_box_1a6e1a48967a9e0cf26e0655b2bb23e196"/><section>
+    <title>x1</title>
+<indexterm><primary>x1</primary><secondary>Library.Util.Box</secondary></indexterm>
+<indexterm><primary>Library.Util.Box</primary><secondary>x1</secondary></indexterm>
+<para><computeroutput>float Library.Util.Box.x1</computeroutput></para><para>
+Definition at line <link linkend="__util_8cs_source_1l00018">18</link> of file <link linkend="__util_8cs_source">Util.cs</link>.</para>
+</section>
+<anchor xml:id="_class_library_1_1_util_1_1_box_1a474d646e2791df41e3eec171d11bec4b"/><section>
+    <title>x2</title>
+<indexterm><primary>x2</primary><secondary>Library.Util.Box</secondary></indexterm>
+<indexterm><primary>Library.Util.Box</primary><secondary>x2</secondary></indexterm>
+<para><computeroutput>float Library.Util.Box.x2</computeroutput></para><para>
+Definition at line <link linkend="__util_8cs_source_1l00019">19</link> of file <link linkend="__util_8cs_source">Util.cs</link>.</para>
+</section>
+<anchor xml:id="_class_library_1_1_util_1_1_box_1aa7805ee1a87289086eda19eaa892de2c"/><section>
+    <title>y1</title>
+<indexterm><primary>y1</primary><secondary>Library.Util.Box</secondary></indexterm>
+<indexterm><primary>Library.Util.Box</primary><secondary>y1</secondary></indexterm>
+<para><computeroutput>float Library.Util.Box.y1</computeroutput></para><para>
+Definition at line <link linkend="__util_8cs_source_1l00020">20</link> of file <link linkend="__util_8cs_source">Util.cs</link>.</para>
+</section>
+<anchor xml:id="_class_library_1_1_util_1_1_box_1a2fe0779515a91fd8ee051deb07ec692e"/><section>
+    <title>y2</title>
+<indexterm><primary>y2</primary><secondary>Library.Util.Box</secondary></indexterm>
+<indexterm><primary>Library.Util.Box</primary><secondary>y2</secondary></indexterm>
+<para><computeroutput>float Library.Util.Box.y2</computeroutput></para><para>
+Definition at line <link linkend="__util_8cs_source_1l00021">21</link> of file <link linkend="__util_8cs_source">Util.cs</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+Library/<link linkend="__util_8cs">Util.cs</link></section>
+</section>

@@ -5,6 +5,10 @@ using Microsoft.Xna.Framework.Content.Pipeline.Serialization.Compiler;
 
 namespace Content_Library.Writer
 {
+    /// <summary>
+    /// A public class that writes the map that has been imported through the pipeline and write it
+    /// into binary
+    /// </summary>
     [ContentTypeWriter]
     public class MapWriter : ContentTypeWriter<SerialMap>
     {

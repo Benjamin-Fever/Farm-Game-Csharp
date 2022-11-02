@@ -1,0 +1,47 @@
+\hypertarget{_serial_layer_8cs_source}{}\doxysection{Serial\+Layer.\+cs}
+\label{_serial_layer_8cs_source}\index{Library/Serializers/SerialLayer.cs@{Library/Serializers/SerialLayer.cs}}
+\mbox{\hyperlink{_serial_layer_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_serial_layer_8cs_source_l00001}00001 \textcolor{keyword}{using }\mbox{\hyperlink{namespace_library_1_1_mapping}{Library.Mapping}};}
+\DoxyCodeLine{\Hypertarget{_serial_layer_8cs_source_l00002}00002 \textcolor{keyword}{using }System;}
+\DoxyCodeLine{\Hypertarget{_serial_layer_8cs_source_l00003}00003 \textcolor{keyword}{using }System.Xml.Serialization;}
+\DoxyCodeLine{\Hypertarget{_serial_layer_8cs_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{_serial_layer_8cs_source_l00005}00005 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_library_1_1_serializers}{Library.Serializers}}}
+\DoxyCodeLine{\Hypertarget{_serial_layer_8cs_source_l00006}00006 \{}
+\DoxyCodeLine{\Hypertarget{_serial_layer_8cs_source_l00010}00010     [XmlRoot(\textcolor{stringliteral}{"{}layer"{}}), Serializable]}
+\DoxyCodeLine{\Hypertarget{_serial_layer_8cs_source_l00011}\mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_layer}{00011}}     \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_layer}{SerialLayer}} : \mbox{\hyperlink{class_library_1_1_mapping_1_1_abstract_layer}{AbstractLayer}}<string>}
+\DoxyCodeLine{\Hypertarget{_serial_layer_8cs_source_l00012}00012     \{}
+\DoxyCodeLine{\Hypertarget{_serial_layer_8cs_source_l00013}00013         [XmlAttribute(\textcolor{stringliteral}{"{}name"{}})]}
+\DoxyCodeLine{\Hypertarget{_serial_layer_8cs_source_l00014}\mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_layer_a1a2b2bc617c519b5df04481b7b6ba094}{00014}}         \textcolor{keyword}{public} \textcolor{keywordtype}{string} \mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_layer_a1a2b2bc617c519b5df04481b7b6ba094}{Name}}}
+\DoxyCodeLine{\Hypertarget{_serial_layer_8cs_source_l00015}00015         \{}
+\DoxyCodeLine{\Hypertarget{_serial_layer_8cs_source_l00016}00016             \textcolor{keyword}{set} \{ \mbox{\hyperlink{class_library_1_1_mapping_1_1_abstract_layer_a177d64ac5ff09429fa2b552782f2df93}{name}} = value; \}}
+\DoxyCodeLine{\Hypertarget{_serial_layer_8cs_source_l00017}00017             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_library_1_1_mapping_1_1_abstract_layer_a177d64ac5ff09429fa2b552782f2df93}{name}}; \}}
+\DoxyCodeLine{\Hypertarget{_serial_layer_8cs_source_l00018}00018         \}}
+\DoxyCodeLine{\Hypertarget{_serial_layer_8cs_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{_serial_layer_8cs_source_l00020}00020         [XmlAttribute(\textcolor{stringliteral}{"{}depth"{}})]}
+\DoxyCodeLine{\Hypertarget{_serial_layer_8cs_source_l00021}\mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_layer_a43b82e29794fe085b020f53c3e1e8e90}{00021}}         \textcolor{keyword}{public} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_layer_a43b82e29794fe085b020f53c3e1e8e90}{Depth}}}
+\DoxyCodeLine{\Hypertarget{_serial_layer_8cs_source_l00022}00022         \{}
+\DoxyCodeLine{\Hypertarget{_serial_layer_8cs_source_l00023}00023             \textcolor{keyword}{set} \{ \mbox{\hyperlink{class_library_1_1_mapping_1_1_abstract_layer_a897ac86eb61859d79c468b1f09349af8}{depth}} = value; \}}
+\DoxyCodeLine{\Hypertarget{_serial_layer_8cs_source_l00024}00024             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_library_1_1_mapping_1_1_abstract_layer_a897ac86eb61859d79c468b1f09349af8}{depth}}; \}}
+\DoxyCodeLine{\Hypertarget{_serial_layer_8cs_source_l00025}00025         \}}
+\DoxyCodeLine{\Hypertarget{_serial_layer_8cs_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{_serial_layer_8cs_source_l00027}00027         [XmlElement]}
+\DoxyCodeLine{\Hypertarget{_serial_layer_8cs_source_l00028}\mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_layer_ad49008ba5610bec2041c31eddcc0953c}{00028}}         \textcolor{keyword}{public} \mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_tileset}{SerialTileset}} \mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_layer_ad49008ba5610bec2041c31eddcc0953c}{Tileset}} \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{\Hypertarget{_serial_layer_8cs_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{_serial_layer_8cs_source_l00030}00030         [XmlElement]}
+\DoxyCodeLine{\Hypertarget{_serial_layer_8cs_source_l00031}\mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_layer_af2e14890c1acec4eb78d15075a4da7d5}{00031}}         \textcolor{keyword}{public} \textcolor{keywordtype}{string} \mbox{\hyperlink{class_library_1_1_serializers_1_1_serial_layer_af2e14890c1acec4eb78d15075a4da7d5}{Data}}}
+\DoxyCodeLine{\Hypertarget{_serial_layer_8cs_source_l00032}00032         \{}
+\DoxyCodeLine{\Hypertarget{_serial_layer_8cs_source_l00033}00033             \textcolor{keyword}{set} }
+\DoxyCodeLine{\Hypertarget{_serial_layer_8cs_source_l00034}00034             \{ }
+\DoxyCodeLine{\Hypertarget{_serial_layer_8cs_source_l00035}00035                 \textcolor{comment}{// Tidy up data input remove formats etc}}
+\DoxyCodeLine{\Hypertarget{_serial_layer_8cs_source_l00036}00036                 \mbox{\hyperlink{class_library_1_1_mapping_1_1_abstract_layer_aefc1f3ba7193a82c17dec4e95a24fd2d}{tiles}} = value;}
+\DoxyCodeLine{\Hypertarget{_serial_layer_8cs_source_l00037}00037                 \mbox{\hyperlink{class_library_1_1_mapping_1_1_abstract_layer_aefc1f3ba7193a82c17dec4e95a24fd2d}{tiles}} = \mbox{\hyperlink{class_library_1_1_mapping_1_1_abstract_layer_aefc1f3ba7193a82c17dec4e95a24fd2d}{tiles}}.Replace(\textcolor{stringliteral}{"{}\(\backslash\)t"{}}, \textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{\Hypertarget{_serial_layer_8cs_source_l00038}00038                 \mbox{\hyperlink{class_library_1_1_mapping_1_1_abstract_layer_aefc1f3ba7193a82c17dec4e95a24fd2d}{tiles}} = \mbox{\hyperlink{class_library_1_1_mapping_1_1_abstract_layer_aefc1f3ba7193a82c17dec4e95a24fd2d}{tiles}}.Replace(\textcolor{stringliteral}{"{} "{}}, \textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{\Hypertarget{_serial_layer_8cs_source_l00039}00039                 \mbox{\hyperlink{class_library_1_1_mapping_1_1_abstract_layer_aefc1f3ba7193a82c17dec4e95a24fd2d}{tiles}} = \mbox{\hyperlink{class_library_1_1_mapping_1_1_abstract_layer_aefc1f3ba7193a82c17dec4e95a24fd2d}{tiles}}.Substring(1,\mbox{\hyperlink{class_library_1_1_mapping_1_1_abstract_layer_aefc1f3ba7193a82c17dec4e95a24fd2d}{tiles}}.Length-\/2);}
+\DoxyCodeLine{\Hypertarget{_serial_layer_8cs_source_l00040}00040             \}}
+\DoxyCodeLine{\Hypertarget{_serial_layer_8cs_source_l00041}00041             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_library_1_1_mapping_1_1_abstract_layer_aefc1f3ba7193a82c17dec4e95a24fd2d}{tiles}}; \}}
+\DoxyCodeLine{\Hypertarget{_serial_layer_8cs_source_l00042}00042         \}}
+\DoxyCodeLine{\Hypertarget{_serial_layer_8cs_source_l00043}00043     \}}
+\DoxyCodeLine{\Hypertarget{_serial_layer_8cs_source_l00044}00044 \}}
+
+\end{DoxyCode}

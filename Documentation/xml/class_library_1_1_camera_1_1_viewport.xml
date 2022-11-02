@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="class_library_1_1_camera_1_1_viewport" kind="class" language="C#" prot="public">
+    <compoundname>Library::Camera::Viewport</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_library_1_1_camera_1_1_viewport_1ad8fa597f4f1bbbe4b8de5c14c19ea7d9" prot="private" static="yes" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 Library.Camera.Viewport.resolution</definition>
+        <argsstring></argsstring>
+        <name>resolution</name>
+        <qualifiedname>Library.Camera.Viewport.resolution</qualifiedname>
+        <initializer>= new Vector2(160, 128)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Camera/Viewport.cs" line="12" column="32" bodyfile="Library/Camera/Viewport.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_library_1_1_camera_1_1_viewport_1ae521d6805423c47494d8866150a11bc9" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_library_1_1_mapping_1_1_mapping_pos" kindref="compound">MappingPos</ref></type>
+        <definition>MappingPos Library.Camera.Viewport.position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <qualifiedname>Library.Camera.Viewport.position</qualifiedname>
+        <initializer>= new <ref refid="class_library_1_1_mapping_1_1_mapping_pos" kindref="compound">MappingPos</ref>(0, 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Camera/Viewport.cs" line="13" column="35" bodyfile="Library/Camera/Viewport.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_library_1_1_camera_1_1_viewport_1a8697d6fe8e01f24b2a76c6b8115cea69" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Library.Camera.Viewport.posInViewport</definition>
+        <argsstring>(MappingPos pos)</argsstring>
+        <name>posInViewport</name>
+        <qualifiedname>Library.Camera.Viewport.posInViewport</qualifiedname>
+        <param>
+          <type><ref refid="class_library_1_1_mapping_1_1_mapping_pos" kindref="compound">MappingPos</ref></type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Check if the mapping position is inside the viewable area  </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position to check against</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if position is inside view area otherwise return false</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Camera/Viewport.cs" line="20" column="28" bodyfile="Library/Camera/Viewport.cs" bodystart="20" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_library_1_1_camera_1_1_viewport_1ac5a95e7ecf78a3c403699c5478e08132" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Library.Camera.Viewport.Move</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>Move</name>
+        <qualifiedname>Library.Camera.Viewport.Move</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Move the viewport along and x and y axis  </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How many positions along the x</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How many positions along the y</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Camera/Viewport.cs" line="34" column="28" bodyfile="Library/Camera/Viewport.cs" bodystart="34" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_library_1_1_camera_1_1_viewport_1a1cafcf35f7a46f27a48f293f6f54a436" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int Library.Camera.Viewport.GetX</definition>
+        <argsstring>()</argsstring>
+        <name>GetX</name>
+        <qualifiedname>Library.Camera.Viewport.GetX</qualifiedname>
+        <briefdescription>
+<para>Get the x position  </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>An int of the x position of the viewport</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Camera/Viewport.cs" line="53" column="27" bodyfile="Library/Camera/Viewport.cs" bodystart="53" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_library_1_1_camera_1_1_viewport_1a1a8aa445cfed3b1f7b5e88da2bf9d466" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int Library.Camera.Viewport.GetY</definition>
+        <argsstring>()</argsstring>
+        <name>GetY</name>
+        <qualifiedname>Library.Camera.Viewport.GetY</qualifiedname>
+        <briefdescription>
+<para>Get the y position  </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>An int of the y position of the viewport</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Camera/Viewport.cs" line="59" column="27" bodyfile="Library/Camera/Viewport.cs" bodystart="59" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_library_1_1_camera_1_1_viewport_1a3e33d6cd0be4d45741f4d53d8382bdab" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Vector2</type>
+        <definition>static Vector2 Library.Camera.Viewport.GetScale</definition>
+        <argsstring>()</argsstring>
+        <name>GetScale</name>
+        <qualifiedname>Library.Camera.Viewport.GetScale</qualifiedname>
+        <briefdescription>
+<para>Gets how much to scale up the viewable area in proprtion to the window size  </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A vector2 where x is the width scale and y is the height scale</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Camera/Viewport.cs" line="65" column="31" bodyfile="Library/Camera/Viewport.cs" bodystart="65" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The viewport class defines what space is viewable to the player at a given time.  </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/Camera/Viewport.cs" line="10" column="19" bodyfile="Library/Camera/Viewport.cs" bodystart="11" bodyend="66"/>
+    <listofallmembers>
+      <member refid="class_library_1_1_camera_1_1_viewport_1a3e33d6cd0be4d45741f4d53d8382bdab" prot="public" virt="non-virtual"><scope>Library::Camera::Viewport</scope><name>GetScale</name></member>
+      <member refid="class_library_1_1_camera_1_1_viewport_1a1cafcf35f7a46f27a48f293f6f54a436" prot="public" virt="non-virtual"><scope>Library::Camera::Viewport</scope><name>GetX</name></member>
+      <member refid="class_library_1_1_camera_1_1_viewport_1a1a8aa445cfed3b1f7b5e88da2bf9d466" prot="public" virt="non-virtual"><scope>Library::Camera::Viewport</scope><name>GetY</name></member>
+      <member refid="class_library_1_1_camera_1_1_viewport_1ac5a95e7ecf78a3c403699c5478e08132" prot="public" virt="non-virtual"><scope>Library::Camera::Viewport</scope><name>Move</name></member>
+      <member refid="class_library_1_1_camera_1_1_viewport_1a8697d6fe8e01f24b2a76c6b8115cea69" prot="public" virt="non-virtual"><scope>Library::Camera::Viewport</scope><name>posInViewport</name></member>
+      <member refid="class_library_1_1_camera_1_1_viewport_1ae521d6805423c47494d8866150a11bc9" prot="private" virt="non-virtual"><scope>Library::Camera::Viewport</scope><name>position</name></member>
+      <member refid="class_library_1_1_camera_1_1_viewport_1ad8fa597f4f1bbbe4b8de5c14c19ea7d9" prot="private" virt="non-virtual"><scope>Library::Camera::Viewport</scope><name>resolution</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

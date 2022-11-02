@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__layer_8cs" xml:lang="en-US">
+<title>Library/Mapping/Layer.cs File Reference</title>
+<indexterm><primary>Library/Mapping/Layer.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_library_1_1_mapping_1_1_abstract_layer">Library.Mapping.AbstractLayer&lt; T &gt;</link></para>
+
+<para>Generic Abstract Layer. Takes a type of T which defines what variable type tiles is  </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_library_1_1_mapping_1_1_tile_layer">Library.Mapping.TileLayer</link></para>
+
+<para>A tilelayer used to define what tiles are visible at this depth. Tile type is a list of Tile. Extends <link linkend="_class_library_1_1_mapping_1_1_abstract_layer">AbstractLayer</link> and implements comparable and graphics component.  </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_library">Library</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_library_1_1_mapping">Library.Mapping</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

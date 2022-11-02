@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_library_1_1_mapping" xml:lang="en-US">
+<title>Library.Mapping Namespace Reference</title>
+<indexterm><primary>Library.Mapping</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_library_1_1_mapping_1_1_abstract_layer">AbstractLayer</link></para>
+
+<para>Generic Abstract Layer. Takes a type of T which defines what variable type tiles is  </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_library_1_1_mapping_1_1_abstract_map">AbstractMap</link></para>
+
+<para>Generic Abstract Layer. Takes a type of T which defines what variable type layers is  </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_library_1_1_mapping_1_1_mapping_pos">MappingPos</link></para>
+
+<para><link linkend="_class_library_1_1_mapping_1_1_mapping_pos">MappingPos</link> defines a position on the map  </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_library_1_1_mapping_1_1_tile_layer">TileLayer</link></para>
+
+<para>A tilelayer used to define what tiles are visible at this depth. Tile type is a list of Tile. Extends <link linkend="_class_library_1_1_mapping_1_1_abstract_layer">AbstractLayer</link> and implements comparable and graphics component.  </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_library_1_1_mapping_1_1_tile_map">TileMap</link></para>
+
+<para>A tilemap used to define what layers are in the map. Layer type is a <link linkend="_class_library_1_1_mapping_1_1_tile_layer">TileLayer</link>. Implements IGraphicsComponent.  </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

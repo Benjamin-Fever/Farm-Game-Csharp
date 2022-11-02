@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_library_1_1_graphics_1_1_tile" xml:lang="en-US">
+<title>Library.Graphics.Tile Class Reference</title>
+<indexterm><primary>Library.Graphics.Tile</primary></indexterm>
+<para>
+
+<para>A graphics component that represents a map tile  </para>
+ 
+</para>
+<para>Inheritance diagram for Library.Graphics.Tile:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_library_1_1_graphics_1_1_tile.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_library_1_1_graphics_1_1_tile_1a10cc32418cfb777daf902c80edc2f9c8">Tile</link> (<link linkend="_class_library_1_1_graphics_1_1_sprite">Sprite</link> <link linkend="_class_library_1_1_graphics_1_1_graphics_component_1a42699f9e7969f7104ba11a4a47c9a69b">sprite</link>, <link linkend="_class_library_1_1_mapping_1_1_mapping_pos">MappingPos</link> <link linkend="_class_library_1_1_graphics_1_1_tile_1acd45540f84d89fa6c9d39bf2062527a3">position</link>, Vector2 <link linkend="_class_library_1_1_graphics_1_1_tile_1ad315a6d802f20f45c3a7cd9c5423197b">tileSize</link>, int <link linkend="_class_library_1_1_graphics_1_1_tile_1a36564162d1bde6d032dd9c3a98518402">columns</link>, int <link linkend="_class_library_1_1_graphics_1_1_tile_1a49518076f8614f3ff79f6a8849c8112a">tileNum</link>)</para>
+</listitem>
+            <listitem><para>override void <link linkend="_class_library_1_1_graphics_1_1_tile_1a228df1b1e20efb443153f724b908c3ac">draw</link> ()</para>
+
+<para>Draw the graphics component  </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>Vector2 <link linkend="_class_library_1_1_graphics_1_1_tile_1ad315a6d802f20f45c3a7cd9c5423197b">tileSize</link></para>
+</listitem>
+            <listitem><para><link linkend="_class_library_1_1_mapping_1_1_mapping_pos">MappingPos</link> <link linkend="_class_library_1_1_graphics_1_1_tile_1acd45540f84d89fa6c9d39bf2062527a3">position</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_class_library_1_1_graphics_1_1_tile_1a49518076f8614f3ff79f6a8849c8112a">tileNum</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_class_library_1_1_graphics_1_1_tile_1a36564162d1bde6d032dd9c3a98518402">columns</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>A graphics component that represents a map tile  </para>
+<para>
+Definition at line <link linkend="__tile_8cs_source_1l00012">12</link> of file <link linkend="__tile_8cs_source">Tile.cs</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_library_1_1_graphics_1_1_tile_1a10cc32418cfb777daf902c80edc2f9c8"/><section>
+    <title>Tile()</title>
+<indexterm><primary>Tile</primary><secondary>Library.Graphics.Tile</secondary></indexterm>
+<indexterm><primary>Library.Graphics.Tile</primary><secondary>Tile</secondary></indexterm>
+<para><computeroutput>Library.Graphics.Tile.Tile (<link linkend="_class_library_1_1_graphics_1_1_sprite">Sprite</link> sprite, <link linkend="_class_library_1_1_mapping_1_1_mapping_pos">MappingPos</link> position, Vector2 tileSize, int columns, int tileNum)</computeroutput></para><para>
+Definition at line <link linkend="__tile_8cs_source_1l00019">19</link> of file <link linkend="__tile_8cs_source">Tile.cs</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_library_1_1_graphics_1_1_tile_1a228df1b1e20efb443153f724b908c3ac"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>Library.Graphics.Tile</secondary></indexterm>
+<indexterm><primary>Library.Graphics.Tile</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput>override void Library.Graphics.Tile.draw ( )<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Draw the graphics component  </para>
+</para>
+<para>
+Implements <link linkend="_class_library_1_1_graphics_1_1_graphics_component_1ae807ff6992bd2a9b486d88a0fa75f3a4">Library.Graphics.GraphicsComponent</link>.</para>
+<para>
+Definition at line <link linkend="__tile_8cs_source_1l00028">28</link> of file <link linkend="__tile_8cs_source">Tile.cs</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_library_1_1_graphics_1_1_tile_1a36564162d1bde6d032dd9c3a98518402"/><section>
+    <title>columns</title>
+<indexterm><primary>columns</primary><secondary>Library.Graphics.Tile</secondary></indexterm>
+<indexterm><primary>Library.Graphics.Tile</primary><secondary>columns</secondary></indexterm>
+<para><computeroutput>int Library.Graphics.Tile.columns</computeroutput></para><para>
+Definition at line <link linkend="__tile_8cs_source_1l00017">17</link> of file <link linkend="__tile_8cs_source">Tile.cs</link>.</para>
+</section>
+<anchor xml:id="_class_library_1_1_graphics_1_1_tile_1acd45540f84d89fa6c9d39bf2062527a3"/><section>
+    <title>position</title>
+<indexterm><primary>position</primary><secondary>Library.Graphics.Tile</secondary></indexterm>
+<indexterm><primary>Library.Graphics.Tile</primary><secondary>position</secondary></indexterm>
+<para><computeroutput><link linkend="_class_library_1_1_mapping_1_1_mapping_pos">MappingPos</link> Library.Graphics.Tile.position</computeroutput></para><para>
+Definition at line <link linkend="__tile_8cs_source_1l00015">15</link> of file <link linkend="__tile_8cs_source">Tile.cs</link>.</para>
+</section>
+<anchor xml:id="_class_library_1_1_graphics_1_1_tile_1a49518076f8614f3ff79f6a8849c8112a"/><section>
+    <title>tileNum</title>
+<indexterm><primary>tileNum</primary><secondary>Library.Graphics.Tile</secondary></indexterm>
+<indexterm><primary>Library.Graphics.Tile</primary><secondary>tileNum</secondary></indexterm>
+<para><computeroutput>int Library.Graphics.Tile.tileNum</computeroutput></para><para>
+Definition at line <link linkend="__tile_8cs_source_1l00016">16</link> of file <link linkend="__tile_8cs_source">Tile.cs</link>.</para>
+</section>
+<anchor xml:id="_class_library_1_1_graphics_1_1_tile_1ad315a6d802f20f45c3a7cd9c5423197b"/><section>
+    <title>tileSize</title>
+<indexterm><primary>tileSize</primary><secondary>Library.Graphics.Tile</secondary></indexterm>
+<indexterm><primary>Library.Graphics.Tile</primary><secondary>tileSize</secondary></indexterm>
+<para><computeroutput>Vector2 Library.Graphics.Tile.tileSize</computeroutput></para><para>
+Definition at line <link linkend="__tile_8cs_source_1l00014">14</link> of file <link linkend="__tile_8cs_source">Tile.cs</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+Library/Graphics/<link linkend="__tile_8cs">Tile.cs</link></section>
+</section>

@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_library_1_1_serializers_1_1_serial_map" xml:lang="en-US">
+<title>Library.Serializers.SerialMap Class Reference</title>
+<indexterm><primary>Library.Serializers.SerialMap</primary></indexterm>
+<para>
+
+<para>Serializable map  </para>
+ 
+</para>
+<para>Inheritance diagram for Library.Serializers.SerialMap:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_library_1_1_serializers_1_1_serial_map.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_class_library_1_1_serializers_1_1_serial_map_1ab9812c4d5210a523746afb9d21fddb6d">Name</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_library_1_1_serializers_1_1_serial_map_1a3bea6074fef1e7519e8f07e3156ca805">TileWidth</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_library_1_1_serializers_1_1_serial_map_1aa68ea27264d13948e07e8e9090f3e4c8">TileHeight</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_library_1_1_serializers_1_1_serial_map_1a520d171b8963786acac5e9591a359905">Width</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_library_1_1_serializers_1_1_serial_map_1acc3a993b8a38e7e9f32ad500161bec38">Height</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="_class_library_1_1_serializers_1_1_serial_color">SerialColor</link> <link linkend="_class_library_1_1_serializers_1_1_serial_map_1aef142e59fe69a1154d70cfe83df6e310">Background</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_class_library_1_1_serializers_1_1_serial_layer">SerialLayer</link> &gt; <link linkend="_class_library_1_1_serializers_1_1_serial_map_1a20e7ca9cadd32e55635bede2587631b0">Layers</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Serializable map  </para>
+<para>
+Definition at line <link linkend="__serial_map_8cs_source_1l00013">13</link> of file <link linkend="__serial_map_8cs_source">SerialMap.cs</link>.</para>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_library_1_1_serializers_1_1_serial_map_1aef142e59fe69a1154d70cfe83df6e310"/><section>
+    <title>Background</title>
+<indexterm><primary>Background</primary><secondary>Library.Serializers.SerialMap</secondary></indexterm>
+<indexterm><primary>Library.Serializers.SerialMap</primary><secondary>Background</secondary></indexterm>
+<para><computeroutput><link linkend="_class_library_1_1_serializers_1_1_serial_color">SerialColor</link> Library.Serializers.SerialMap.Background<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__serial_map_8cs_source_1l00050">50</link> of file <link linkend="__serial_map_8cs_source">SerialMap.cs</link>.</para>
+</section>
+<anchor xml:id="_class_library_1_1_serializers_1_1_serial_map_1acc3a993b8a38e7e9f32ad500161bec38"/><section>
+    <title>Height</title>
+<indexterm><primary>Height</primary><secondary>Library.Serializers.SerialMap</secondary></indexterm>
+<indexterm><primary>Library.Serializers.SerialMap</primary><secondary>Height</secondary></indexterm>
+<para><computeroutput>int Library.Serializers.SerialMap.Height<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__serial_map_8cs_source_1l00044">44</link> of file <link linkend="__serial_map_8cs_source">SerialMap.cs</link>.</para>
+</section>
+<anchor xml:id="_class_library_1_1_serializers_1_1_serial_map_1a20e7ca9cadd32e55635bede2587631b0"/><section>
+    <title>Layers</title>
+<indexterm><primary>Layers</primary><secondary>Library.Serializers.SerialMap</secondary></indexterm>
+<indexterm><primary>Library.Serializers.SerialMap</primary><secondary>Layers</secondary></indexterm>
+<para><computeroutput>List&lt;<link linkend="_class_library_1_1_serializers_1_1_serial_layer">SerialLayer</link>&gt; Library.Serializers.SerialMap.Layers<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__serial_map_8cs_source_1l00065">65</link> of file <link linkend="__serial_map_8cs_source">SerialMap.cs</link>.</para>
+</section>
+<anchor xml:id="_class_library_1_1_serializers_1_1_serial_map_1ab9812c4d5210a523746afb9d21fddb6d"/><section>
+    <title>Name</title>
+<indexterm><primary>Name</primary><secondary>Library.Serializers.SerialMap</secondary></indexterm>
+<indexterm><primary>Library.Serializers.SerialMap</primary><secondary>Name</secondary></indexterm>
+<para><computeroutput>string Library.Serializers.SerialMap.Name<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__serial_map_8cs_source_1l00016">16</link> of file <link linkend="__serial_map_8cs_source">SerialMap.cs</link>.</para>
+</section>
+<anchor xml:id="_class_library_1_1_serializers_1_1_serial_map_1aa68ea27264d13948e07e8e9090f3e4c8"/><section>
+    <title>TileHeight</title>
+<indexterm><primary>TileHeight</primary><secondary>Library.Serializers.SerialMap</secondary></indexterm>
+<indexterm><primary>Library.Serializers.SerialMap</primary><secondary>TileHeight</secondary></indexterm>
+<para><computeroutput>int Library.Serializers.SerialMap.TileHeight<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__serial_map_8cs_source_1l00030">30</link> of file <link linkend="__serial_map_8cs_source">SerialMap.cs</link>.</para>
+</section>
+<anchor xml:id="_class_library_1_1_serializers_1_1_serial_map_1a3bea6074fef1e7519e8f07e3156ca805"/><section>
+    <title>TileWidth</title>
+<indexterm><primary>TileWidth</primary><secondary>Library.Serializers.SerialMap</secondary></indexterm>
+<indexterm><primary>Library.Serializers.SerialMap</primary><secondary>TileWidth</secondary></indexterm>
+<para><computeroutput>int Library.Serializers.SerialMap.TileWidth<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__serial_map_8cs_source_1l00023">23</link> of file <link linkend="__serial_map_8cs_source">SerialMap.cs</link>.</para>
+</section>
+<anchor xml:id="_class_library_1_1_serializers_1_1_serial_map_1a520d171b8963786acac5e9591a359905"/><section>
+    <title>Width</title>
+<indexterm><primary>Width</primary><secondary>Library.Serializers.SerialMap</secondary></indexterm>
+<indexterm><primary>Library.Serializers.SerialMap</primary><secondary>Width</secondary></indexterm>
+<para><computeroutput>int Library.Serializers.SerialMap.Width<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__serial_map_8cs_source_1l00037">37</link> of file <link linkend="__serial_map_8cs_source">SerialMap.cs</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+Library/Serializers/<link linkend="__serial_map_8cs">SerialMap.cs</link></section>
+</section>

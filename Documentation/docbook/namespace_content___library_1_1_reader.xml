@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_content___library_1_1_reader" xml:lang="en-US">
+<title>Content_Library.Reader Namespace Reference</title>
+<indexterm><primary>Content_Library.Reader</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_content___library_1_1_reader_1_1_map_reader">MapReader</link></para>
+
+<para>Read the binary map file  </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

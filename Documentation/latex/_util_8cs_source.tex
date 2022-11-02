@@ -1,0 +1,52 @@
+\hypertarget{_util_8cs_source}{}\doxysection{Util.\+cs}
+\label{_util_8cs_source}\index{Library/Util.cs@{Library/Util.cs}}
+\mbox{\hyperlink{_util_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00001}00001 \textcolor{keyword}{using }\mbox{\hyperlink{namespace_library_1_1_mapping}{Library.Mapping}};}
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00002}00002 \textcolor{keyword}{using }Microsoft.Xna.Framework;}
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00003}00003 \textcolor{keyword}{using }Microsoft.Xna.Framework.Content;}
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00004}00004 \textcolor{keyword}{using }Microsoft.Xna.Framework.Graphics;}
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00005}00005 \textcolor{keyword}{using }Microsoft.Xna.Framework.Input;}
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00006}00006 \textcolor{keyword}{using }System;}
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00007}00007 \textcolor{keyword}{using }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00008}00008 \textcolor{keyword}{using }System.IO;}
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00009}00009 \textcolor{keyword}{using }System.Linq;}
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00011}\mbox{\hyperlink{namespace_library_1_1_util}{00011}} \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_library_1_1_util}{Library.Util}}}
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00012}00012 \{}
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00016}\mbox{\hyperlink{class_library_1_1_util_1_1_box}{00016}}     \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{class_library_1_1_util_1_1_box}{Box}}}
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00017}00017     \{}
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00018}\mbox{\hyperlink{class_library_1_1_util_1_1_box_a6e1a48967a9e0cf26e0655b2bb23e196}{00018}}         \textcolor{keyword}{public} \textcolor{keywordtype}{float} \mbox{\hyperlink{class_library_1_1_util_1_1_box_a6e1a48967a9e0cf26e0655b2bb23e196}{x1}};}
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00019}\mbox{\hyperlink{class_library_1_1_util_1_1_box_a474d646e2791df41e3eec171d11bec4b}{00019}}         \textcolor{keyword}{public} \textcolor{keywordtype}{float} \mbox{\hyperlink{class_library_1_1_util_1_1_box_a474d646e2791df41e3eec171d11bec4b}{x2}};}
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00020}\mbox{\hyperlink{class_library_1_1_util_1_1_box_aa7805ee1a87289086eda19eaa892de2c}{00020}}         \textcolor{keyword}{public} \textcolor{keywordtype}{float} \mbox{\hyperlink{class_library_1_1_util_1_1_box_aa7805ee1a87289086eda19eaa892de2c}{y1}};}
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00021}\mbox{\hyperlink{class_library_1_1_util_1_1_box_a2fe0779515a91fd8ee051deb07ec692e}{00021}}         \textcolor{keyword}{public} \textcolor{keywordtype}{float} \mbox{\hyperlink{class_library_1_1_util_1_1_box_a2fe0779515a91fd8ee051deb07ec692e}{y2}};}
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00023}\mbox{\hyperlink{class_library_1_1_util_1_1_box_a19f2280d8876d473d8db80c2bd321f77}{00023}}         \textcolor{keyword}{public} \mbox{\hyperlink{class_library_1_1_util_1_1_box_a19f2280d8876d473d8db80c2bd321f77}{Box}}(\textcolor{keywordtype}{float} \mbox{\hyperlink{class_library_1_1_util_1_1_box_a6e1a48967a9e0cf26e0655b2bb23e196}{x1}}, \textcolor{keywordtype}{float} \mbox{\hyperlink{class_library_1_1_util_1_1_box_aa7805ee1a87289086eda19eaa892de2c}{y1}}, \textcolor{keywordtype}{float} \mbox{\hyperlink{class_library_1_1_util_1_1_box_a474d646e2791df41e3eec171d11bec4b}{x2}}, \textcolor{keywordtype}{float} \mbox{\hyperlink{class_library_1_1_util_1_1_box_a2fe0779515a91fd8ee051deb07ec692e}{y2}})}
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00024}00024         \{}
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00025}00025             this.x1 = \mbox{\hyperlink{class_library_1_1_util_1_1_box_a6e1a48967a9e0cf26e0655b2bb23e196}{x1}};}
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00026}00026             this.x2 = \mbox{\hyperlink{class_library_1_1_util_1_1_box_a474d646e2791df41e3eec171d11bec4b}{x2}};}
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00027}00027             this.y1 = \mbox{\hyperlink{class_library_1_1_util_1_1_box_aa7805ee1a87289086eda19eaa892de2c}{y1}};}
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00028}00028             this.y2 = \mbox{\hyperlink{class_library_1_1_util_1_1_box_a2fe0779515a91fd8ee051deb07ec692e}{y2}};}
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00029}00029         \}}
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00031}\mbox{\hyperlink{class_library_1_1_util_1_1_box_a46042c9aee96eb186c39f28e7b8c3e01}{00031}}         \textcolor{keyword}{public} \mbox{\hyperlink{class_library_1_1_util_1_1_box_a46042c9aee96eb186c39f28e7b8c3e01}{Box}}(Vector2 topLeft, Vector2 bottomRight)}
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00032}00032         \{}
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00033}00033             this.x1 = topLeft.X;}
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00034}00034             this.x2 = bottomRight.X;}
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00035}00035             this.y1 = topLeft.Y;}
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00036}00036             this.y2 = bottomRight.Y;}
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00037}00037         \}}
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00039}\mbox{\hyperlink{class_library_1_1_util_1_1_box_a8c5b20a25981f409bd93c73b0eb307ee}{00039}}         \textcolor{keyword}{public} \textcolor{keyword}{override} \textcolor{keywordtype}{string} \mbox{\hyperlink{class_library_1_1_util_1_1_box_a8c5b20a25981f409bd93c73b0eb307ee}{ToString}}()}
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00040}00040         \{}
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00041}00041             \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}Square:\(\backslash\)n    Top Left:\(\backslash\)n        X: "{}} + \mbox{\hyperlink{class_library_1_1_util_1_1_box_a6e1a48967a9e0cf26e0655b2bb23e196}{x1}} + \textcolor{stringliteral}{"{}\(\backslash\)n        Y: "{}} + \mbox{\hyperlink{class_library_1_1_util_1_1_box_aa7805ee1a87289086eda19eaa892de2c}{y1}} + \textcolor{stringliteral}{"{}\(\backslash\)n    Bottom Right:\(\backslash\)n        X: "{}} + \mbox{\hyperlink{class_library_1_1_util_1_1_box_a6e1a48967a9e0cf26e0655b2bb23e196}{x1}} + \textcolor{stringliteral}{"{}\(\backslash\)n        Y: "{}} + \mbox{\hyperlink{class_library_1_1_util_1_1_box_aa7805ee1a87289086eda19eaa892de2c}{y1}};}
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00042}00042         \}}
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00048}\mbox{\hyperlink{class_library_1_1_util_1_1_box_a7f2c35d927f47aa410fef8afd4d5e4aa}{00048}}         \textcolor{keyword}{public} Rectangle \mbox{\hyperlink{class_library_1_1_util_1_1_box_a7f2c35d927f47aa410fef8afd4d5e4aa}{ConvertXnaRect}}()}
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00049}00049         \{}
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00050}00050             \textcolor{keywordflow}{return} \textcolor{keyword}{new} Rectangle((\textcolor{keywordtype}{int})\mbox{\hyperlink{class_library_1_1_util_1_1_box_a6e1a48967a9e0cf26e0655b2bb23e196}{x1}}, (\textcolor{keywordtype}{int})\mbox{\hyperlink{class_library_1_1_util_1_1_box_aa7805ee1a87289086eda19eaa892de2c}{y1}}, (\textcolor{keywordtype}{int})(\mbox{\hyperlink{class_library_1_1_util_1_1_box_a474d646e2791df41e3eec171d11bec4b}{x2}} -\/ \mbox{\hyperlink{class_library_1_1_util_1_1_box_a6e1a48967a9e0cf26e0655b2bb23e196}{x1}}), (\textcolor{keywordtype}{int})(\mbox{\hyperlink{class_library_1_1_util_1_1_box_a2fe0779515a91fd8ee051deb07ec692e}{y2}} -\/ \mbox{\hyperlink{class_library_1_1_util_1_1_box_aa7805ee1a87289086eda19eaa892de2c}{y1}}));}
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00051}00051         \}}
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00052}00052     \}}
+\DoxyCodeLine{\Hypertarget{_util_8cs_source_l00053}00053 \}}
+
+\end{DoxyCode}

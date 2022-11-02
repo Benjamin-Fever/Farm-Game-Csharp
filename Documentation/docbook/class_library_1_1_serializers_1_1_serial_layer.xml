@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_library_1_1_serializers_1_1_serial_layer" xml:lang="en-US">
+<title>Library.Serializers.SerialLayer Class Reference</title>
+<indexterm><primary>Library.Serializers.SerialLayer</primary></indexterm>
+<para>
+
+<para>Serializable Layer  </para>
+ 
+</para>
+<para>Inheritance diagram for Library.Serializers.SerialLayer:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_library_1_1_serializers_1_1_serial_layer.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_class_library_1_1_serializers_1_1_serial_layer_1a1a2b2bc617c519b5df04481b7b6ba094">Name</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_library_1_1_serializers_1_1_serial_layer_1a43b82e29794fe085b020f53c3e1e8e90">Depth</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="_class_library_1_1_serializers_1_1_serial_tileset">SerialTileset</link> <link linkend="_class_library_1_1_serializers_1_1_serial_layer_1ad49008ba5610bec2041c31eddcc0953c">Tileset</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>string <link linkend="_class_library_1_1_serializers_1_1_serial_layer_1af2e14890c1acec4eb78d15075a4da7d5">Data</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Serializable Layer  </para>
+<para>
+Definition at line <link linkend="__serial_layer_8cs_source_1l00011">11</link> of file <link linkend="__serial_layer_8cs_source">SerialLayer.cs</link>.</para>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_library_1_1_serializers_1_1_serial_layer_1af2e14890c1acec4eb78d15075a4da7d5"/><section>
+    <title>Data</title>
+<indexterm><primary>Data</primary><secondary>Library.Serializers.SerialLayer</secondary></indexterm>
+<indexterm><primary>Library.Serializers.SerialLayer</primary><secondary>Data</secondary></indexterm>
+<para><computeroutput>string Library.Serializers.SerialLayer.Data<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__serial_layer_8cs_source_1l00031">31</link> of file <link linkend="__serial_layer_8cs_source">SerialLayer.cs</link>.</para>
+</section>
+<anchor xml:id="_class_library_1_1_serializers_1_1_serial_layer_1a43b82e29794fe085b020f53c3e1e8e90"/><section>
+    <title>Depth</title>
+<indexterm><primary>Depth</primary><secondary>Library.Serializers.SerialLayer</secondary></indexterm>
+<indexterm><primary>Library.Serializers.SerialLayer</primary><secondary>Depth</secondary></indexterm>
+<para><computeroutput>int Library.Serializers.SerialLayer.Depth<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__serial_layer_8cs_source_1l00021">21</link> of file <link linkend="__serial_layer_8cs_source">SerialLayer.cs</link>.</para>
+</section>
+<anchor xml:id="_class_library_1_1_serializers_1_1_serial_layer_1a1a2b2bc617c519b5df04481b7b6ba094"/><section>
+    <title>Name</title>
+<indexterm><primary>Name</primary><secondary>Library.Serializers.SerialLayer</secondary></indexterm>
+<indexterm><primary>Library.Serializers.SerialLayer</primary><secondary>Name</secondary></indexterm>
+<para><computeroutput>string Library.Serializers.SerialLayer.Name<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__serial_layer_8cs_source_1l00014">14</link> of file <link linkend="__serial_layer_8cs_source">SerialLayer.cs</link>.</para>
+</section>
+<anchor xml:id="_class_library_1_1_serializers_1_1_serial_layer_1ad49008ba5610bec2041c31eddcc0953c"/><section>
+    <title>Tileset</title>
+<indexterm><primary>Tileset</primary><secondary>Library.Serializers.SerialLayer</secondary></indexterm>
+<indexterm><primary>Library.Serializers.SerialLayer</primary><secondary>Tileset</secondary></indexterm>
+<para><computeroutput><link linkend="_class_library_1_1_serializers_1_1_serial_tileset">SerialTileset</link> Library.Serializers.SerialLayer.Tileset<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__serial_layer_8cs_source_1l00028">28</link> of file <link linkend="__serial_layer_8cs_source">SerialLayer.cs</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+Library/Serializers/<link linkend="__serial_layer_8cs">SerialLayer.cs</link></section>
+</section>

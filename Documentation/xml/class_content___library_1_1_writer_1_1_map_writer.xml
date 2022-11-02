@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="class_content___library_1_1_writer_1_1_map_writer" kind="class" language="C#" prot="public">
+    <compoundname>Content_Library::Writer::MapWriter</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ContentTypeWriter&lt; SerialMap &gt;</basecompoundref>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_content___library_1_1_writer_1_1_map_writer_1ae71669631ad1eb8a744ea4e8d33698f5" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Content_Library.Writer.MapWriter.Write</definition>
+        <argsstring>(ContentWriter output, SerialMap value)</argsstring>
+        <name>Write</name>
+        <qualifiedname>Content_Library.Writer.MapWriter.Write</qualifiedname>
+        <param>
+          <type>ContentWriter</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type><ref refid="class_library_1_1_serializers_1_1_serial_map" kindref="compound">SerialMap</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Content Pipeline/Writer/MapWriter.cs" line="15" column="33" bodyfile="Content Pipeline/Writer/MapWriter.cs" bodystart="15" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_content___library_1_1_writer_1_1_map_writer_1a166967a7913d9001f2444670ae6a42ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string Content_Library.Writer.MapWriter.GetRuntimeType</definition>
+        <argsstring>(TargetPlatform targetPlatform)</argsstring>
+        <name>GetRuntimeType</name>
+        <qualifiedname>Content_Library.Writer.MapWriter.GetRuntimeType</qualifiedname>
+        <param>
+          <type>TargetPlatform</type>
+          <declname>targetPlatform</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Content Pipeline/Writer/MapWriter.cs" line="36" column="32" bodyfile="Content Pipeline/Writer/MapWriter.cs" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_content___library_1_1_writer_1_1_map_writer_1a6e42abdcebd1c908d4f43581dc569a74" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string Content_Library.Writer.MapWriter.GetRuntimeReader</definition>
+        <argsstring>(TargetPlatform targetPlatform)</argsstring>
+        <name>GetRuntimeReader</name>
+        <qualifiedname>Content_Library.Writer.MapWriter.GetRuntimeReader</qualifiedname>
+        <param>
+          <type>TargetPlatform</type>
+          <declname>targetPlatform</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Content Pipeline/Writer/MapWriter.cs" line="37" column="32" bodyfile="Content Pipeline/Writer/MapWriter.cs" bodystart="37" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A public class that writes the map that has been imported through the pipeline and write it into binary  </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ContentTypeWriter&lt; SerialMap &gt;</label>
+      </node>
+      <node id="1">
+        <label>Content_Library.Writer.MapWriter</label>
+        <link refid="class_content___library_1_1_writer_1_1_map_writer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ContentTypeWriter&lt; SerialMap &gt;</label>
+      </node>
+      <node id="1">
+        <label>Content_Library.Writer.MapWriter</label>
+        <link refid="class_content___library_1_1_writer_1_1_map_writer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Content Pipeline/Writer/MapWriter.cs" line="13" column="11" bodyfile="Content Pipeline/Writer/MapWriter.cs" bodystart="14" bodyend="38"/>
+    <listofallmembers>
+      <member refid="class_content___library_1_1_writer_1_1_map_writer_1a6e42abdcebd1c908d4f43581dc569a74" prot="public" virt="non-virtual"><scope>Content_Library::Writer::MapWriter</scope><name>GetRuntimeReader</name></member>
+      <member refid="class_content___library_1_1_writer_1_1_map_writer_1a166967a7913d9001f2444670ae6a42ae" prot="public" virt="non-virtual"><scope>Content_Library::Writer::MapWriter</scope><name>GetRuntimeType</name></member>
+      <member refid="class_content___library_1_1_writer_1_1_map_writer_1ae71669631ad1eb8a744ea4e8d33698f5" prot="protected" virt="non-virtual"><scope>Content_Library::Writer::MapWriter</scope><name>Write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

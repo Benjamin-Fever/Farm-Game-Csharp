@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="class_library_1_1_util_1_1_box" kind="class" language="C#" prot="public">
+    <compoundname>Library::Util::Box</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_library_1_1_util_1_1_box_1a6e1a48967a9e0cf26e0655b2bb23e196" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Library.Util.Box.x1</definition>
+        <argsstring></argsstring>
+        <name>x1</name>
+        <qualifiedname>Library.Util.Box.x1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Util.cs" line="18" column="22" bodyfile="Library/Util.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_library_1_1_util_1_1_box_1a474d646e2791df41e3eec171d11bec4b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Library.Util.Box.x2</definition>
+        <argsstring></argsstring>
+        <name>x2</name>
+        <qualifiedname>Library.Util.Box.x2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Util.cs" line="19" column="22" bodyfile="Library/Util.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_library_1_1_util_1_1_box_1aa7805ee1a87289086eda19eaa892de2c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Library.Util.Box.y1</definition>
+        <argsstring></argsstring>
+        <name>y1</name>
+        <qualifiedname>Library.Util.Box.y1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Util.cs" line="20" column="22" bodyfile="Library/Util.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_library_1_1_util_1_1_box_1a2fe0779515a91fd8ee051deb07ec692e" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Library.Util.Box.y2</definition>
+        <argsstring></argsstring>
+        <name>y2</name>
+        <qualifiedname>Library.Util.Box.y2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Util.cs" line="21" column="22" bodyfile="Library/Util.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_library_1_1_util_1_1_box_1a19f2280d8876d473d8db80c2bd321f77" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Library.Util.Box.Box</definition>
+        <argsstring>(float x1, float y1, float x2, float y2)</argsstring>
+        <name>Box</name>
+        <qualifiedname>Library.Util.Box.Box</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Util.cs" line="23" column="16" bodyfile="Library/Util.cs" bodystart="23" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_library_1_1_util_1_1_box_1a46042c9aee96eb186c39f28e7b8c3e01" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Library.Util.Box.Box</definition>
+        <argsstring>(Vector2 topLeft, Vector2 bottomRight)</argsstring>
+        <name>Box</name>
+        <qualifiedname>Library.Util.Box.Box</qualifiedname>
+        <param>
+          <type>Vector2</type>
+          <declname>topLeft</declname>
+        </param>
+        <param>
+          <type>Vector2</type>
+          <declname>bottomRight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Util.cs" line="31" column="16" bodyfile="Library/Util.cs" bodystart="31" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_library_1_1_util_1_1_box_1a8c5b20a25981f409bd93c73b0eb307ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string Library.Util.Box.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <qualifiedname>Library.Util.Box.ToString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Util.cs" line="39" column="32" bodyfile="Library/Util.cs" bodystart="39" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_library_1_1_util_1_1_box_1a7f2c35d927f47aa410fef8afd4d5e4aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Rectangle</type>
+        <definition>Rectangle Library.Util.Box.ConvertXnaRect</definition>
+        <argsstring>()</argsstring>
+        <name>ConvertXnaRect</name>
+        <qualifiedname>Library.Util.Box.ConvertXnaRect</qualifiedname>
+        <briefdescription>
+<para>Convert between box to xna rect  </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A rect from XNA</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/Util.cs" line="48" column="26" bodyfile="Library/Util.cs" bodystart="48" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Define a box  </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/Util.cs" line="16" column="11" bodyfile="Library/Util.cs" bodystart="17" bodyend="52"/>
+    <listofallmembers>
+      <member refid="class_library_1_1_util_1_1_box_1a19f2280d8876d473d8db80c2bd321f77" prot="public" virt="non-virtual"><scope>Library::Util::Box</scope><name>Box</name></member>
+      <member refid="class_library_1_1_util_1_1_box_1a46042c9aee96eb186c39f28e7b8c3e01" prot="public" virt="non-virtual"><scope>Library::Util::Box</scope><name>Box</name></member>
+      <member refid="class_library_1_1_util_1_1_box_1a7f2c35d927f47aa410fef8afd4d5e4aa" prot="public" virt="non-virtual"><scope>Library::Util::Box</scope><name>ConvertXnaRect</name></member>
+      <member refid="class_library_1_1_util_1_1_box_1a8c5b20a25981f409bd93c73b0eb307ee" prot="public" virt="non-virtual"><scope>Library::Util::Box</scope><name>ToString</name></member>
+      <member refid="class_library_1_1_util_1_1_box_1a6e1a48967a9e0cf26e0655b2bb23e196" prot="public" virt="non-virtual"><scope>Library::Util::Box</scope><name>x1</name></member>
+      <member refid="class_library_1_1_util_1_1_box_1a474d646e2791df41e3eec171d11bec4b" prot="public" virt="non-virtual"><scope>Library::Util::Box</scope><name>x2</name></member>
+      <member refid="class_library_1_1_util_1_1_box_1aa7805ee1a87289086eda19eaa892de2c" prot="public" virt="non-virtual"><scope>Library::Util::Box</scope><name>y1</name></member>
+      <member refid="class_library_1_1_util_1_1_box_1a2fe0779515a91fd8ee051deb07ec692e" prot="public" virt="non-virtual"><scope>Library::Util::Box</scope><name>y2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

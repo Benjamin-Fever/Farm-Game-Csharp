@@ -2,6 +2,9 @@
 
 namespace Library.Serializers
 {
+    /// <summary>
+    /// Serializable Tileset
+    /// </summary>
     public class SerialTileset
     {
         [XmlAttribute("name")] 

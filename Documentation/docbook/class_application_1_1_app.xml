@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_application_1_1_app" xml:lang="en-US">
+<title>Application.App Class Reference</title>
+<indexterm><primary>Application.App</primary></indexterm>
+<para>
+
+<para><link linkend="_class_application_1_1_app">App</link> extends on the monogame class Game to setup and run the game </para>
+ 
+</para>
+<para>Inheritance diagram for Application.App:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_application_1_1_app.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_application_1_1_app_1a7f67d3d558792ba3627b2f9881e2eae9">App</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>override void <link linkend="_class_application_1_1_app_1afca44a73b69a572c08b9d707d34d9e91">Initialize</link> ()</para>
+
+<para>Initilize game window  </para>
+</listitem>
+            <listitem><para>override void <link linkend="_class_application_1_1_app_1a9c1ac277eb7629f3e99658b0083bfa71">LoadContent</link> ()</para>
+
+<para>Load game content compiled using the monogame content pipeline  </para>
+</listitem>
+            <listitem><para>override void <link linkend="_class_application_1_1_app_1a700abaa7b52e8b8479c3c08872359619">Update</link> (GameTime gameTime)</para>
+</listitem>
+            <listitem><para>override void <link linkend="_class_application_1_1_app_1a8a0a88e3d24e7bf906ee4b0479322292">Draw</link> (GameTime gameTime)</para>
+
+<para>The draw method used to display whats on the game window  </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><link linkend="_class_application_1_1_app">App</link> extends on the monogame class Game to setup and run the game </para>
+<para>
+Definition at line <link linkend="__app_8cs_source_1l00013">13</link> of file <link linkend="__app_8cs_source">App.cs</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_application_1_1_app_1a7f67d3d558792ba3627b2f9881e2eae9"/><section>
+    <title>App()</title>
+<indexterm><primary>App</primary><secondary>Application.App</secondary></indexterm>
+<indexterm><primary>Application.App</primary><secondary>App</secondary></indexterm>
+<para><computeroutput>Application.App.App ( )</computeroutput></para><para>
+Definition at line <link linkend="__app_8cs_source_1l00020">20</link> of file <link linkend="__app_8cs_source">App.cs</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_application_1_1_app_1a8a0a88e3d24e7bf906ee4b0479322292"/><section>
+    <title>Draw()</title>
+<indexterm><primary>Draw</primary><secondary>Application.App</secondary></indexterm>
+<indexterm><primary>Application.App</primary><secondary>Draw</secondary></indexterm>
+<para><computeroutput>override void Application.App.Draw (GameTime gameTime)<computeroutput>[protected]</computeroutput></computeroutput></para><para>
+
+<para>The draw method used to display whats on the game window  </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>gameTime</entry><entry>
+<para>Time passed between frames</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__app_8cs_source_1l00061">61</link> of file <link linkend="__app_8cs_source">App.cs</link>.</para>
+</section>
+<anchor xml:id="_class_application_1_1_app_1afca44a73b69a572c08b9d707d34d9e91"/><section>
+    <title>Initialize()</title>
+<indexterm><primary>Initialize</primary><secondary>Application.App</secondary></indexterm>
+<indexterm><primary>Application.App</primary><secondary>Initialize</secondary></indexterm>
+<para><computeroutput>override void Application.App.Initialize ( )<computeroutput>[protected]</computeroutput></computeroutput></para><para>
+
+<para>Initilize game window  </para>
+</para>
+<para>
+Definition at line <link linkend="__app_8cs_source_1l00030">30</link> of file <link linkend="__app_8cs_source">App.cs</link>.</para>
+</section>
+<anchor xml:id="_class_application_1_1_app_1a9c1ac277eb7629f3e99658b0083bfa71"/><section>
+    <title>LoadContent()</title>
+<indexterm><primary>LoadContent</primary><secondary>Application.App</secondary></indexterm>
+<indexterm><primary>Application.App</primary><secondary>LoadContent</secondary></indexterm>
+<para><computeroutput>override void Application.App.LoadContent ( )<computeroutput>[protected]</computeroutput></computeroutput></para><para>
+
+<para>Load game content compiled using the monogame content pipeline  </para>
+</para>
+<para>
+Definition at line <link linkend="__app_8cs_source_1l00043">43</link> of file <link linkend="__app_8cs_source">App.cs</link>.</para>
+</section>
+<anchor xml:id="_class_application_1_1_app_1a700abaa7b52e8b8479c3c08872359619"/><section>
+    <title>Update()</title>
+<indexterm><primary>Update</primary><secondary>Application.App</secondary></indexterm>
+<indexterm><primary>Application.App</primary><secondary>Update</secondary></indexterm>
+<para><computeroutput>override void Application.App.Update (GameTime gameTime)<computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__app_8cs_source_1l00051">51</link> of file <link linkend="__app_8cs_source">App.cs</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+Game-Project/<link linkend="__app_8cs">App.cs</link></section>
+</section>

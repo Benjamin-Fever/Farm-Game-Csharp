@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__map_processor_8cs_source" xml:lang="en-US">
+<title>MapProcessor.cs</title>
+<indexterm><primary>Content Pipeline/Processors/MapProcessor.cs</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__map_processor_8cs_source_1l00001"/>00001 <emphasis role="keyword">using&#32;</emphasis><link linkend="_namespace_library_1_1_serializers">Library.Serializers</link>;
+<anchor xml:id="__map_processor_8cs_source_1l00002"/>00002 <emphasis role="keyword">using&#32;</emphasis>Microsoft.Xna.Framework.Content.Pipeline;
+<anchor xml:id="__map_processor_8cs_source_1l00003"/>00003 <emphasis role="keyword">using&#32;</emphasis>System;
+<anchor xml:id="__map_processor_8cs_source_1l00004"/>00004 
+<anchor xml:id="__map_processor_8cs_source_1l00005"/><link linkend="_namespace_content___library_1_1_processor">00005</link> <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_content___library_1_1_processor">Content_Library.Processor</link>
+<anchor xml:id="__map_processor_8cs_source_1l00006"/>00006 {
+<anchor xml:id="__map_processor_8cs_source_1l00010"/>00010 &#32;&#32;&#32;&#32;[ContentProcessor(DisplayName&#32;=&#32;<emphasis role="stringliteral">&quot;Map&#32;Processor&#32;-&#32;Map.Pipeline&quot;</emphasis>)]
+<anchor xml:id="__map_processor_8cs_source_1l00011"/>00011 &#32;&#32;&#32;&#32;<emphasis role="keyword">internal</emphasis>&#32;<emphasis role="keyword">class&#32;</emphasis>MapProcessor&#32;:&#32;ContentProcessor&lt;SerialMap,&#32;SerialMap&gt;
+<anchor xml:id="__map_processor_8cs_source_1l00012"/>00012 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__map_processor_8cs_source_1l00013"/>00013 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">override</emphasis>&#32;<link linkend="_class_library_1_1_serializers_1_1_serial_map">SerialMap</link>&#32;Process(<link linkend="_class_library_1_1_serializers_1_1_serial_map">SerialMap</link>&#32;input,&#32;ContentProcessorContext&#32;context)
+<anchor xml:id="__map_processor_8cs_source_1l00014"/>00014 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__map_processor_8cs_source_1l00015"/>00015 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;input;
+<anchor xml:id="__map_processor_8cs_source_1l00016"/>00016 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__map_processor_8cs_source_1l00017"/>00017 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__map_processor_8cs_source_1l00018"/>00018 }
+</programlisting></section>

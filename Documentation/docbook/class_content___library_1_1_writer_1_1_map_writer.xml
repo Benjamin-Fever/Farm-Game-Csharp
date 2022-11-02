@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_content___library_1_1_writer_1_1_map_writer" xml:lang="en-US">
+<title>Content_Library.Writer.MapWriter Class Reference</title>
+<indexterm><primary>Content_Library.Writer.MapWriter</primary></indexterm>
+<para>
+
+<para>A public class that writes the map that has been imported through the pipeline and write it into binary  </para>
+ 
+</para>
+<para>Inheritance diagram for Content_Library.Writer.MapWriter:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_content___library_1_1_writer_1_1_map_writer.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>override string <link linkend="_class_content___library_1_1_writer_1_1_map_writer_1a166967a7913d9001f2444670ae6a42ae">GetRuntimeType</link> (TargetPlatform targetPlatform)</para>
+</listitem>
+            <listitem><para>override string <link linkend="_class_content___library_1_1_writer_1_1_map_writer_1a6e42abdcebd1c908d4f43581dc569a74">GetRuntimeReader</link> (TargetPlatform targetPlatform)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>override void <link linkend="_class_content___library_1_1_writer_1_1_map_writer_1ae71669631ad1eb8a744ea4e8d33698f5">Write</link> (ContentWriter output, <link linkend="_class_library_1_1_serializers_1_1_serial_map">SerialMap</link> value)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>A public class that writes the map that has been imported through the pipeline and write it into binary  </para>
+<para>
+Definition at line <link linkend="__map_writer_8cs_source_1l00013">13</link> of file <link linkend="__map_writer_8cs_source">MapWriter.cs</link>.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_content___library_1_1_writer_1_1_map_writer_1a6e42abdcebd1c908d4f43581dc569a74"/><section>
+    <title>GetRuntimeReader()</title>
+<indexterm><primary>GetRuntimeReader</primary><secondary>Content_Library.Writer.MapWriter</secondary></indexterm>
+<indexterm><primary>Content_Library.Writer.MapWriter</primary><secondary>GetRuntimeReader</secondary></indexterm>
+<para><computeroutput>override string Content_Library.Writer.MapWriter.GetRuntimeReader (TargetPlatform targetPlatform)</computeroutput></para><para>
+Definition at line <link linkend="__map_writer_8cs_source_1l00037">37</link> of file <link linkend="__map_writer_8cs_source">MapWriter.cs</link>.</para>
+</section>
+<anchor xml:id="_class_content___library_1_1_writer_1_1_map_writer_1a166967a7913d9001f2444670ae6a42ae"/><section>
+    <title>GetRuntimeType()</title>
+<indexterm><primary>GetRuntimeType</primary><secondary>Content_Library.Writer.MapWriter</secondary></indexterm>
+<indexterm><primary>Content_Library.Writer.MapWriter</primary><secondary>GetRuntimeType</secondary></indexterm>
+<para><computeroutput>override string Content_Library.Writer.MapWriter.GetRuntimeType (TargetPlatform targetPlatform)</computeroutput></para><para>
+Definition at line <link linkend="__map_writer_8cs_source_1l00036">36</link> of file <link linkend="__map_writer_8cs_source">MapWriter.cs</link>.</para>
+</section>
+<anchor xml:id="_class_content___library_1_1_writer_1_1_map_writer_1ae71669631ad1eb8a744ea4e8d33698f5"/><section>
+    <title>Write()</title>
+<indexterm><primary>Write</primary><secondary>Content_Library.Writer.MapWriter</secondary></indexterm>
+<indexterm><primary>Content_Library.Writer.MapWriter</primary><secondary>Write</secondary></indexterm>
+<para><computeroutput>override void Content_Library.Writer.MapWriter.Write (ContentWriter output, <link linkend="_class_library_1_1_serializers_1_1_serial_map">SerialMap</link> value)<computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__map_writer_8cs_source_1l00015">15</link> of file <link linkend="__map_writer_8cs_source">MapWriter.cs</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+Content Pipeline/Writer/<link linkend="__map_writer_8cs">MapWriter.cs</link></section>
+</section>

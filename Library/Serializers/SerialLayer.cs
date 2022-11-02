@@ -4,6 +4,9 @@ using System.Xml.Serialization;
 
 namespace Library.Serializers
 {
+    /// <summary>
+    /// Serializable Layer
+    /// </summary>
     [XmlRoot("layer"), Serializable]
     public class SerialLayer : AbstractLayer<string>
     {
@@ -29,6 +32,7 @@ namespace Library.Serializers
         {
             set 
             { 
+                // Tidy up data input remove formats etc
                 tiles = value;
                 tiles = tiles.Replace("\t", "");
                 tiles = tiles.Replace(" ", "");
