@@ -20,15 +20,8 @@ namespace Library.Mapping
     /// A tilelayer used to define what tiles are visible at this depth. Tile type is a list of Tile.
     /// Extends AbstractLayer and implements comparable and graphics component.
     /// </summary>
-    public class TileLayer : AbstractLayer<List<Tile>>, IComparable<TileLayer>, IGraphicsComponent
+    public class TileLayer : AbstractLayer<List<Tile>>, IGraphicsComponent
     {
-        public int CompareTo(TileLayer other)
-        {
-            if (other == null) { return 1; }
-            if (depth == other.depth) { return 0; }
-            if (depth > other.depth) { return -1; }
-            return 1;
-        }
 
         /// <summary>
         /// Draw the layer
@@ -43,11 +36,5 @@ namespace Library.Mapping
                 }
             }
         }
-
-        /// <summary>
-        /// Get layer depth
-        /// </summary>
-        /// <returns>A int of the layers depth</returns>
-        public int GetDepth() { return depth; }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Microsoft.Xna.Framework.Graphics;
 using Library.Util;
+using Library.Static;
 
 namespace Library.Graphics
 {
@@ -86,5 +87,9 @@ namespace Library.Graphics
         /// <returns>A box of the sprites bounding box</returns>
         public Box GetBoundBox() { return bbox; }
 
+        public static Sprite Null()
+        {
+            return new Sprite((Texture2D)Assets.get("assets/textures/_null32"));
+        }
     }
 }

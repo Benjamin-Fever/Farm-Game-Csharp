@@ -1,5 +1,9 @@
-﻿using Library.Static;
+﻿using Library.Mapping;
+using Library.Objects;
+using Library.Static;
 using Microsoft.Xna.Framework;
+using System;
+using System.Collections.Generic;
 
 namespace Library.Graphics
 {
@@ -9,6 +13,7 @@ namespace Library.Graphics
     public class Renderer : IGraphicsComponent
     {
         private Game game;
+        public Test t;
 
         public Renderer(Game game)
         {
@@ -18,7 +23,8 @@ namespace Library.Graphics
         public void draw()
         {
             game.GraphicsDevice.Clear(Global.Map.background); // Clear screen
-            Global.Map.draw(); // Draw map
+            Global.Map.draw();
+            t.draw();
         }
     }
 }

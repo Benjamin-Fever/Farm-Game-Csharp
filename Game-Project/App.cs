@@ -4,6 +4,9 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Library.Static;
+using Library.Camera;
+using Viewport = Library.Camera.Viewport;
+using Library.Objects;
 
 namespace Application
 {
@@ -14,7 +17,6 @@ namespace Application
     {
         /// Initilize Varaibles
         private GraphicsDeviceManager _graphics;
-        private SpriteBatch _spriteBatch;
         private Renderer _renderer;
 
         public App()
@@ -42,15 +44,20 @@ namespace Application
         /// </summary>
         protected override void LoadContent()
         {
-            _spriteBatch = new SpriteBatch(GraphicsDevice);
-            GraphicsComponent.setSpriteBatch(_spriteBatch);
+            Global.Sprite_Batch = new SpriteBatch(GraphicsDevice);
             Assets.load(Content);  // Load all game assets
             Global.Map = Content.Load<TileMap>("assets/maps/map1");  // Load map
+            _renderer.t = new Test();
         }
 
         protected override void Update(GameTime gameTime)
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape)) Exit();
+            if (Keyboard.GetState().IsKeyDown(Keys.W)) _renderer.t.move(0, -1);
+            if (Keyboard.GetState().IsKeyDown(Keys.S)) _renderer.t.move(0, 1);
+            if (Keyboard.GetState().IsKeyDown(Keys.A)) _renderer.t.move(-1, 0);
+            if (Keyboard.GetState().IsKeyDown(Keys.D)) _renderer.t.move(1, 0);
+            _renderer.t.Update();
             base.Update(gameTime);
         }
 
@@ -60,10 +67,9 @@ namespace Application
         /// <param name="gameTime">Time passed between frames</param>
         protected override void Draw(GameTime gameTime)
         {
-            _spriteBatch.Begin(SpriteSortMode.Deferred, null, SamplerState.PointClamp, null, null, null, null);
+            Global.Sprite_Batch.Begin(SpriteSortMode.Deferred, null, SamplerState.PointClamp, null, null, null, null);
             _renderer.draw();
-            _spriteBatch.End();
-
+            Global.Sprite_Batch.End();
             base.Draw(gameTime);
         }
     }

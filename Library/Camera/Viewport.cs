@@ -19,11 +19,7 @@ namespace Library.Camera
         /// <returns>true if position is inside view area otherwise return false</returns>
         public static bool posInViewport(MappingPos pos)
         {
-            return 
-                (pos.X >= position.X) &&
-                (pos.Y >= position.Y) && 
-                (pos.X < (position.X + resolution.X)) &&
-                (pos.Y < (position.Y + resolution.Y));
+            return true;
         }
 
         /// <summary>
@@ -44,6 +40,13 @@ namespace Library.Camera
 
             position.X = (int)(position.X + width  > Global.Map.size.X ? Global.Map.size.X - width  : position.X);
             position.Y = (int)(position.Y + height > Global.Map.size.Y ? Global.Map.size.Y - height : position.Y);
+        }
+
+
+        public static void SetPos(int x, int y)
+        {
+            position.X = x;
+            position.Y = y;
         }
 
         /// <summary>

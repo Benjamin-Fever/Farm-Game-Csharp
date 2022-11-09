@@ -2,7 +2,7 @@
 <Map name="map1" tilewidth="16" tileheight="16" width="30" height="20">
   <Background red="0" green="0" blue="0"/>
   <Layers>
-    <Layer name="Layer1" depth="10">
+    <Layer name="Layer1" depth="1">
       <Tileset name="tileset1" columns="40" source="assets/textures/overworld"/>
       <Data encoding="csv">
 		1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -27,7 +27,7 @@
 		1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
       </Data>
     </Layer>
-    <Layer name="Layer2" depth="0">
+    <Layer name="Layer2" depth="2">
       <Tileset name="tileset1" columns="40" source="assets/textures/overworld"/>
       <Data encoding="csv">
 		0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -52,7 +52,7 @@
 		0,0,0,0,0,0,0,732,733,733,733,734,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
       </Data>
     </Layer>
-    <Layer name="Layer3" depth="0">
+    <Layer name="Layer3" depth="5">
       <Tileset name="tileset1" columns="40" source="assets/textures/overworld"/>
       <Data encoding="csv">
 		0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -77,7 +77,7 @@
 		0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
       </Data>
     </Layer>
-    <Layer name="Layer4" depth="0">
+    <Layer name="Layer4" depth="4">
       <Tileset name="tileset1" columns="40" source="assets/textures/overworld"/>
       <Data encoding="csv">
 		405,406,406,406,406,406,406,406,406,406,406,406,406,1,1,1,1,1,1,1,406,407,0,0,0,283,284,284,284,284,
@@ -102,7 +102,7 @@
 		0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,283,284
       </Data>
     </Layer>
-    <Layer name="Layer5" depth="0">
+    <Layer name="Layer5" depth="5">
       <Tileset name="tileset1" columns="40" source="assets/textures/overworld"/>
       <Data encoding="csv">
 		45,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,413,0,0,45,

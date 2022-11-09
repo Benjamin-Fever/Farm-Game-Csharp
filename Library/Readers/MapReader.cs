@@ -39,7 +39,7 @@ namespace Content_Library.Reader
                 ts.columns = input.ReadInt32();
                 ts.source = input.ReadString();
                 string tiles = input.ReadString();
-                layer.tiles = getTiles(tiles, map, ts);
+                layer.tiles = getTiles(tiles, map, ts, layer);
                 map.layers.Add(layer);
             }
             return map;
@@ -52,7 +52,7 @@ namespace Content_Library.Reader
         /// <param name="m"></param>
         /// <param name="ts"></param>
         /// <returns>A list of tiles</returns>
-        private static List<Tile> getTiles(string data, TileMap m, SerialTileset ts)
+        private static List<Tile> getTiles(string data, TileMap m, SerialTileset ts, TileLayer tl)
         {
             Sprite sp = new Sprite((Texture2D)Assets.get(ts.source));
             List<Tile> tiles = new List<Tile>();
@@ -65,7 +65,7 @@ namespace Content_Library.Reader
                 foreach (string value in rows)
                 {
                     if (value == "") { continue; }
-                    Tile t = new Tile(sp, new MappingPos(x, y), m.tileSize, ts.columns, Int32.Parse(value));
+                    Tile t = new Tile(sp, new MappingPos(x, y), m.tileSize, ts.columns, Int32.Parse(value), tl.depth);
                     tiles.Add(t);
                     x++;
                 }

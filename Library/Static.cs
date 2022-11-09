@@ -12,6 +12,7 @@ namespace Library.Static
     public static class Global
     {
         public static TileMap Map;
+        public static SpriteBatch Sprite_Batch;
         public static int Window_Width = 800;
         public static int Window_Height = 512;
     }

@@ -29,8 +29,6 @@ namespace Library.Mapping
         /// </summary>
         public void draw()
         {
-            
-            layers.Sort(); // Sort layers by depth
             foreach (TileLayer layer in layers)
             {
                 layer.draw();
